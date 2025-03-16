@@ -1,12 +1,93 @@
-# plu
+# Analyse PLU
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+Project PLU
+
+- [Analyse PLU](#analyse-plu)
+- [Automatic retrieval](#automatic-retrieval)
+- [Extraction](#extraction)
+  - [1. Extraction from pdf files](#1-extraction-from-pdf-files)
+  - [2. Cleaning of useless text and images](#2-cleaning-of-useless-text-and-images)
+    - [a. Text data](#a-text-data)
+    - [b. Image data](#b-image-data)
+- [Analyzing each document](#analyzing-each-document)
+  - [1. Sending each extracted document for summarization](#1-sending-each-extracted-document-for-summarization)
+  - [2. Storing the Data](#2-storing-the-data)
+    - [a. Tagging and naming the documents](#a-tagging-and-naming-the-documents)
+- [Synthesizing analysis](#synthesizing-analysis)
+  - [1. Retrieval of all summary related to a location](#1-retrieval-of-all-summary-related-to-a-location)
+  - [2. Synthesizing (Gemini or Qwen1M)](#2-synthesizing-gemini-or-qwen1m)
+  - [3. Storing of synthesis](#3-storing-of-synthesis)
+- [Front End](#front-end)
+- [Project Organization](#project-organization)
+
+
+The following plan follows the construction of the project.
+
+# Automatic retrieval
+
+<!-- TODO -->
+
+# Extraction
+
+If you download yout data manually, create a folder in `data/external` and place your files into it. You can create sub-folders at your convenience.
+
+You have to setup your `.env` file, with your a `MISTRAL_API_KEY`.
+
+## 1. Extraction from pdf files
+
+With **Mistral OCR API**, simply use the terminal command: 
+
+```zsh
+python src/dataset.py extract-data -f folder_name
+```
+
+where `folder_name` of the data that you wish to extract.
+
+All files will then be stored in the `data/raw/folder_name` folder, compromising individual folders for each original pdf file, with text data in a markdown format, and images in an /images folder.
+
+
+## 2. Cleaning of useless text and images
+
+### a. Text data
+
+Cleans the markdown data.
+
+### b. Image data
+
+**Current Method:** Removes images based of the references in the `references/images` folder.
+
+Run : 
+```zsh 
+python src/dataset.py clean-data -f folder_name
+```
+
+
+# Analyzing each document
+   
+## 1. Sending each extracted document for summarization
+
+
+## 2. Storing the Data
+   
+### a. Tagging and naming the documents
+
+
+### b. Storage on the cloud
+
+# Synthesizing analysis
+   
+## 1. Retrieval of all summary related to a location
+
+## 2. Synthesizing (Gemini or Qwen1M) 
+
+## 3. Storing of synthesis
+
+
+# Front End
 
 Analyse PLU
 
-## Project Organization
+# Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
