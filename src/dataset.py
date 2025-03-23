@@ -3,7 +3,7 @@ This script extracts data from pdf files,
 converts them to text and saves it to a markdown files and images.
 """
 
-import os
+import json
 from pathlib import Path
 
 import typer
@@ -12,8 +12,8 @@ from tqdm import tqdm
 
 from src.config import (
     EXTERNAL_DATA_DIR,
-    PROCESSED_DATA_DIR,
     INTERIM_DATA_DIR,
+    PROCESSED_DATA_DIR,
     PROJ_ROOT,
     RAW_DATA_DIR,
 )
@@ -25,6 +25,7 @@ from src.extract.mistral_ocr import (
     save_as_markdown,
 )
 from src.extract.utils import read_all_files_in_directory, read_all_folders_in_directory
+from src.gemini.gemini_flash import generate_analysis
 
 # Create Typer app
 app = typer.Typer()
@@ -93,7 +94,6 @@ def clean_data(
     """
     logger.info(f"Cleaning text & images from {raw_dir / folder}...")
     files = read_all_folders_in_directory(raw_dir / folder)
-    os.makedirs(int_dir, exist_ok=True)
 
     for folder_path in tqdm(files, desc="Cleaning files", total=len(files)):
         # Create output directory
@@ -113,6 +113,49 @@ def clean_data(
             clean_text_files(input_path=folder_path, output_dir=output_path)
 
     logger.success(f"Cleaning text & images from {raw_dir / folder} complete.")
+
+
+@app.command()
+def analyse_data(
+    folder: str = typer.Option("Grenoble", "--folder", "-f", help="City folder"),
+    int_dir: Path = typer.Option(
+        INTERIM_DATA_DIR, "--int-dir", "-i", help="Interim directory path"
+    ),
+    proc_dir: Path = typer.Option(
+        PROCESSED_DATA_DIR, "--proc-dir", "-p", help="Processed directory path"
+    ),
+):
+    """
+    Analyses the cleaned data from the specified folder containing markdown files.
+
+    Args:
+        folder: The folder containing the data.
+        input_path: The path to the folder containing the data.
+        output_path: The path to save the analysed data to.
+    """
+    logger.info(f"Analysing data from {int_dir / folder}...")
+    files = read_all_folders_in_directory(int_dir / folder)
+
+    # Load system and user prompts
+    with open("/mnt/mydisk/Projects/plu/references/system_prompt.txt", "r") as f:
+        system_prompt: str = f.read()
+    with open("/mnt/mydisk/Projects/plu/references/user_prompt.txt", "r") as f:
+        user_message: str = f.read()
+
+    for folder_path in tqdm(files, desc="Analysing files", total=len(files)):
+        # Create output directory
+        output_path = proc_dir / Path(folder_path).relative_to(int_dir)
+        output_path.mkdir(exist_ok=True, parents=True)
+
+        # Perform analysis
+        response_data = generate_analysis(
+            user_message=user_message, path_dir=folder_path, system_prompt=system_prompt
+        )
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(response_data, f, indent=4, ensure_ascii=False)
+
+    logger.success(f"Analysing data from {int_dir / folder} complete.")
 
 
 @app.command()

@@ -18,7 +18,7 @@ mistralai==1.5.1
 mypy-extensions==1.0.0
 numpy==2.2.3
 pillow==11.1.0
--e git+https://github.com/fllin1/plu.git@7b1eea9d525960c1bdd2d4ad1ce24937a659b48a#egg=plu
+-e git+https://github.com/fllin1/plu.git@452276f8986f1212d2d9a56459082c1ce4efb4d9#egg=plu
 pydantic==2.10.6
 pydantic_core==2.27.2
 Pygments @ file:///work/perseverance-python-buildout/croot/pygments_1698846270603/work
