@@ -1,8 +1,12 @@
+import base64
+import os
 import re
 from pathlib import Path
 from typing import List, Optional, Tuple
 
 import vertexai
+from google import genai
+from google.genai import types
 from vertexai.generative_models import (
     Content,
     GenerationConfig,
@@ -90,7 +94,6 @@ def get_plu_ocr_data(user_message: str, path_dir: Path) -> List[any]:
 def generate_analysis(
     user_message: str,
     path_dir: Path,
-    system_prompt: Optional[str] = None,
 ) -> GenerationResponse:
     """
     Generate the analysis of the PLU document.
@@ -117,37 +120,17 @@ def generate_analysis(
         temperature=1,
         top_p=0.95,
         max_output_tokens=8192,
-        # # To get the response in JSON format
-        # response_mime_type="application/json",
-        # response_schema={
-        #     "type": "OBJECT",
-        #     "properties": {"response": {"type": "STRING"}},
-        # },
     )
-
-    # # Paramètres de sécurité
-    # safety_settings = [
-    #     types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="OFF"),
-    #     types.SafetySetting(
-    #         category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="OFF"
-    #     ),
-    #     types.SafetySetting(
-    #         category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="OFF"
-    #     ),
-    #     types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="OFF"),
-    # ]
 
     parts = get_plu_ocr_data(user_message=user_message, path_dir=path_dir)
     contents = [
-        # Content(role="system", parts=[Part.from_text(system_prompt)]), NOTE: Sytem prompt not supported w/ gemini-2.0-flash-001
-        Content(role="user", parts=[Part.from_text(system_prompt)] + parts),
+        Content(role="user", parts=parts),
     ]
 
     # Générer la réponse
     response: GenerationResponse = model.generate_content(
         contents=contents,
         generation_config=generation_config,
-        # safety_settings=safety_settings,
         stream=False,
     )
 

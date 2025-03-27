@@ -74,52 +74,11 @@ def extract_data(
 
 
 @app.command()
-def clean_data(
-    folder: str = typer.Option("Grenoble", "--folder", "-f", help="City folder"),
-    raw_dir: Path = typer.Option(
-        RAW_DATA_DIR, "--raw-dir", "-r", help="Raw directory path"
-    ),
-    int_dir: Path = typer.Option(
-        INTERIM_DATA_DIR, "--int-dir", "-i", help="Interim directory path"
-    ),
-    ref_img_dir: Path = PROJ_ROOT / "references/images",
-):
-    """
-    Cleans the extracted data from the specified folder containing markdown files.
-
-    Args:
-        folder: The folder containing the data.
-        input_path: The path to the folder containing the data.
-        output_path: The path to save the cleaned data to.
-    """
-    logger.info(f"Cleaning text & images from {raw_dir / folder}...")
-    files = read_all_folders_in_directory(raw_dir / folder)
-
-    for folder_path in tqdm(files, desc="Cleaning files", total=len(files)):
-        # Create output directory
-        output_path = int_dir / Path(folder_path).relative_to(raw_dir)
-        output_path.mkdir(exist_ok=True, parents=True)
-
-        # Clean images
-        if Path(folder_path).stem == "images":
-            clean_images_files(
-                references_dir=ref_img_dir,
-                input_dir=folder_path,
-                output_dir=output_path,
-                threshold=5,
-            )
-        # Clean text
-        else:
-            clean_text_files(input_path=folder_path, output_dir=output_path)
-
-    logger.success(f"Cleaning text & images from {raw_dir / folder} complete.")
-
-
-@app.command()
 def analyse_data(
     folder: str = typer.Option("Grenoble", "--folder", "-f", help="City folder"),
-    int_dir: Path = typer.Option(
-        INTERIM_DATA_DIR, "--int-dir", "-i", help="Interim directory path"
+    zone: str = typer.Option("AU", "--zone", "-z", help="Zone folder"),
+    raw_dir: Path = typer.Option(
+        INTERIM_DATA_DIR, "--raw-dir", "-r", help="Raw directory path"
     ),
     proc_dir: Path = typer.Option(
         PROCESSED_DATA_DIR, "--proc-dir", "-p", help="Processed directory path"
@@ -133,29 +92,27 @@ def analyse_data(
         input_path: The path to the folder containing the data.
         output_path: The path to save the analysed data to.
     """
-    logger.info(f"Analysing data from {int_dir / folder}...")
-    files = read_all_folders_in_directory(int_dir / folder)
+    logger.info(f"Analysing data from {raw_dir / folder}...")
+    files = read_all_folders_in_directory(raw_dir / folder)
 
     # Load system and user prompts
-    with open("/mnt/mydisk/Projects/plu/references/system_prompt.txt", "r") as f:
-        system_prompt: str = f.read()
-    with open("/mnt/mydisk/Projects/plu/references/user_prompt.txt", "r") as f:
+    with open("/mnt/mydisk/Projects/plu/references/prompt.txt", "r") as f:
         user_message: str = f.read()
 
     for folder_path in tqdm(files, desc="Analysing files", total=len(files)):
         # Create output directory
-        output_path = proc_dir / Path(folder_path).relative_to(int_dir)
+        output_path = proc_dir / Path(folder_path).relative_to(raw_dir)
         output_path.mkdir(exist_ok=True, parents=True)
 
         # Perform analysis
         response_data = generate_analysis(
-            user_message=user_message, path_dir=folder_path, system_prompt=system_prompt
+            user_message=user_message, path_dir=folder_path
         )
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(response_data, f, indent=4, ensure_ascii=False)
 
-    logger.success(f"Analysing data from {int_dir / folder} complete.")
+    logger.success(f"Analysing data from {raw_dir / folder} complete.")
 
 
 @app.command()
