@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+"""Project configuration.
+
+This module contains the configuration settings for the project.
+
+Version: 1.0
+Date: 2025-03-31
+Author: Florent Lin
+"""
+
 from pathlib import Path
 
 from dotenv import load_dotenv
