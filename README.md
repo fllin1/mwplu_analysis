@@ -1,91 +1,120 @@
-# Analyse PLU
+<a id="readme-top"></a>
+<h1 align="center">Analyse PLU</h1>
 
-Project PLU
+The project PLU was built with
 
-- [Analyse PLU](#analyse-plu)
-- [Automatic retrieval](#automatic-retrieval)
-- [Extraction](#extraction)
-  - [1. Extraction from pdf files](#1-extraction-from-pdf-files)
-  - [2. Cleaning of useless text and images](#2-cleaning-of-useless-text-and-images)
-    - [a. Text data](#a-text-data)
-    - [b. Image data](#b-image-data)
-- [Analyzing each document](#analyzing-each-document)
-  - [1. Sending each extracted document for summarization](#1-sending-each-extracted-document-for-summarization)
-  - [2. Storing the Data](#2-storing-the-data)
-    - [a. Tagging and naming the documents](#a-tagging-and-naming-the-documents)
-- [Synthesizing analysis](#synthesizing-analysis)
-  - [1. Retrieval of all summary related to a location](#1-retrieval-of-all-summary-related-to-a-location)
-  - [2. Synthesizing (Gemini or Qwen1M)](#2-synthesizing-gemini-or-qwen1m)
-  - [3. Storing of synthesis](#3-storing-of-synthesis)
+![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+- [About The Project](#about-the-project)
+- [Installation](#installation)
+- [Data Oraganization](#data-oraganization)
+- [Back End](#back-end)
+  - [OCR](#ocr)
+  - [Format Data](#format-data)
+  - [Analyse](#analyse)
 - [Front End](#front-end)
 - [Project Organization](#project-organization)
 
 
-The following plan follows the construction of the project.
+# About The Project
 
-# Automatic retrieval
+This project offers an end-to-end solution for automated document management that handles extraction, analysis, and synthesis of document data. Using API calls including Mistral OCR and Gemini-pro, the system processes both text and images to generate synthesis according to a template from unstructured documents.
 
-<!-- TODO -->
+**Key features include:**
+- Automated document processing
+- Combined text and image analysis
+- Summarization according to a template
+- Location-based document synthesis
+- Cloud storage integration (TODO)
+- User-friendly front-end access (TODO)
 
-# Extraction
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you download yout data manually, create a folder in `data/external` and place your files into it. You can create sub-folders at your convenience.
+# Installation
 
-You have to setup your `.env` file, with your a `MISTRAL_API_KEY`.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/fllin1/plu.git
+   ```
+2. Install NPM packages
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Create and add your Google AI and Mistral API in `.env`
+   ```
+   MISTRAL_API_KEY = 'ENTER YOUR MISTRAL API KEY'
+   GOOGLE_AI_API_KEY = 'ENTER YOUR MISTRAL API KEY'
+   ```
+4. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirm the changes
+   ```
 
-## 1. Extraction from pdf files
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-With **Mistral OCR API**, simply use the terminal command: 
+# Data Oraganization
 
-```zsh
-python src/dataset.py extract-data -f folder_name
+1. Create a folder for your city or specific zone in the `./data/external/` folder.
+2. Place your document files with this kind of architectures:
+```
+city
+  ├── zones_urbaines            <- Folder with the PLU
+  │   ├── zone_UA1              <- PLU of the zones you want to analyse
+  │   └── zone_UA2              <- You can put as many as you have
+  ├── zones_urbaines            <- PLU for all the zones urbaines, you have to use the exact same name as your folder above
+  ├── dispositions_generales    <- Disposition générales
+  └── other_documents           <- Add the OAP and PPRI
+```
+3. You will need to reproduce this architecture in the `./config/plu_tree.yaml` file while separing the general documents and the specific documents for zones as such :
+```yaml
+city:
+  documents_generaux:
+    - dispositions_generales
+    - other_documents
+  documents_par_zone:
+    zones_urbaines:
+      - zone_UA1
+      - zone_UA2
 ```
 
-where `folder_name` of the data that you wish to extract.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-All files will then be stored in the `data/raw/folder_name` folder, compromising individual folders for each original pdf file, with text data in a markdown format, and images in an /images folder.
+# Back End
 
+## OCR
 
-## 2. Cleaning of useless text and images
+This part aims to extract all your `./data/external/{city}/` into the `./data/raw/{city}/` folder as `.json` files.
 
-### a. Text data
+Analysing with Mistral OCR. Note that you will have to put credits in your Mistral account.
+```sh
+python src/orc.py --folder {city}
+```
+It saves all the full raw OCR responses and reproduces the folder structure in input.
 
-Cleans the markdown data.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### b. Image data
+## Format Data
 
-**Current Method:** Removes images based of the references in the `references/images` folder.
+Be careful, if Mistral OCR changes its output format, the preprocessing might not work.
 
-Run : 
-```zsh 
-python src/dataset.py clean-data -f folder_name
+This time, all the data will be combined in a single file as `./data/interim/data_{city}.json`.
+```sh
+python src/format.py --folder {city} --model-name "gemini-2.5-pro-exp-03-25"
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Analyzing each document
-   
-## 1. Sending each extracted document for summarization
+## Analyse
 
-
-## 2. Storing the Data
-   
-### a. Tagging and naming the documents
-
-
-### b. Storage on the cloud
-
-# Synthesizing analysis
-   
-## 1. Retrieval of all summary related to a location
-
-## 2. Synthesizing (Gemini or Qwen1M) 
-
-## 3. Storing of synthesis
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Front End
 
 Analyse PLU
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Project Organization
 
@@ -140,3 +169,4 @@ Analyse PLU
 
 --------
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

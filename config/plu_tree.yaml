@@ -1,55 +1,56 @@
 Grenoble:
-  Documents Généraux:
-    - Disposition Générales
+  documents_generaux:
+    - Dispositions Générales
     - Plan de Prévention du Risque Inondation
     - Carnet de Paysage
-  Zone à Urbaniser:
-    - Zone_AU
-    - Zone_AUC1
-    - Zone_AUC2
-    - Zone_AUC3
-    - Zone_AUCRU10
-    - Zone_AUD1
-    - Zone_AUD2
-    - Zone_AUD3
-    - Zone_AUD4
-    - Zone_AUE1
-    - Zone_AUP1r
-  Zone Agricole:
-    - Zone_A
-    - Zone_AL
-    - Zone_N
-    - Zone_NL
-  Zone Dédiée:
-    - Zone_UE1
-    - Zone_UE2
-    - Zone_UE3
-    - Zone_UE4
-    - Zone_UV
-    - Zone_UZ1
-    - Zone_UZ2
-    - Zone_UZ3
-    - Zone_UZ4
-  Zone Urbaine:
-    - Zone_UA1
-    - Zone_UA2
-    - Zone_UA3
-    - Zone_UB
-    - Zone_UC1
-    - Zone_UC2
-    - Zone_UC3
-    - Zone_UCRU1
-    - Zone_UCRU2
-    - Zone_UCRU3
-    - Zone_UCRU4
-    - Zone_UCRU5
-    - Zone_UCRU6
-    - Zone_UCRU7
-    - Zone_UCRU8
-    - Zone_UCRU9
-    - Zone_UCRU11
-    - Zone_UD1
-    - Zone_UD2
-    - Zone_UD3
-    - Zone_UD4
+  documents_par_zone:
+    Zone à Urbaniser:
+      # - Zone_AU
+      # - Zone_AUC1
+      - Zone_AUC2
+      # - Zone_AUC3
+      # - Zone_AUCRU10
+      # - Zone_AUD1
+      - Zone_AUD2
+      # - Zone_AUD3
+      # - Zone_AUD4
+      # - Zone_AUE1
+      # - Zone_AUP1r
+    # Zone Agricoles:
+    #   - Zone_A
+    #   - Zone_AL
+    #   - Zone_N
+    #   - Zone_NL
+    # Zone Dédiées:
+    #   - Zone_UE1
+    #   - Zone_UE2
+    #   - Zone_UE3
+    #   - Zone_UE4
+    #   - Zone_UV
+    #   - Zone_UZ1
+    #   - Zone_UZ2
+    #   - Zone_UZ3
+    #   - Zone_UZ4
+    # Zone Urbaines:
+    #   - Zone_UA1
+    #   - Zone_UA2
+    #   - Zone_UA3
+    #   - Zone_UB
+    #   - Zone_UC1
+    #   - Zone_UC2
+    #   - Zone_UC3
+    #   - Zone_UCRU1
+    #   - Zone_UCRU2
+    #   - Zone_UCRU3
+    #   - Zone_UCRU4
+    #   - Zone_UCRU5
+    #   - Zone_UCRU6
+    #   - Zone_UCRU7
+    #   - Zone_UCRU8
+    #   - Zone_UCRU9
+    #   - Zone_UCRU11
+    #   - Zone_UD1
+    #   - Zone_UD2
+    #   - Zone_UD3
+    #   - Zone_UD4
 
