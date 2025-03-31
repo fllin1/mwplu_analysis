@@ -108,6 +108,13 @@ python src/format.py --folder {city} --model-name "gemini-2.5-pro-exp-03-25"
 
 ## Analyse
 
+After completing the previous steps, you don't have much to do here. 
+
+You can retrieve the Gemini output prompts here `./data/processed/data_{city}.json`.
+```sh
+python src/analyse.py --folder {city} --model-name "gemini-2.5-pro-exp-03-25"
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Front End
@@ -119,52 +126,55 @@ Analyse PLU
 # Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+├── LICENSE            <- MIT License.
+├── Makefile           <- Makefile (not used).
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── external       <- Original `.pdf` files.
+│   ├── interim        <- Intermediate data that has been preprocessed.
+│   ├── processed      <- The raw reponses analysis of each zone.
+│   └── raw            <- The OCR raw responses.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── docs               <- Documents of the project.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── notebooks          <- Jupyter notebooks for testing.
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── pyproject.toml     <- Project configuration file with package metadata for src.
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         src and configuration for tools like black
+├── references         <- Text version of prompt for edits and conversion to json.
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── requirements.txt   <- The requirements files for the python analysis.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
+├── setup.cfg          <- Configuration file for flake8 (not used).
 │
 └── src   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes src a Python module
+    ├── api                
+    │   ├── __init__.py 
+    │   ├── gemini_thinking.py  <- Code for API calls to Gemini models.
+    │   └── mistral_ocr.py      <- Code to train models.
     │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
+    ├── prompt                
+    │   ├── __init__.py 
+    │   ├── prompt_config.py    <- Generation Content Configurations constant.
+    │   └── txt_to_json.py      <- Code to convert prompts in `/references/` to `.json`.
     │
     ├── modeling                
     │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
+    │   ├── preprocess.py       <- Code to preprocess raw OCR responses.
+    │   └── prompt_format.py    <- Code to create prompts from preprocess data.
     │
-    └── plots.py                <- Code to create visualizations
+    ├── __init__.py             <- Makes src a Python module.
+    │
+    ├── analyse.py              <- Scripts to send prompts and retrieve analysis.
+    │
+    ├── config.py               <- Store useful variables and configuration.
+    │
+    ├── format.py               <- Scripts format the data using `preprocess.py`.
+    │
+    ├── orc.py                  <- Code to use OCR on external `.pdf` files.
+    │
+    └── utils.py                <- Variety of useful fonctions.
 ```
 
 --------

@@ -60,10 +60,12 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
             "DISPOSITION GENERALES": genai.types.Schema(
                 type=genai.types.Type.OBJECT,
                 required=[
-                    "DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE"
+                    "CHAPITRE 1 - DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE",
+                    "CHAPITRE 2 - CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES",
+                    "CHAPITRE 3 - EQUIPEMENTS ET RÉSEAUX",
                 ],
                 properties={
-                    "DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE": genai.types.Schema(
+                    "CHAPITRE 1 - DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE": genai.types.Schema(
                         type=genai.types.Type.ARRAY,
                         items=genai.types.Schema(
                             type=genai.types.Type.OBJECT,
@@ -71,13 +73,6 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
                                 "1 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS INTERDITS ",
                                 "2 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS SOUMISES À CONDITIONS PARTICULIÈRES ",
                                 "3 - MIXITÉ FONCTIONNELLE ET SOCIALE ",
-                                "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ",
-                                "5 - QUALITÉ URBAINE, ARCHITECTURALE, ENVIRONNEMENTALE ET PAYSAGÈRE",
-                                "6 - TRAITEMENT ENVIRONNEMENTAL ET PAYSAGER DES ESPACES NON BÂTIS, DES CONSTRUCTIONS ET DE LEURS ABORDS ",
-                                "7 - STATIONNEMENT ",
-                                "8 - DESSERTE PAR LES VOIES PUBLIQUES ET PRIVÉES ",
-                                "9 - DESSERTE PAR LES RÉSEAUX ",
-                                "10 - ENERGIE ET PERFORMANCES ÉNERGÉTIQUES",
                             ],
                             properties={
                                 "1 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS INTERDITS ": genai.types.Schema(
@@ -150,7 +145,6 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
                                             "3.1. DISPOSITIONS EN FAVEUR DE LA MIXITÉ COMMERCIALE ET FONCTIONNELLE",
                                             "3.2. RÈGLES DIFFÉRENCIÉES ENTRE REZ-DE-CHAUSSÉE ET ÉTAGES SUPÉRIEURS ",
                                             "3.3. DISPOSITIONS EN FAVEUR DE LA MIXITÉ SOCIALE",
-                                            "3.4 CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES",
                                         ],
                                         properties={
                                             "3.1. DISPOSITIONS EN FAVEUR DE LA MIXITÉ COMMERCIALE ET FONCTIONNELLE": genai.types.Schema(
@@ -171,15 +165,22 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
                                                     type=genai.types.Type.STRING,
                                                 ),
                                             ),
-                                            "3.4 CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES": genai.types.Schema(
-                                                type=genai.types.Type.ARRAY,
-                                                items=genai.types.Schema(
-                                                    type=genai.types.Type.STRING,
-                                                ),
-                                            ),
                                         },
                                     ),
                                 ),
+                            },
+                        ),
+                    ),
+                    "CHAPITRE 2 - CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES": genai.types.Schema(
+                        type=genai.types.Type.ARRAY,
+                        items=genai.types.Schema(
+                            type=genai.types.Type.OBJECT,
+                            required=[
+                                "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ",
+                                "5 - QUALITÉ URBAINE, ARCHITECTURALE, ENVIRONNEMENTALE ET PAYSAGÈRE",
+                                "6 - TRAITEMENT ENVIRONNEMENTAL ET PAYSAGER DES ESPACES NON BÂTIS, DES CONSTRUCTIONS ET DE LEURS ABORDS ",
+                            ],
+                            properties={
                                 "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ": genai.types.Schema(
                                     type=genai.types.Type.ARRAY,
                                     items=genai.types.Schema(
@@ -280,7 +281,6 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
                                             "6.3. MAINTIEN OU REMISE EN ÉTAT DES CONTINUITÉS ÉCOLOGIQUES ",
                                             "6.4. GESTION DES EAUX PLUVIALES ET DU RUISSELLEMENT ",
                                             "6.5. AMÉNAGEMENT D’EMPLACEMENTS SPÉCIFIQUES DÉDIÉS À LA COLLECTE DES DÉCHETS MÉNAGERS ET ASSIMILÉS",
-                                            "6.6 EQUIPEMENTS ET RÉSEAUX",
                                         ],
                                         properties={
                                             "6.1. OBLIGATIONS EN MATIÈRE DE RÉALISATION D’ESPACES LIBRES ET DE PLANTATIONS, D’AIRES DE JEUX ET DE LOISIRS ": genai.types.Schema(
@@ -313,15 +313,23 @@ CONFIG_TEMPLATE: types.GenerateContentConfig = types.GenerateContentConfig(
                                                     type=genai.types.Type.STRING,
                                                 ),
                                             ),
-                                            "6.6 EQUIPEMENTS ET RÉSEAUX": genai.types.Schema(
-                                                type=genai.types.Type.ARRAY,
-                                                items=genai.types.Schema(
-                                                    type=genai.types.Type.STRING,
-                                                ),
-                                            ),
                                         },
                                     ),
                                 ),
+                            },
+                        ),
+                    ),
+                    "CHAPITRE 3 - EQUIPEMENTS ET RÉSEAUX": genai.types.Schema(
+                        type=genai.types.Type.ARRAY,
+                        items=genai.types.Schema(
+                            type=genai.types.Type.OBJECT,
+                            required=[
+                                "7 - STATIONNEMENT ",
+                                "8 - DESSERTE PAR LES VOIES PUBLIQUES ET PRIVÉES ",
+                                "9 - DESSERTE PAR LES RÉSEAUX ",
+                                "10 - ENERGIE ET PERFORMANCES ÉNERGÉTIQUES",
+                            ],
+                            properties={
                                 "7 - STATIONNEMENT ": genai.types.Schema(
                                     type=genai.types.Type.ARRAY,
                                     items=genai.types.Schema(

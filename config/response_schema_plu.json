@@ -4,7 +4,7 @@
         "DISPOSITION GENERALES": {
             "type": "object",
             "properties": {
-                "DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE": {
+                "CHAPITRE 1 - DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -93,22 +93,28 @@
                                             "items": {
                                                 "type": "string"
                                             }
-                                        },
-                                        "3.4 CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "string"
-                                            }
                                         }
                                     },
                                     "required": [
                                         "3.1. DISPOSITIONS EN FAVEUR DE LA MIXITÉ COMMERCIALE ET FONCTIONNELLE",
                                         "3.2. RÈGLES DIFFÉRENCIÉES ENTRE REZ-DE-CHAUSSÉE ET ÉTAGES SUPÉRIEURS ",
-                                        "3.3. DISPOSITIONS EN FAVEUR DE LA MIXITÉ SOCIALE",
-                                        "3.4 CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES"
+                                        "3.3. DISPOSITIONS EN FAVEUR DE LA MIXITÉ SOCIALE"
                                     ]
                                 }
-                            },
+                            }
+                        },
+                        "required": [
+                            "1 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS INTERDITS ",
+                            "2 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS SOUMISES À CONDITIONS PARTICULIÈRES ",
+                            "3 - MIXITÉ FONCTIONNELLE ET SOCIALE "
+                        ]
+                    }
+                },
+                "CHAPITRE 2 - CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
                             "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ": {
                                 "type": "array",
                                 "items": {
@@ -233,12 +239,6 @@
                                             "items": {
                                                 "type": "string"
                                             }
-                                        },
-                                        "6.6 EQUIPEMENTS ET RÉSEAUX": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "string"
-                                            }
                                         }
                                     },
                                     "required": [
@@ -246,11 +246,23 @@
                                         "6.2. SURFACES VÉGÉTALISÉES OU PERMÉABLES ",
                                         "6.3. MAINTIEN OU REMISE EN ÉTAT DES CONTINUITÉS ÉCOLOGIQUES ",
                                         "6.4. GESTION DES EAUX PLUVIALES ET DU RUISSELLEMENT ",
-                                        "6.5. AMÉNAGEMENT D’EMPLACEMENTS SPÉCIFIQUES DÉDIÉS À LA COLLECTE DES DÉCHETS MÉNAGERS ET ASSIMILÉS",
-                                        "6.6 EQUIPEMENTS ET RÉSEAUX"
+                                        "6.5. AMÉNAGEMENT D’EMPLACEMENTS SPÉCIFIQUES DÉDIÉS À LA COLLECTE DES DÉCHETS MÉNAGERS ET ASSIMILÉS"
                                     ]
                                 }
-                            },
+                            }
+                        },
+                        "required": [
+                            "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ",
+                            "5 - QUALITÉ URBAINE, ARCHITECTURALE, ENVIRONNEMENTALE ET PAYSAGÈRE",
+                            "6 - TRAITEMENT ENVIRONNEMENTAL ET PAYSAGER DES ESPACES NON BÂTIS, DES CONSTRUCTIONS ET DE LEURS ABORDS "
+                        ]
+                    }
+                },
+                "CHAPITRE 3 - EQUIPEMENTS ET RÉSEAUX": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
                             "7 - STATIONNEMENT ": {
                                 "type": "array",
                                 "items": {
@@ -359,12 +371,6 @@
                             }
                         },
                         "required": [
-                            "1 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS INTERDITS ",
-                            "2 - CONSTRUCTIONS, USAGES ET AFFECTATIONS DES SOLS, ACTIVITÉS ET INSTALLATIONS SOUMISES À CONDITIONS PARTICULIÈRES ",
-                            "3 - MIXITÉ FONCTIONNELLE ET SOCIALE ",
-                            "4 - IMPLANTATION ET VOLUMÉTRIE DES CONSTRUCTIONS ET DES INSTALLATIONS ",
-                            "5 - QUALITÉ URBAINE, ARCHITECTURALE, ENVIRONNEMENTALE ET PAYSAGÈRE",
-                            "6 - TRAITEMENT ENVIRONNEMENTAL ET PAYSAGER DES ESPACES NON BÂTIS, DES CONSTRUCTIONS ET DE LEURS ABORDS ",
                             "7 - STATIONNEMENT ",
                             "8 - DESSERTE PAR LES VOIES PUBLIQUES ET PRIVÉES ",
                             "9 - DESSERTE PAR LES RÉSEAUX ",
@@ -374,7 +380,9 @@
                 }
             },
             "required": [
-                "DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE"
+                "CHAPITRE 1 - DESTINATION DES CONSTRUCTIONS, USAGE DES SOLS, ACTIVITÉS ET INSTALLATIONS, MIXITÉ FONCTIONNELLE ET SOCIALE",
+                "CHAPITRE 2 - CARACTÉRISTIQUES URBAINES, ARCHITECTURALES, ENVIRONNEMENTALES ET PAYSAGÈRES",
+                "CHAPITRE 3 - EQUIPEMENTS ET RÉSEAUX"
             ]
         }
     },

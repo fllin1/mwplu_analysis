@@ -74,7 +74,6 @@ def main(
                 )
 
             output_dir = proc_dir / Path(folder) / Path(zone_type_name)
-            output_dir.mkdir(parents=True, exist_ok=True)
             output_file = (output_dir / Path(zone_name)).with_suffix(".json")
 
             try:
@@ -85,9 +84,9 @@ def main(
                 )
                 save_as_json(
                     data=response.to_json_dict(),
-                    path=output_file,
+                    save_path=output_file,
                 )
-                logger.success(f"File saved: {output_file}")
+                logger.success(f"File saved: {output_file.relative_to(PROJ_ROOT)}")
 
             except ClientError as e:
                 error_message = str(e)
@@ -97,7 +96,6 @@ def main(
                     and "exceeds the maximum number of tokens allowed" in error_message
                 ):
                     logger.warning(f"{zone_name} skipped due to : {error_message}")
-                    logger.info(f"Number of parts : {len(parts)}")
                     skipped_zones.append(zone_name)
                 else:
                     raise
