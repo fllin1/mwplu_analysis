@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+"""Project configuration.
+
+This module contains the configuration settings for the project.
+
+Version: 1.0
+Date: 2025-03-31
+Author: Florent Lin
+"""
+
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -8,7 +18,6 @@ load_dotenv()
 
 # Paths
 PROJ_ROOT = Path(__file__).resolve().parents[1]
-logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}")
 
 DATA_DIR = PROJ_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
@@ -20,6 +29,8 @@ MODELS_DIR = PROJ_ROOT / "models"
 
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
+
+CONFIG_DIR = PROJ_ROOT / "config"
 
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135

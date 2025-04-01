@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "response": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "zone": {
+                        "type": "string"
+                    },
+                    "pages": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "required": [
+                    "zone",
+                    "pages"
+                ]
+            }
+        }
+    },
+    "required": [
+        "response"
+    ]
+}
