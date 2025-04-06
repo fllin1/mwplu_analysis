@@ -10,16 +10,25 @@ split text by images, and convert OCR results to parts.
 The module is designed to work with Google GenAI API types and PIL images.
 
 Version: 1.0
-Date: 2025-03-31
+Date: 2025-04-05
 Author: Grey Panda
 """
 
 import base64
 import io
-from typing import Any, Dict, List, Union
+import json
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Union
 
 from google.genai import types
 from PIL import Image
+from loguru import logger
+
+from src.config import PROJ_ROOT
+
+# Loading the prompts
+PROMPT_PATH: Path = PROJ_ROOT / Path("config/prompts.json")
+prompts: Dict[str, str] = json.loads(PROMPT_PATH.read_text(encoding="utf-8"))
 
 
 def base64_to_PIL(base64_str: str) -> Image.Image:
@@ -28,7 +37,7 @@ def base64_to_PIL(base64_str: str) -> Image.Image:
     Args:
         base64_str (str): The base64 string to convert.
     Returns:
-        Image.Image: The PIL Image.
+        image (Image.Image): The PIL Image.
     """
     image_data = base64.b64decode(base64_str.split(",")[1])
     assert isinstance(image_data, bytes), f"{image_data} not bytes: {type(image_data)}"
@@ -49,7 +58,7 @@ def split_text_by_image(
         text (str): The text to split.
         images (List[str]): The images to split the text by.
     Returns:
-        List[Union[types.Part, Image.Image]]: The list of parts.
+        parts (List[Union[types.Part, Image.Image]]): Parts for one page.
     """
     parts = []
     # Check if there are images
@@ -85,10 +94,9 @@ def ocr_result_to_parts(
     Args:
         ocr_result (List[Dict[int, Any]]): The OCR result.
     Returns:
-        List[Union[types.Part, Image.Image]]: The list of parts.
+        parts (List[Union[types.Part, Image.Image]]): Parts for one document.
     """
     parts = []
-
     for page_data in ocr_result:
         text = f"page {page_data['index'] + 1}: " + page_data["markdown"]
         assert isinstance(text, str), f"{text} is not a string: {type(text)}"
@@ -108,74 +116,79 @@ def ocr_result_to_parts(
 
 # Format to types.Part and PIL Image for a zone
 def format_prompt_plu(
-    preprocessed_data: Dict[str, Dict[str, Any]],
-    doc_general_name: str,
-    zone_type_name: str,
-    zone_name: str,
+    ocr_content: Dict[str, Any],
+    doc_name: List[str],
+    regles_communes: Optional[Dict[str, Any]] = None,
+    prompts: str = prompts,
 ) -> List[Union[types.Part, Image.Image]]:
     """
     Convert the processed data to parts for a zone.
     Args:
-        processed_data (Dict[str, Dict[str, Any]]): The processed data.
-        doc_general_name (str): The name of the general document.
-        zone_type_name (str): The name of the zone type.
-        zone_name (str): The name of the zone.
+        ocr_content (Dict[str, Any]): The processed data.
+        doc_name (List[str]): The name of the document.
+        regles_communes (Optional[Dict[str, Any]]): The common rules to format.
+        prompts (str): The prompts to format.
     Returns:
-        List[types.Part]: The list of parts.
+        parts (List[Union[types.Part, Image.Image]]): The list of parts.
     """
-    string_reglement_general = f"1er document : {doc_general_name}"
-    string_reglement_des_zones = f"2ème document : Réglement des {zone_type_name}"
-    string_reglement_zone = f"3ème document : Réglement de la {zone_name}"
+    parts = [types.Part.from_text(text=prompts["prompt_plu"])]
 
-    # Convert the data to parts for document general
-    parts = [types.Part.from_text(text=string_reglement_general)]
-    doc_general_data = preprocessed_data["documents_generaux"][doc_general_name]
-    doc_general_data_parts = ocr_result_to_parts(doc_general_data)
-    parts.extend(doc_general_data_parts)
+    if regles_communes:
+        parts_communes = [
+            types.Part.from_text(text="Nom du document : Règles communes")
+        ]
+        com_content_parts = ocr_result_to_parts(regles_communes)
+        parts_communes.extend(com_content_parts)
+        logger.info("Processing common rules...")
 
-    # Convert the data to parts for zone type
-    parts.append(types.Part.from_text(text=string_reglement_des_zones))
-    zone_type_data = preprocessed_data["reglement_des_zones"][zone_type_name][zone_name]
-    zone_type_data_parts = ocr_result_to_parts(zone_type_data)
-    parts.extend(zone_type_data_parts)
+        parts.extend(parts_communes)
+        assert len(parts) >= len(parts_communes), (
+            "Had the common rules been added to the parts?"
+        )
 
-    # Convert the data to parts for zone
-    parts.append(types.Part.from_text(text=string_reglement_zone))
-    zone_data = preprocessed_data["reglement_zone"][zone_type_name][zone_name]
-    zone_data_parts = ocr_result_to_parts(zone_data)
-    parts.extend(zone_data_parts)
+    parts_zone = [types.Part.from_text(text=f"Nom du document : {doc_name}")]
+    zone_content_parts = ocr_result_to_parts(ocr_content)
+    parts_zone.extend(zone_content_parts)
+    logger.info("Processing zone...")
+
+    parts.extend(parts_zone)
+    assert len(parts) > len(parts_communes) + len(parts_zone), (
+        "Parts has less elements than expected"
+    )
+
     return parts
 
 
 def format_all_prompt_plu(
-    tree: Dict[str, Any], prompt: str, folder: str, preprocessed_data: Dict[str, Any]
+    documents: Dict[str, Dict[str, Any]],
+    regles_communes: Optional[Dict[str, Any]] = None,
+    prompts: str = prompts,
 ) -> Dict[str, List[Union[types.Part, Image.Image]]]:
     """
     Format all the data for a folder.
     Args:
-        tree (Dict[str, Any]): The tree of the data.
-        prompt (str): The prompt to format.
-        folder (str): The name of the folder.
-        preprocessed_data (Dict[str, Any]): The preprocessed data.
+        documents (Dict[str, Dict[str, Any]]): The documents to format.
+        regles_communes (Optional[Dict[str, Any]]): The common rules to format.
+        prompts (str): The prompts to format.
     Returns:
-        Dict[str, Any]: The formatted data.
+        prompts (Dict[str, List[Union[types.Part, Image.Image]]]): The formatted data.
     """
     prompts = {}
 
-    for zone_type_name, zones_names in tree[folder]["documents_par_zone"].items():
-        prompts[zone_type_name] = {}
-        for zone_name in zones_names:
+    for zone_name, document in documents.items():
+        if regles_communes:
+            # Get the data for the zone and the common rules
+            parts = format_prompt_plu(
+                ocr_content=document,
+                doc_name=zone_name,
+                regles_communes=regles_communes,
+            )
+        else:
             # Get the data for the zone
             parts = format_prompt_plu(
-                preprocessed_data=preprocessed_data,
-                doc_general_name=tree[folder]["documents_generaux"][0],
-                zone_type_name=zone_type_name,
-                zone_name=zone_name,
+                ocr_content=document,
+                doc_name=zone_name,
             )
-            prompt_plu = [types.Part.from_text(text=prompt["prompt_plu"])]
-            assert isinstance(prompt_plu[0], types.Part), (
-                f"{type(prompt_plu[0])} should be Part"
-            )
-            prompts[zone_type_name][zone_name] = prompt_plu + parts
 
+        prompts[zone_name].extend(parts)
     return prompts

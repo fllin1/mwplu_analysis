@@ -35,7 +35,10 @@ CONFIG_EXTRACT_PAGES: types.GenerateContentConfig = types.GenerateContentConfig(
                     required=["zone", "pages"],
                     properties={
                         "zone": genai.types.Schema(
-                            type=genai.types.Type.STRING,
+                            type=genai.types.Type.ARRAY,
+                            items=genai.types.Schema(
+                                type=genai.types.Type.STRING,
+                            ),
                         ),
                         "pages": genai.types.Schema(
                             type=genai.types.Type.ARRAY,

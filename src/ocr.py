@@ -4,8 +4,8 @@
 This module extracts text from PDF files using Mistral OCR with base64 images,
 converting the content to JSON format.
 
-Version: 1.0
-Date: 2025-03-31
+Version: 1.1
+Date: 2025-04-04
 Author: Grey Panda
 """
 
@@ -33,16 +33,36 @@ app = typer.Typer()
 
 # Loading file organisation data
 with open(PROJ_ROOT / "config/plu_tree.yaml", "r", encoding="utf-8") as f:
-    tree_grenoble = yaml.safe_load(f)["Grenoble"]
+    TREE = yaml.safe_load(f)
+
+
+def _append_paths_dict(paths: list, file_name: str, ext_dir: Path, raw_dir: Path):
+    """
+    Appends the input and output paths to the list of paths to be processed.
+    Args:
+        paths: (list) The list of paths to be processed.
+        file_name: (str) The name of the file to be processed.
+        ext_dir: (str) The path to the folder containing the data.
+        raw_dir: (str) The path to save the raw extracted data to.
+    Returns:
+        list: The updated list of paths to be processed.
+    """
+    input_path = ext_dir / Path(file_name).with_suffix(".pdf")
+    output_path = raw_dir / Path(file_name).with_suffix(".json")
+    assert input_path.exists(), f"Le fichier PDF n'existe pas: {input_path}"
+
+    paths.append({"input_path": input_path, "output_path": output_path})
+    (output_path).parent.mkdir(parents=True, exist_ok=True)
+    return paths
 
 
 def prepare_file_paths(
-    tree_grenoble: Dict[str, Any], ext_dir: Path, raw_dir: Path
+    tree: Dict[str, Any], ext_dir: Path, raw_dir: Path
 ) -> List[Dict[str, Path]]:
     """
     Prepares the file paths for the documents to be processed.
     Args:
-        tree_grenoble: (Dict[str, Any]) The file organisation data.
+        tree: (Dict[str, Any]) The file organisation data.
         ext_dir: (str) The path to the folder containing the data.
         raw_dir: (str) The path to save the raw extracted data to.
     Returns:
@@ -51,39 +71,26 @@ def prepare_file_paths(
     raw_dir.mkdir(parents=True, exist_ok=True)
     paths = []
 
-    # Traiter les documents_generaux
-    for file_name in tree_grenoble["documents_generaux"]:
-        pdf_path = Path(file_name).with_suffix(".pdf")
-        input_path = ext_dir / pdf_path
-        assert input_path.exists(), f"Le fichier PDF n'existe pas: {input_path}"
+    for key, value in tree.items():
+        if key == "documents_generaux":
+            for doc in value:
+                paths = _append_paths_dict(
+                    paths=paths,
+                    file_name=doc,
+                    ext_dir=ext_dir,
+                    raw_dir=raw_dir,
+                )
 
-        paths.append({"input_path": input_path, "output_path": raw_dir / pdf_path})
-        (raw_dir / pdf_path).parent.mkdir(parents=True, exist_ok=True)
-
-    # Traiter les documents_par_zone
-    for zone_type, zone_names in tree_grenoble["documents_par_zone"].items():
-        pdf_path = Path(zone_type).with_suffix(".pdf")
-        input_path = ext_dir / pdf_path
-        assert input_path.exists(), f"Le fichier PDF n'existe pas: {input_path}"
-
-        paths.append({"input_path": input_path, "output_path": raw_dir / pdf_path})
-        (raw_dir / pdf_path).parent.mkdir(parents=True, exist_ok=True)
-
-        # Traiter les fichiers JSON des zones
-        for zone_name in zone_names:
-            json_path = Path(zone_type) / Path(zone_name).with_suffix(".json")
-            input_path = ext_dir / json_path
-            assert input_path.exists(), f"Le fichier JSON n'existe pas: {input_path}"
-
-            paths.append({"input_path": input_path, "output_path": raw_dir / json_path})
-            (raw_dir / json_path).parent.mkdir(parents=True, exist_ok=True)
+        paths = _append_paths_dict(
+            paths=paths, file_name=key, ext_dir=ext_dir, raw_dir=raw_dir
+        )
 
     return paths
 
 
 @app.command()
 def main(
-    folder: str = typer.Option("Grenoble", "--folder", "-f", help="City folder"),
+    folder: str = typer.Option("grenoble", "--folder", "-f", help="City folder"),
     ext_dir: Path = typer.Option(EXTERNAL_DATA_DIR, "--ext-dir", "-e"),
     raw_dir: Path = typer.Option(RAW_DATA_DIR, "--output-dir", "-r"),
 ) -> None:
@@ -100,7 +107,7 @@ def main(
     logger.info(f"Retrieving OCR data from {ext_dir / folder}...")
     # Retrieve the list of files to be processed
     paths = prepare_file_paths(
-        tree_grenoble=tree_grenoble,
+        tree=TREE[folder],
         ext_dir=ext_dir / folder,
         raw_dir=raw_dir / folder,
     )
@@ -108,10 +115,10 @@ def main(
     for file_path in tqdm(paths, desc="OCR", total=len(paths)):
         # Get signed URL for the file then perform OCR
         signed_url = push_to_mistral(file_path=file_path["input_path"])
-        ocr_response = mistral_ocr(signed_url=signed_url)
+        ocr_response = mistral_ocr(signed_url=signed_url).model_dump()
 
         # Save the OCR response as JSON
-        save_as_json(ocr_response=ocr_response, save_path=file_path["output_path"])
+        save_as_json(data=ocr_response, save_path=file_path["output_path"])
 
     logger.success(f"Extracting data from {ext_dir / folder} complete.")
 

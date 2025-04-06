@@ -9,24 +9,27 @@ FORMAT DE SORTIE ATTENDU
 {
   "response": [
     {
-      "zone": string,
+      "zone": List[string],
       "pages": List[int]
     },
     {
-      "zone": string,
+      "zone": List[string],
       "pages": List[int]
     }
   ]
 }
 ```
+Où la valeur de "zone" est dans le format : ["zone_{référence de la zone}", ...]
+
 INSTRUCTIONS DÉTAILLÉES
 
 Pertinence : Ne retenir que les pages contenant des informations significatives sur chaque zone (réglementations, descriptions, paramètres d'aménagement, contraintes spécifiques). Exclure les mentions superficielles comme :
 
-Simples apparitions dans les sommaires ou tables des matières
-Mentions en en-tête ou pied de page
-Citations dans des listes ou tableaux sans contenu informatif
-Références croisées sans détails substantiels
+- La page de garde
+- Simples apparitions dans les sommaires ou tables des matières
+- Mentions en en-tête ou pied de page
+- Citations dans des listes ou tableaux sans contenu informatif
+- Références croisées sans détails substantiels
 
 
 Exhaustivité : Identifier toutes les catégories de zones présentes dans le document, quelle que soit leur nature :
@@ -40,12 +43,12 @@ Zones de protection spécifiques
 Toute autre classification territoriale présente dans le document
 
 
+Pluralité : Certaines pages peuvent faire références à plusieurs zones, dans ce cas là, indique toutes les zones concernées.
+
+
 Précision : Le résultat doit suivre strictement le format JSON spécifié :
 
 Uniquement des entiers pour les numéros de page
 Aucun texte explicatif en dehors de la structure
 Renvoyer de l'appellation exacte des zones telle qu'elle apparaît dans le document
 Ajouter la chaîne de caractères "Zone_" avant l'appellation de la zone
-
-
-Filtrage : Ne pas inclure dans le résultat final les zones qui n'apparaissent que dans des sections non substantielles du document.

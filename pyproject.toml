@@ -9,7 +9,26 @@ description = "This project offers an end-to-end solution for automated document
 authors = [
     {name = "Grey Panda", email = "naviredelest@gmail.com"}
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.12,<4.0"
 
 [tool.setuptools]
 packages = ["src"]
+
+[tool.poetry]
+name = "plu"
+version = "0.1.0"
+authors = ["Grey Panda"]
+packages = [
+    { include = "src" },
+]
+
+[tool.poetry.dependencies]
+typer = "^0.15.2"
+pyyaml = "^6.0.2"
+loguru = "^0.7.3"
+tqdm = "^4.67.1"
+python-dotenv = "^1.1.0"
+mistralai = "^1.6.0"
+google-genai = "^1.9.0"
+pillow = "^11.1.0"
+reportlab = "^4.3.1"

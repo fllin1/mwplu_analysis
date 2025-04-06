@@ -8,8 +8,8 @@ into `/data/interim/{folder}`.
 Be carreful to attentively respect the structure of the data and complete the
 `/config/plu_tree.yaml` file as explained in the `/README.md`.
 
-Version: 1.0
-Date: 2025-03-31
+Version: 1.1
+Date: 2025-04-05
 Author: Grey Panda
 """
 
@@ -19,7 +19,15 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List
 
+from loguru import logger
+
 from src.api.gemini_thinking import retrieve_zone_pages
+from src.config import INTERIM_DATA_DIR, RAW_DATA_DIR, PROJ_ROOT
+
+
+# Loading the prompts
+PROMPT_PATH: Path = PROJ_ROOT / Path("config/prompts.json")
+PROMPTS: Dict[str, str] = json.loads(PROMPT_PATH.read_text(encoding="utf-8"))
 
 
 class Preprocess:
@@ -30,22 +38,27 @@ class Preprocess:
     def __init__(
         self,
         folder: str,
-        raw_dir: str,
-        model_name: str,
-        tree: Dict[str, Any],
-        prompts: Dict[str, str],
+        ocr_path: Path,
+        model_name: str = "gemini-2.5-pro-exp-03-25",
+        prompts: Dict[str, str] = PROMPTS,
     ) -> None:
         """
         Initializes the FormatterPLU class.
-
         Args:
             folder: (str) The folder containing the data.
-            raw_dir: (str) The path to save the raw extracted data to.
+            model_name: (str) The name of the model to use.
+            tree: (Dict[str, Any]) The tree structure of the data.
+            prompts: (Dict[str, str]) The prompts to use for the data.
         """
-        self.input_dir = raw_dir / folder
-        self.tree = tree[folder]
-        self.prompts = prompts
+        # Set the directories for the raw, interim and processed data
+        self.raw_dir = RAW_DATA_DIR / folder
+        self.int_dir = INTERIM_DATA_DIR
+
+        self.folder = folder
         self.model_name = model_name
+        self.prompts = prompts
+        self.ocr_path = ocr_path
+        self.ocr_plu = json.loads(ocr_path.read_text(encoding="utf-8"))
 
     def _get_pages_reglement_des_zones(
         self, data: Dict[str, Any]
@@ -55,81 +68,62 @@ class Preprocess:
         Args:
             data (Dict[str, Any]): The data containing the pages.
         Returns:
-            List[Dict[str, List[int]]]: A list of dictionaries containing the pages.
+            List[Dict[str, List[Any]]]: A list of dictionaries containing
+            the documents references and the pages.
         """
-        pages_dict = {}
         response = retrieve_zone_pages(
             ocr_json=data,
             prompt=self.prompts["prompt_reglement_zone"],
             model_name=self.model_name,
         )
-
         assert isinstance(response, list), "Response is not of type 'list'"
-        for item in response:
-            pages_dict[item["zone"]] = item["pages"]
 
-        return pages_dict
+        return response
 
-    def prepare_data(self) -> Dict[str, List[Dict[str, Any]]]:
+    def get_pages(self) -> List[Dict[str, Any]]:
         """
-        Prepares the data for the PLU, OAP and PPRI.
+        Retrieves the pages of the zone documents from the specific pages.
         Returns:
-            Dict[str, List[Dict[str, Any]]]: The prepared data.
+            pages_zones (List[Dict[str, Any]]): The prepared data.
         """
-        assert "documents_generaux" in self.tree, "'documents_generaux' not in tree"
-        assert "documents_par_zone" in self.tree, "'documents_par_zone' not in tree"
+        path_pages: Path = self.int_dir / Path(self.folder).with_suffix(".json")
+        if not path_pages.exists():
+            pages_zones = {}
+        else:
+            pages_zones = json.loads(path_pages.read_text(encoding="utf-8"))
 
-        documents_generaux = {}
-        reglement_des_zones = {}
-        reglement_zone = {}
+        plu_name = self.ocr_path.stem
 
-        # Retrieve the general documents data
-        for doc in self.tree["documents_generaux"]:
-            path_doc = Path(self.input_dir / doc).with_suffix(".json")
+        # Retrieve the pages of the zone documents
+        response: list = self._get_pages_reglement_des_zones(self.ocr_plu)
+        logger.info(f"Pages retrieved : {plu_name}")
 
-            with open(path_doc, "r", encoding="utf-8") as f:
-                data = json.load(f)
+        for zones in response:
+            assert all(isinstance(page, int) for page in zones["pages"]), (
+                f"Page index not int for '{plu_name}, {zones}'"
+            )
+            assert all(0 <= i < len(self.ocr_plu["pages"]) for i in zones["pages"]), (
+                f"Some page index are out of the document '{plu_name}'"
+            )
+            assert isinstance(zones["zone"], list), (
+                f"{zones['zone']} is not of type 'list' for '{plu_name}'"
+            )
 
-            assert "pages" in data, f"Key 'pages' not in '{path_doc}'"
-            documents_generaux[doc] = data["pages"]
+            # For each zone, add the pages to the documents_pages dictionary
+            for zone in zones["zone"]:
+                pages_zones[zone] = {"page_index": zones["pages"], "plu_name": plu_name}
 
-        # Retrieve the zone documents data from the specific pages
-        for zone_a in self.tree["documents_par_zone"]:
-            path_par_zone = Path(self.input_dir / zone_a).with_suffix(".json")
-            with open(path_par_zone, "r", encoding="utf-8") as f:
-                data_zone = json.load(f)
+        return pages_zones
 
-            # Retrieve the pages of the zone documents
-            pages_dict = self._get_pages_reglement_des_zones(data_zone)
+    def extract_pages(self, pages: List[int]) -> List[Dict[str, Any]]:
+        """
+        Extracts the pages from the documents and returns them in a dictionary.
+        Args:
+            pages (List[int]): The pages to extract.
+        Returns:
+            documents (List[Dict[str, Any]]): The extracted pages.
+        """
+        pages: List[int] = pages
+        document = [self.ocr_plu["pages"][page] for page in pages]
 
-            reglement_des_zones[zone_a] = {}
-            for zone, pages in pages_dict.items():
-                assert all(isinstance(i, int) for i in pages), (
-                    f"Page index not int for '{zone_a}'"
-                )
-                assert all(0 <= i < len(data_zone["pages"]) for i in pages), (
-                    f"Some page index are out of the document '{zone_a}'"
-                )
-
-                reglement_des_zones[zone_a][zone] = [
-                    data_zone["pages"][i] for i in pages
-                ]
-
-        # Retrieve the zone documents data
-        for zone_a, zones in self.tree["documents_par_zone"].items():
-            reglement_zone[zone_a] = {}
-
-            for zone in zones:
-                path_zone = Path(self.input_dir / zone_a / zone).with_suffix(".json")
-                with open(path_zone, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-
-                assert "pages" in data, f"Key 'pages' not in '{path_zone}'"
-                reglement_zone[zone_a][zone] = data["pages"]
-
-        documents = {
-            "documents_generaux": documents_generaux,
-            "reglement_des_zones": reglement_des_zones,
-            "reglement_zone": reglement_zone,
-        }
-        return documents
+        return document
