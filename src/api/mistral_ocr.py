@@ -25,12 +25,10 @@ client = Mistral(api_key=api_key)
 def push_to_mistral(file_path: Path) -> str:
     """
     Pushes a file to Mistral for OCR processing.
-
     Args:
-        file_path: The path to the file to push.
-
+        file_path (Path): The path to the file to push.
     Returns:
-        The signed URL of the uploaded file.
+        signed_url (str): The signed URL of the uploaded file.
     """
     with open(file_path, "rb") as file:
         uploaded_pdf = client.files.upload(
@@ -47,12 +45,10 @@ def push_to_mistral(file_path: Path) -> str:
 def mistral_ocr(signed_url: str) -> OCRResponse:
     """
     Performs OCR on the specified file.
-
     Args:
-        signed_url: The signed URL of the file to perform OCR on.
-
+        signed_url(str): The signed URL of the file to perform OCR on.
     Returns:
-        The OCR response.
+        ocr_response(OCRResponse): The OCR response.
     """
     ocr_response = client.ocr.process(
         model="mistral-ocr-latest",

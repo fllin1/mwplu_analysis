@@ -1,56 +1,111 @@
-Grenoble:
-  documents_generaux:
-    - Dispositions Générales
-    - Plan de Prévention du Risque Inondation
-    - Carnet de Paysage
-  documents_par_zone:
-    Zone à Urbaniser:
-      # - Zone_AU
-      # - Zone_AUC1
-      - Zone_AUC2
-      # - Zone_AUC3
-      # - Zone_AUCRU10
-      # - Zone_AUD1
-      - Zone_AUD2
-      # - Zone_AUD3
-      # - Zone_AUD4
-      # - Zone_AUE1
-      # - Zone_AUP1r
-    # Zone Agricoles:
-    #   - Zone_A
-    #   - Zone_AL
-    #   - Zone_N
-    #   - Zone_NL
-    # Zone Dédiées:
-    #   - Zone_UE1
-    #   - Zone_UE2
-    #   - Zone_UE3
-    #   - Zone_UE4
-    #   - Zone_UV
-    #   - Zone_UZ1
-    #   - Zone_UZ2
-    #   - Zone_UZ3
-    #   - Zone_UZ4
-    # Zone Urbaines:
-    #   - Zone_UA1
-    #   - Zone_UA2
-    #   - Zone_UA3
-    #   - Zone_UB
-    #   - Zone_UC1
-    #   - Zone_UC2
-    #   - Zone_UC3
-    #   - Zone_UCRU1
-    #   - Zone_UCRU2
-    #   - Zone_UCRU3
-    #   - Zone_UCRU4
-    #   - Zone_UCRU5
-    #   - Zone_UCRU6
-    #   - Zone_UCRU7
-    #   - Zone_UCRU8
-    #   - Zone_UCRU9
-    #   - Zone_UCRU11
-    #   - Zone_UD1
-    #   - Zone_UD2
-    #   - Zone_UD3
-    #   - Zone_UD4
-
+grenoble:
+  # documents_generaux:
+  #   - dispositions_generales
+  #   - ppri
+  #   - carnet_de_paysage
+  zones_a_urbaniser:
+    - zone_AU
+    - zone_AUC1
+    - zone_AUC2
+    - zone_AUC3
+    - zone_AUCRU10
+    - zone_AUD1
+    - zone_AUD2
+    - zone_AUD3
+    - zone_AUD4
+    - zone_AUE1
+    - zone_AUP1r
+  zones_agricoles_et_naturelles:
+    - zone_A
+    - zone_AL
+    - zone_N
+    - zone_NL
+  zones_dediees:
+    - zone_UE1
+    - zone_UE2
+    - zone_UE3
+    - zone_UE4
+    - zone_UV
+    - zone_UZ1
+    - zone_UZ2
+    - zone_UZ3
+    - zone_UZ4
+  zones_urbaines_mixtes:
+    - zone_UA1
+    - zone_UA2
+    - zone_UA3
+    - zone_UB
+    - zone_UC1
+    - zone_UC2
+    - zone_UC3
+    - zone_UCRU1
+    - zone_UCRU2
+    - zone_UCRU3
+    - zone_UCRU4
+    - zone_UCRU5
+    - zone_UCRU6
+    - zone_UCRU7
+    - zone_UCRU8
+    - zone_UCRU9
+    - zone_UCRU11
+    - zone_UD1
+    - zone_UD2
+    - zone_UD3
+    - zone_UD4
+archamps:
+  plu:
+    - synthese
+    - zone_Ub
+    - zone_Uep
+    - zone_Uf
+    - zone_Uh
+    - zone_Ut
+    - zone_Uv
+    - zone_Ux
+    - zone_Uy
+    - zone_1AUt
+    - zone_1AUv
+    - zone_2AU
+    - zone_A
+    - zone_N
+    - palette_vegetale
+froges:
+  plu:
+    - dispositions_generales
+    - zones_urbaines
+    - zones_a_urbaniser
+    - zones_agricoles
+    - zones_naturelles_et_forestieres
+montbonnot:
+  plu:
+    - zones_UA_UAh
+    - zones_UB_UB1_UBs_UBepa_UBepa1
+    - zones_UC_UCa_UCb_UCi
+    - zones_UI_UInovallée
+    - zone_AU
+    - zone_AUb
+    - zone_AUc
+    - zone_AUe
+    - zones_A_Adi
+    - zones_N_Nl_Nm
+voreppe:
+  plu:
+    - dispositions_generales
+    - zone_UA
+    - zone_UB
+    - zone_UC
+    - zone_UD
+    - zone_UE
+    - zone_UECA
+    - zone_UECA2
+    - zone_UP
+    - zone_UT
+    - zone_1AUH
+    - zone_1AUC
+    - zone_1AUEa
+    - zone_2AU
+    - zone_2AUE
+    - zone_A
+    - zone_N
+    - zone_NCA2
+    

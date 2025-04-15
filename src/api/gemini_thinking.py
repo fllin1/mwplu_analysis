@@ -4,26 +4,27 @@
 This module provides utilities for interacting with the Gemini API
 for generating content and extracting pages from documents.
 
-Version: 1.0
-Date: 2025-03-31
+Version: 1.1
+Date: 2025-04-05
 Author: Grey Panda
 """
 
 import json
 import os
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Union
 
 from google import genai
 from google.genai import types
 from PIL import Image
 
 from src.prompt.prompt_config import CONFIG_EXTRACT_PAGES
+from src.utils import remove_text_outside_json
 
 
 def gemini_api(
-    model_name: str,
     contents: List[types.Part],
     generate_content_config: types.GenerateContentConfig,
+    model_name: str = "gemini-2.5-pro-exp-03-25",
 ) -> types.GenerateContentResponse:
     """
     Génère une réponse du modèle Gemini et retourne la réponse brute complète.
@@ -35,7 +36,7 @@ def gemini_api(
         user_message: (str) The user message to send to the model.
 
     Returns:
-        The response from the model.
+        response (types.GenerateContentResponse): The response from the model.
     """
     client = genai.Client(
         api_key=os.environ.get("GOOGLE_AI_API_KEY"),
@@ -61,7 +62,7 @@ def retrieve_zone_pages(
     ocr_json: Dict[str, Any],
     prompt: str,
     model_name: str,
-) -> Dict[str, List[int]]:
+) -> List[Dict[str, List[Union[str, int]]]]:
     """
     Récupère les pages du document et les affiche dans des parties séparées.
 
@@ -70,18 +71,16 @@ def retrieve_zone_pages(
 
     Returns:
         La réponse brute complète du modèle sous format dict:
-        {
-            "response": [
-                {
-                    "zone": "Nom de la première zone identifiée",
-                    "pages": [12, 15, 23, 47]
-                },
-                {
-                    "zone": "Nom de la deuxième zone identifiée",
-                    "pages": [8, 19, 32]
-                }
-            ]
-        }
+        [
+            {
+                "zone": ["Nom des zones identifiées"],
+                "pages": [12, 15, 23, 47]
+            },
+            {
+                "zone": ["Nom des zones identifiées"],
+                "pages": [8, 19, 32]
+            }
+        ]
     """
 
     assert "pages" in ocr_json, "OCR JSON does not contain pages"
@@ -99,9 +98,10 @@ def retrieve_zone_pages(
         )
 
     response = gemini_api(
-        model_name=model_name,
         contents=contents,
         generate_content_config=CONFIG_EXTRACT_PAGES,
+        model_name=model_name,
     )
 
-    return json.loads(response.text)["response"]
+    response_text = remove_text_outside_json(response.text)
+    return json.loads(response_text)["response"]
