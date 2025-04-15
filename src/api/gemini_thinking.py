@@ -22,9 +22,9 @@ from src.utils import remove_text_outside_json
 
 
 def gemini_api(
-    model_name: str,
     contents: List[types.Part],
     generate_content_config: types.GenerateContentConfig,
+    model_name: str = "gemini-2.5-pro-exp-03-25",
 ) -> types.GenerateContentResponse:
     """
     Génère une réponse du modèle Gemini et retourne la réponse brute complète.
@@ -98,9 +98,9 @@ def retrieve_zone_pages(
         )
 
     response = gemini_api(
-        model_name=model_name,
         contents=contents,
         generate_content_config=CONFIG_EXTRACT_PAGES,
+        model_name=model_name,
     )
 
     response_text = remove_text_outside_json(response.text)

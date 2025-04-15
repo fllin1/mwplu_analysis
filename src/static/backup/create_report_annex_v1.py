@@ -4,30 +4,29 @@
 This script converts structured JSON data into a PDF document.
 It uses ReportLab to create the PDF and handles various formatting options.
 
-Version: 1.2
-Date: 2025-04-13
+Version: 1.1
+Date: 2025-04-09
 Author: Grey Panda
 """
 
+import os
 import re
+import tempfile
 from pathlib import Path
-
-from typing import (
-    Any,
-    Dict,
-    List,
-    Optional,
-    Tuple,
-    Union,
-)
+from typing import Any, Dict, List, Optional, Set, Tuple, Union
 from xml.sax import saxutils
 
 from loguru import logger
+from pypdf import PdfMerger  # Removed PdfReader as it's not used in the merging logic
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import cm
 from reportlab.platypus import Flowable, Paragraph, SimpleDocTemplate, Spacer
+
+# Removed AnchorFlowable as we are not using internal anchors for annexes now
+# from reportlab.platypus.flowables import AnchorFlowable
+from src.config import INTERIM_DATA_DIR
 
 
 def escape_html_in_text(text: str) -> str:
@@ -66,6 +65,11 @@ def extract_source(content: str) -> Tuple[str, str]:
     return escaped_content, ""
 
 
+# --------------------------
+# ----------ANNEXE----------
+# --------------------------
+
+
 def _parse_source_doc_name(source_string: str) -> Optional[str]:
     """Parses the base document name from the source string."""
     # Case 1: "Document Name, Page X"
@@ -83,9 +87,33 @@ def _parse_source_doc_name(source_string: str) -> Optional[str]:
     return source_string.strip()
 
 
-# --------------------------------------
-# ----------MAIN FUNCTIONS--------------
-# --------------------------------------
+def _format_doc_name_to_filename(doc_name: str) -> str:
+    """Formats the parsed document name into a PDF filename."""
+    # Specific case: "Règles communes" -> "regles_communes.pdf"
+    if doc_name.lower() == "règles communes":
+        return "regles_communes.pdf"
+
+    # General case: "Zone X" or "Règlement zone X" -> "Zone_X.pdf"
+    # Try to extract "Zone X" part
+    zone_match = re.search(r"(zone\s+[A-Z0-9]+)", doc_name, re.IGNORECASE)
+    if zone_match:
+        zone_part = zone_match.group(1).strip()
+        # Replace space with underscore and ensure correct casing (e.g., Zone_A)
+        formatted_zone = zone_part.replace(" ", "_").title().replace("zone", "Zone")
+        return f"{formatted_zone}.pdf"
+
+    # Fallback: Simple formatting for other cases
+    filename_base = re.sub(r"\W+", "_", doc_name.lower())
+    return f"{filename_base}.pdf"
+
+
+# Removed _get_source_pdf_path as its logic is integrated into _append_annexes
+# Removed generate_anchor_name as we are not using anchors for annexes anymore
+
+
+# -------------------------------------
+# ----------MAIN FUNCTION--------------
+# -------------------------------------
 
 
 def _create_styles(base_title_size: int) -> Dict[str, ParagraphStyle]:
@@ -146,17 +174,18 @@ def _create_styles(base_title_size: int) -> Dict[str, ParagraphStyle]:
 
 
 def _process_json_data(
-    json_data: Dict[str, Any],
-    styles: Dict[str, ParagraphStyle],
-    source_links: Dict[str, str],
-) -> List[Flowable]:
+    json_data: Dict[str, Any], styles: Dict[str, ParagraphStyle]
+) -> Tuple[List[Flowable], Set[str]]:
     """
-    Processes the JSON data into ReportLab Flowables, embedding source links.
+    Processes the JSON data into ReportLab Flowables and extracts unique source doc names.
 
     Returns:
-        List[Flowable]: The list of ReportLab elements for the main content.
+        Tuple containing:
+        - List[Flowable]: The list of ReportLab elements for the main content.
+        - Set[str]: A set of unique base document names found in sources.
     """
     elements: List[Flowable] = []
+    unique_source_doc_names: Set[str] = set()
 
     for main_title, chapters in json_data.items():
         elements.append(Paragraph(escape_html_in_text(main_title), styles["Title"]))
@@ -184,31 +213,17 @@ def _process_json_data(
                                     Paragraph(main_content, styles["Content"])
                                 )
                                 if source_string:
-                                    # Look up the link for the source
-                                    doc_name = _parse_source_doc_name(source_string)
-                                    link = (
-                                        source_links.get(doc_name) if doc_name else None
+                                    # Remove hyperlink, just display source text
+                                    elements.append(
+                                        Paragraph(
+                                            f"Source : {escape_html_in_text(source_string)}",
+                                            styles["Source"],
+                                        )
                                     )
-
-                                    if link:
-                                        # Create hyperlink
-                                        link_text = escape_html_in_text(
-                                            source_string
-                                        )  # Use original source string as link text
-                                        elements.append(
-                                            Paragraph(
-                                                f'Source : <a href="{link}" color="blue">{link_text}</a>',
-                                                styles["Source"],
-                                            )
-                                        )
-                                    else:
-                                        # Display plain text and log warning if doc_name was found but no link
-                                        elements.append(
-                                            Paragraph(
-                                                f"Source : {escape_html_in_text(source_string)}",  # Display plain text
-                                                styles["Source"],
-                                            )
-                                        )
+                                    # Extract and store unique base document name
+                                    doc_name = _parse_source_doc_name(source_string)
+                                    if doc_name:
+                                        unique_source_doc_names.add(doc_name)
                                 elements.append(Spacer(1, 3))
                         else:
                             # List of subsections
@@ -232,58 +247,36 @@ def _process_json_data(
                                             Paragraph(main_content, styles["Content"])
                                         )
                                         if source_string:
+                                            elements.append(
+                                                Paragraph(
+                                                    f"Source : {escape_html_in_text(source_string)}",
+                                                    styles["Source"],
+                                                )
+                                            )
                                             doc_name = _parse_source_doc_name(
                                                 source_string
                                             )
-                                            link = (
-                                                source_links.get(doc_name)
-                                                if doc_name
-                                                else None
-                                            )
-                                            if link:
-                                                link_text = escape_html_in_text(
-                                                    source_string
-                                                )
-                                                elements.append(
-                                                    Paragraph(
-                                                        f'Source : <a href="{link}" color="blue">{link_text}</a>',
-                                                        styles["Source"],
-                                                    )
-                                                )
-                                            else:
-                                                elements.append(
-                                                    Paragraph(
-                                                        f"Source : {escape_html_in_text(source_string)}",
-                                                        styles["Source"],
-                                                    )
-                                                )
+                                            if doc_name:
+                                                unique_source_doc_names.add(doc_name)
                                         elements.append(Spacer(1, 2))
                     elif isinstance(subsections, str):
                         # Direct content string under section (handle potential edge case)
                         main_content, source_string = extract_source(subsections)
                         elements.append(Paragraph(main_content, styles["Content"]))
                         if source_string:
+                            elements.append(
+                                Paragraph(
+                                    f"Source : {escape_html_in_text(source_string)}",
+                                    styles["Source"],
+                                )
+                            )
                             doc_name = _parse_source_doc_name(source_string)
-                            link = source_links.get(doc_name) if doc_name else None
-                            if link:
-                                link_text = escape_html_in_text(source_string)
-                                elements.append(
-                                    Paragraph(
-                                        f'Source : <a href="{link}" color="blue">{link_text}</a>',
-                                        styles["Source"],
-                                    )
-                                )
-                            else:
-                                elements.append(
-                                    Paragraph(
-                                        f"Source : {escape_html_in_text(source_string)}",
-                                        styles["Source"],
-                                    )
-                                )
+                            if doc_name:
+                                unique_source_doc_names.add(doc_name)
                         elements.append(Spacer(1, 3))
                     # Add handling for other potential structures if necessary
 
-    return elements
+    return elements, unique_source_doc_names
 
 
 def _build_pdf_safe(
@@ -323,42 +316,112 @@ def _build_pdf_safe(
             logger.error(f"Failed to build simplified PDF: {str(e2)}")
 
 
+def _append_annexes(
+    main_content_pdf_path: str,
+    final_output_path: Path,
+    source_doc_names: Set[str],
+    folder: str,
+) -> None:
+    """
+    Appends source PDFs (annexes) to the main generated PDF content.
+
+    Args:
+        main_content_pdf_path (str): Path to the temporary PDF with main content.
+        final_output_path (Path): Path to save the final merged PDF.
+        source_doc_names (Set[str]): Set of unique base document names for annexes.
+        folder (str): The subfolder within INTERIM_DATA_DIR containing source PDFs.
+    """
+    merger = PdfMerger()
+    try:
+        # Append the main document first
+        if (
+            os.path.exists(main_content_pdf_path)
+            and os.path.getsize(main_content_pdf_path) > 0
+        ):
+            merger.append(main_content_pdf_path)
+            logger.debug(f"Appended main content PDF: {main_content_pdf_path}")
+        else:
+            logger.error(
+                f"Main content PDF is missing or empty: {main_content_pdf_path}"
+            )
+            # Decide if we should proceed without main content or raise error
+            # For now, let's log error and continue to append annexes if any
+
+        # Append each source document found
+        appended_annex_count = 0
+        sorted_doc_names = sorted(list(source_doc_names))  # Sort for consistent order
+
+        for doc_name in sorted_doc_names:
+            filename = _format_doc_name_to_filename(doc_name)
+            source_pdf_path = INTERIM_DATA_DIR / folder / filename
+
+            if source_pdf_path.exists():
+                try:
+                    merger.append(str(source_pdf_path))
+                    logger.info(f"Appended annex: {source_pdf_path}")
+                    appended_annex_count += 1
+                except Exception as append_error:
+                    logger.error(
+                        f"Failed to append annex {source_pdf_path}: {append_error}"
+                    )
+            else:
+                logger.warning(f"Annex PDF not found, skipping: {source_pdf_path}")
+
+        # Write the final merged PDF
+        if appended_annex_count > 0 or (
+            os.path.exists(main_content_pdf_path)
+            and os.path.getsize(main_content_pdf_path) > 0
+        ):
+            with open(final_output_path, "wb") as f_out:
+                merger.write(f_out)
+            logger.success(
+                f"Final PDF with {appended_annex_count} annex(es) saved to: {final_output_path}"
+            )
+        else:
+            logger.error(
+                "No main content or annexes were appended. Final PDF not created."
+            )
+
+    except Exception as merge_error:
+        logger.error(f"Error during PDF merging process: {merge_error}")
+    finally:
+        merger.close()
+        logger.debug("PdfMerger closed.")
+
+
 def convert_json_to_pdf(
     json_data: Dict[str, Any],
     output_pdf: Union[str, Path],
-    source_links: Dict[str, str],  # Added source_links, removed folder
+    folder: str,  # New argument for the source PDF subfolder
     margin: float = 2.0,
     title_size: int = 16,
 ) -> None:
     """
     Converts structured JSON data into a PDF document using ReportLab,
-    embedding web links for sources.
+    then appends source PDFs found in the specified folder as annexes.
 
     Args:
         json_data (Dict[str, Any]): The structured data to convert.
         output_pdf (Union[str, Path]): Path to save the final generated PDF file.
-        source_links (Dict[str, str]): Dictionary mapping base source document names to web links.
+        folder (str): The subfolder within INTERIM_DATA_DIR containing source PDFs.
         margin (float, optional): Page margin in centimeters. Defaults to 2.0.
         title_size (int, optional): Base font size for the main title. Defaults to 16.
     """
-    output_pdf_path = Path(output_pdf)  # Use output_pdf_path directly
-    output_pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    final_output_path = Path(output_pdf)
+    final_output_path.parent.mkdir(parents=True, exist_ok=True)
 
     styles = _create_styles(title_size)
-    # Process data to get elements with embedded links
-    assert isinstance(source_links, dict), (
-        "source_links should be a dictionary mapping document names to URLs."
-    )
-    if source_links == {}:
-        logger.warning("No source links provided. No hyperlinks will be created.")
+    # Process data to get elements and the names of source documents needed for annexes
+    elements, unique_source_doc_names = _process_json_data(json_data, styles)
 
-    elements = _process_json_data(json_data, styles, source_links)  # Pass source_links
-
-    # Removed temporary file logic
+    # --- Generate Main Content PDF (Temporarily) ---
+    # Create a temporary file for the main content generated by ReportLab
+    temp_fd, temp_main_pdf_path = tempfile.mkstemp(suffix=".pdf")
+    os.close(temp_fd)  # Close the file descriptor, SimpleDocTemplate will open the path
 
     try:
         doc = SimpleDocTemplate(
-            str(output_pdf_path),  # Build directly to the final output path
+            temp_main_pdf_path,  # Build the main content to the temporary file
             pagesize=A4,
             rightMargin=margin * cm,
             leftMargin=margin * cm,
@@ -366,9 +429,21 @@ def convert_json_to_pdf(
             bottomMargin=margin * cm,
         )
 
-        # Build the final PDF safely
-        _build_pdf_safe(doc, elements, styles, str(output_pdf_path))
+        # Build the main part (without annexes) safely
+        _build_pdf_safe(doc, elements, styles, temp_main_pdf_path)
+
+        # --- Append Annexes ---
+        # Merge the generated main content with the source PDFs
+        _append_annexes(
+            temp_main_pdf_path, final_output_path, unique_source_doc_names, folder
+        )
 
     except Exception as e:
-        logger.error(f"Failed during PDF generation process: {e}")
-    # Removed finally block for temp file cleanup
+        logger.error(f"Failed during PDF generation or merging process: {e}")
+    finally:
+        # --- Clean up temporary file ---
+        try:
+            os.remove(temp_main_pdf_path)
+            logger.debug(f"Removed temporary file: {temp_main_pdf_path}")
+        except OSError as e:
+            logger.error(f"Error removing temporary file {temp_main_pdf_path}: {e}")

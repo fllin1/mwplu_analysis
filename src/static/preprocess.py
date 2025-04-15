@@ -22,6 +22,7 @@ from typing import Any, Dict, List
 from loguru import logger
 
 from src.api.gemini_thinking import retrieve_zone_pages
+from src.static.pdf import extract
 from src.config import INTERIM_DATA_DIR, RAW_DATA_DIR, PROJ_ROOT
 
 
@@ -102,16 +103,30 @@ class Preprocess:
             assert all(isinstance(page, int) for page in zones["pages"]), (
                 f"Page index not int for '{plu_name}, {zones}'"
             )
-            assert all(0 <= i < len(self.ocr_plu["pages"]) for i in zones["pages"]), (
-                f"Some page index are out of the document '{plu_name}'"
-            )
+            assert all(
+                0 <= i <= self.ocr_plu["usage_info"]["pages_processed"]
+                for i in zones["pages"]
+            ), f"Some page index are out of the document '{plu_name}'"
             assert isinstance(zones["zone"], list), (
                 f"{zones['zone']} is not of type 'list' for '{plu_name}'"
             )
 
             # For each zone, add the pages to the documents_pages dictionary
+            # And create sub-pdf from the original pdfs according to the pages
             for zone in zones["zone"]:
                 pages_zones[zone] = {"page_index": zones["pages"], "plu_name": plu_name}
+                try:
+                    extract(
+                        folder=self.folder,
+                        input_pdf=Path(plu_name),
+                        output_pdf=Path(zone),
+                        pages=zones["pages"],
+                    )
+                except IndexError:
+                    logger.error(
+                        f"Error extracting pages {zones['pages']} from {plu_name} for zone {zone}"
+                    )
+                    continue
 
         return pages_zones
 
@@ -123,7 +138,6 @@ class Preprocess:
         Returns:
             documents (List[Dict[str, Any]]): The extracted pages.
         """
-        pages: List[int] = pages
         document = [self.ocr_plu["pages"][page] for page in pages]
 
         return document

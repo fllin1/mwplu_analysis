@@ -6,8 +6,17 @@ extract text using Mistral OCR, creating a prompt from the OCR results,
 sending and retrieving the response from Gemini Pro 2.5, and converting
 the final output to a readable pdf.
 
-Version: 1.0
-Date: 2025-04-05
+Usage : python main.py synthesis <zone> [options]
+        <zone> : Zone to process in format 'Zone_UB'
+        --analysis : Whether to perform analysis of the document with
+        Gemini Pro 2.5, if not, just specify "-a".
+        --regles-communes : Name of the file containing the common rules
+        In this case, if there is no common rules, just specify "-c False"
+        --folder : City folder
+        --model-name : Model name to use for processing
+
+Version: 1.2
+Date: 2025-04-13
 Author: Grey Panda
 """
 
@@ -33,7 +42,7 @@ from src.config import (
 from src.prompt.prompt_config import CONFIG_TEMPLATE
 from src.static.preprocess import Preprocess
 from src.static.prompt_format import format_prompt_plu
-from src.utils import save_as_json
+from src.utils import save_as_json, remove_text_outside_json
 from src.static.create_report import convert_json_to_pdf
 
 
@@ -80,61 +89,73 @@ def ocr(
 @app.command()
 def synthesis(
     zone: str = typer.Argument(help="Zone to process in format 'Zone_UB'"),
+    type_zone: str = typer.Option(
+        None,
+        "--type-zone",
+        "-t",
+        help="Type of zone to process, either 'zone' or 'secteur'",
+    ),
     analysis: bool = typer.Option(
         True,
         "--analysis",
         "-a",
         help="Whether to perform analysis or not",
     ),
-    regles_communes: str = typer.Option(
-        "dispositions_generales",
+    regles_communes: bool = typer.Option(
+        True,
         "--regles-communes",
-        "-c",
+        "-r",
         help="Name of the file containing the common rules",
     ),
-    folder: str = typer.Option("grenoble", "--folder", "-f", help="City folder"),
-    model_name: str = typer.Option(
-        "gemini-2.5-pro-exp-03-25", "--model-name", "-m", help="Model name"
-    ),
+    city: str = typer.Option("grenoble", "--city", "-c", help="City folder"),
+    file: str = typer.Option(None, "--file", "-f", help="File name"),
 ) -> None:
     """
     Main function to process the OCR results and generate a PDF file.
     Args:
-        zone: (str) The PLU to process.
+        zone: (str) The PLU we want to process.
         regles_communes: (str) The name of the file containing the common rules.
         folder: (str) The folder containing the PDF files.
+        file: (str) Corresponds to the name of the existing zone in the original document.
         model_name: (str) The model name to use for processing.
     """
-    path_pages: Path = INTERIM_DATA_DIR / Path(folder).with_suffix(".json")
+    path_pages: Path = INTERIM_DATA_DIR / Path(city).with_suffix(".json")
     pages_index = json.loads(path_pages.read_text(encoding="utf-8"))
+    if file is None:
+        logger.info("'file' is None, using 'zone' as file")
+        file = zone
 
-    ocr_plu_name = pages_index[zone]["plu_name"]
-    ocr_path: Path = (
-        RAW_DATA_DIR / Path(folder) / Path(ocr_plu_name).with_suffix(".json")
-    )
+    ocr_plu_name = pages_index[file]["plu_name"]
+    ocr_path: Path = RAW_DATA_DIR / Path(city) / Path(ocr_plu_name).with_suffix(".json")
 
     # Extract the pages for a zone from the complete PLU
     preprocess = Preprocess(
-        folder=folder,
+        folder=city,
         ocr_path=ocr_path,
     )
     preprocessed_data = preprocess.extract_pages(
-        pages=pages_index[zone]["page_index"],
+        pages=pages_index[file]["page_index"],
     )
 
     # If we have common rules, we need to load them and add them to the prompt
     if regles_communes:
-        rc_path: Path = (
-            RAW_DATA_DIR / Path(folder) / Path(regles_communes).with_suffix(".json")
-        )
-        assert rc_path.exists(), f"File not found: {rc_path}, did you run OCR?"
+        rc_path: Path = RAW_DATA_DIR / Path(city) / Path("dispositions_generales.json")
+        if rc_path.exists():
+            regles_communes = json.loads(rc_path.read_text(encoding="utf-8"))["pages"]
+        else:
+            assert "dispositions_generales" in pages_index, (
+                f"File not found: {rc_path}, did you run OCR?"
+            )
+            regles_communes = preprocess.extract_pages(
+                pages=pages_index["dispositions_generales"]["page_index"],
+            )
 
-        regles_communes = json.loads(rc_path.read_text(encoding="utf-8"))
         # We then get the Parts with the common rules
         parts = format_prompt_plu(
             ocr_content=preprocessed_data,
             doc_name=ocr_plu_name.replace("_", " ").title(),
-            regles_communes=regles_communes["pages"],
+            zone=zone,
+            regles_communes=regles_communes,
         )
 
     else:
@@ -142,6 +163,7 @@ def synthesis(
         parts = format_prompt_plu(
             ocr_content=preprocessed_data,
             doc_name=ocr_plu_name.replace("_", " ").title(),
+            zone=zone,
         )
 
     logger.info(f"Processing zone: {zone}")
@@ -151,13 +173,15 @@ def synthesis(
             f"{zone} is not of type types.Part or Image.Image: {type(part)}"
         )
 
-    output_dir = PROCESSED_DATA_DIR / Path(folder)
+    output_dir = PROCESSED_DATA_DIR / Path(city)
+    if type_zone is not None:
+        output_dir = output_dir / Path(type_zone)
+
     output_file = (output_dir / Path(zone)).with_suffix(".json")
 
     if analysis:
         # Send the request to Gemini API
         response = gemini_api(
-            model_name=model_name,
             contents=parts,
             generate_content_config=CONFIG_TEMPLATE,
         ).to_json_dict()
@@ -171,11 +195,22 @@ def synthesis(
         # Load the response from the file
         response = json.loads(output_file.read_text(encoding="utf-8"))
 
+    if "parsed" not in response:
+        text = response["candidates"][0]["content"]["parts"][0]["text"]
+        response["parsed"] = json.loads(remove_text_outside_json(text))
+        save_as_json(
+            data=response,
+            save_path=output_file,
+        )
+
     # Convert the response to PDF
     pdf_output_path: Path = output_dir / Path("pdf") / Path(zone).with_suffix(".pdf")
+
+    pdf_output_path.parent.mkdir(parents=True, exist_ok=True)
     convert_json_to_pdf(
         json_data=response["parsed"],
         output_pdf=str(pdf_output_path),
+        source_links={},
         margin=1.1,
         title_size=16,
     )

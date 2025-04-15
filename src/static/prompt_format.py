@@ -108,9 +108,8 @@ def ocr_result_to_parts(
         parts.extend(page_parts)
 
     assert len(parts) >= len(ocr_result), "Parts has less elements than expected"
-    assert not len(parts) == len(ocr_result), (
-        f"Parts has added no images len(output): {len(parts)}, len(input): {len(ocr_result)}"
-    )
+    if len(parts) == len(ocr_result):
+        logger.warning("Parts has added no images")
     return parts
 
 
@@ -118,6 +117,7 @@ def ocr_result_to_parts(
 def format_prompt_plu(
     ocr_content: Dict[str, Any],
     doc_name: List[str],
+    zone: str,
     regles_communes: Optional[Dict[str, Any]] = None,
     prompts: str = prompts,
 ) -> List[Union[types.Part, Image.Image]]:
@@ -131,7 +131,8 @@ def format_prompt_plu(
     Returns:
         parts (List[Union[types.Part, Image.Image]]): The list of parts.
     """
-    parts = [types.Part.from_text(text=prompts["prompt_plu"])]
+    prompt = prompts["prompt_plu"].format(ZONE_CADASTRALE_CIBLE=zone)
+    parts = [types.Part.from_text(text=prompt)]
 
     if regles_communes:
         parts_communes = [
@@ -146,15 +147,12 @@ def format_prompt_plu(
             "Had the common rules been added to the parts?"
         )
 
-    parts_zone = [types.Part.from_text(text=f"Nom du document : {doc_name}")]
+    parts_zone = [types.Part.from_text(text=f"Nom du document : {doc_name} - {zone}")]
     zone_content_parts = ocr_result_to_parts(ocr_content)
     parts_zone.extend(zone_content_parts)
     logger.info("Processing zone...")
 
     parts.extend(parts_zone)
-    assert len(parts) > len(parts_communes) + len(parts_zone), (
-        "Parts has less elements than expected"
-    )
 
     return parts
 
