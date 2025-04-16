@@ -40,11 +40,10 @@ from src.config import (
     RAW_DATA_DIR,
 )
 from src.prompt.prompt_config import CONFIG_TEMPLATE
+from src.static.create_report import convert_json_to_pdf
 from src.static.preprocess import Preprocess
 from src.static.prompt_format import format_prompt_plu
-from src.utils import save_as_json, remove_text_outside_json
-from src.static.create_report import convert_json_to_pdf
-
+from src.utils import remove_text_outside_json, save_as_json
 
 app = typer.Typer(pretty_exceptions_enable=False)
 

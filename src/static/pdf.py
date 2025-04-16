@@ -1,8 +1,15 @@
+"""
+Tool to extract pages from a PDF file.
+
+Version: 1.2
+Date: 2025-04-13
+Author: Grey Panda
+"""
+
 from pathlib import Path
-from typing import List, Union
+from typing import List
 
 import typer
-from loguru import logger
 from pypdf import PdfReader, PdfWriter
 
 from src.config import EXTERNAL_DATA_DIR, INTERIM_DATA_DIR
