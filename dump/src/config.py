@@ -25,7 +25,11 @@ INTERIM_DATA_DIR = DATA_DIR / "interim"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 EXTERNAL_DATA_DIR = DATA_DIR / "external"
 
-REFERENCES_DIR = PROJ_ROOT / "references"
+MODELS_DIR = PROJ_ROOT / "models"
+
+REPORTS_DIR = PROJ_ROOT / "reports"
+FIGURES_DIR = REPORTS_DIR / "figures"
+
 CONFIG_DIR = PROJ_ROOT / "config"
 
 # If tqdm is installed, configure loguru with tqdm.write
