@@ -11,33 +11,26 @@ Date: 2025-03-31
 Author: Grey Panda
 """
 
-import os
-from pathlib import Path
-from datetime import date
-
 from mistralai import Mistral
 from mistralai.models import OCRResponse
 
-from src.api.utils import standardize_ocr_output
-from src.utils.json import save_as_json
 
-
-def push_to_mistral(client: Mistral, path_input: Path) -> str:
+def push_to_mistral(client: Mistral, file: bytes, name_file: str) -> str:
     """
     Pushes a file to Mistral for OCR processing.
     Args:
-        file_path (Path): The path to the file to push.
+        file (bytes): The file to push.
+        name_file (str): The name of the file.
     Returns:
         signed_url (str): The signed URL of the uploaded file.
     """
-    with open(path_input, "rb") as file:
-        uploaded_pdf = client.files.upload(
-            file={
-                "file_name": path_input.name,
-                "content": file,
-            },
-            purpose="ocr",
-        )
+    uploaded_pdf = client.files.upload(
+        file={
+            "file_name": name_file,
+            "content": file,
+        },
+        purpose="ocr",
+    )
     signed_url = client.files.get_signed_url(file_id=uploaded_pdf.id)
     return signed_url
 
@@ -59,27 +52,3 @@ def ocr_with_mistral(client: Mistral, signed_url: str) -> OCRResponse:
         include_image_base64=True,
     )
     return ocr_response.model_dump()
-
-
-def main(
-    path_input: Path,
-    path_output: Path,
-    date_creation_source_document: date.isoformat,
-    name_city: str,
-    name_document: str,
-) -> None:
-    """
-    Main function to POST the plu.pdf, run the OCR processing and save the response.
-    """
-    api_key = os.environ["MISTRAL_API_KEY"]
-    client = Mistral(api_key=api_key)
-
-    signed_url = push_to_mistral(client=client, path_input=path_input)
-    ocr_response = ocr_with_mistral(client=client, signed_url=signed_url)
-    standardized_response = standardize_ocr_output(
-        ocr_response=ocr_response,
-        date_creation_source_document=date_creation_source_document,
-        name_city=name_city,
-        name_document=name_document,
-    )
-    save_as_json(standardized_response, path_output)

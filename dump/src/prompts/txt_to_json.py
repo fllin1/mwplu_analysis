@@ -19,7 +19,7 @@ from src.config import PROJ_ROOT
 path_prompt_plu: Path = PROJ_ROOT / Path("references/prompt_plu.txt")
 path_prompt_oap: Path = PROJ_ROOT / Path("references/prompt_oap.txt")
 path_prompt_reglement_zone: Path = PROJ_ROOT / Path(
-    "references/prompt_reglement_zone.txt"
+    "references/prompt_extract_zones.txt"
 )
 
 # Read the text files and convert them to JSON format

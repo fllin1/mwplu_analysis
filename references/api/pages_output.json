@@ -12,9 +12,11 @@
     }
   ],
   "metadata": {
-    "table_name": "documents",
+    "type_response": "extract_pages_response",
     "name_city": "city_name",
-    "name_document": "plu.pdf",
+    "name_zoning": "zoning_name",
+    "name_zone": "zone_name",
+    "name_document": "plu_name",
     "date_creation_source_document": "the date the plu.pdf document was created",
     "number_total_page": 6
   }

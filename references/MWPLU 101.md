@@ -48,7 +48,7 @@ Three types of document and three cases for a city :
 ```text
 external/
 ├── city_1/
-│   ├── disposition_generales.pdf
+│   ├── dispositions_generales.pdf
 │   ├── zones_urbaines_mixtes.pdf
 │   └── (...)
 │
@@ -74,7 +74,7 @@ We'll keep the input naming convention :
 ```text
 raw/
 ├── city_1/
-│   ├── disposition_generales.json
+│   ├── dispositions_generales.json
 │   ├── zones_urbaines_mixtes.json
 │   └── (...)
 │
@@ -84,7 +84,7 @@ raw/
 
 Output stored in the `/data/interim/` folder.
 
-For this step, we'll divide the whole PLU into subfiles, for each zone + dispositions_generales if it exists.
+For this step, we'll divide the whole zoning PLU into subfolders, one subfolder for each zone, and we'll keep the dispositions_generales as it is.
 After this step, we'll save the output on Supabase.
 
 The metadata and the data structure : [Pages Output](/references/api/pages_output.json)
@@ -94,11 +94,13 @@ We'll create subfolders with input naming convention, and place our results in i
 ```text
 interim/
 ├── city_1/
-│   ├── disposition_generales/
-│   │   ├──
-│   │   ├──
-
+│   ├── dispositions_generales.json
 │   ├── zones_urbaines_mixtes/
+│   │   ├── zones_urbaines_mixtes_cutting.json
+│   │   ├── zone_U1.json
+│   │   ├── zone_U2.json
+│   │   └── (...)
 │   └── (...)
-│
 ```
+
+Where `./city_1/zones_urbaines_mixtes/zones_urbaines_mixtes_cutting.json` corresponds to the output of the model, which separates the whole plu into sub-documents for each zone.

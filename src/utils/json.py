@@ -14,7 +14,7 @@ from pathlib import Path
 
 def save_as_json(data: dict, save_path: Path) -> None:
     """
-    Saves the OCR response as a JSON file.
+    Saves data as a JSON file.
 
     Args:
         data: (dict) The data to save.

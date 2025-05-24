@@ -15,7 +15,7 @@ import io
 from PIL import Image
 
 
-def base64_to_PIL(base64_str: str) -> Image.Image:
+def base64_to_image(base64_str: str) -> Image.Image:
     """
     Convert a base64 string to a PIL Image.
     Args:

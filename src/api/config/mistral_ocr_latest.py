@@ -16,6 +16,7 @@ def standardize_ocr_output(
     ocr_response: dict,
     date_creation_source_document: str,
     name_city: str,
+    name_zoning: str,
     name_document: str,
     table_name: str = "ocr_response",
 ) -> dict:
@@ -36,7 +37,7 @@ def standardize_ocr_output(
     formatted_output = {
         "pages": [
             {
-                "page_number": page["index"] + 1,
+                "number_page": page["index"] + 1,
                 "text": page["markdown"].replace("img-", "img_"),
                 "images": [
                     {
@@ -55,8 +56,9 @@ def standardize_ocr_output(
         ],
         "name_model": ocr_response["model"],
         "metadata": {
-            "name_img_bucket": table_name,
+            "type_response": table_name,
             "name_city": name_city,
+            "name_zoning": name_zoning if name_zoning != "None" else name_document,
             "name_document": name_document,
             "date_creation_source_document": date_creation_source_document,
             "number_total_page": ocr_response["usage_info"]["pages_processed"],

@@ -26,7 +26,7 @@ def convert_prompts_txt_to_json():
     path_prompt_plu: Path = REFERENCES_DIR / "prompt" / "prompt_plu.txt"
     path_prompt_oap: Path = REFERENCES_DIR / "prompt" / "prompt_oap.txt"
     path_prompt_reglement_zone: Path = (
-        REFERENCES_DIR / "prompt" / "references/prompt_reglement_zone.txt"
+        REFERENCES_DIR / "prompt" / "prompt_extract_zones.txt"
     )
 
     # Read the text files and convert them to JSON format
@@ -46,7 +46,6 @@ def convert_prompts_txt_to_json():
     save_path.write_text(
         json.dumps(prompt_json, indent=4, ensure_ascii=False), encoding="utf-8"
     )
-    logger.success(f"Prompts saved to {save_path}")
 
 
 if __name__ == "__main__":

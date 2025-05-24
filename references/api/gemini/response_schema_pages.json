@@ -1,0 +1,22 @@
+{
+  "type": "ARRAY",
+  "items": {
+    "type": "OBJECT",
+    "properties": {
+      "name_zoning": {
+        "type": "STRING",
+        "description": "The name of the zoning"
+      },
+      "name_zone": {
+        "type": "STRING",
+        "description": "The name of the zone"
+      },
+      "list_pages": {
+        "type": "ARRAY",
+        "items": {
+          "type": "INTEGER"
+        }
+      }
+    }
+  }
+}
