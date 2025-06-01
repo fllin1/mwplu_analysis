@@ -79,7 +79,7 @@ Everything is then pushed and stored on the open-source database and storage sol
 
 3. You should reference your prompts in the references folders. As of now, only two prompts are used :
    1. The first being `./references/prompt_extract_zones.txt` asking the LLM to specify which pages of a PLU refers to which "Zone" name.
-   2. The second prompt is for the analysis `./references/prompt_plu.txt` and should contain the variable *{ZONE_CADASTRALE_CIBLE}*.
+   2. The second prompt is for the analysis `./references/prompt_synthesis.txt` and should contain the variable *{ZONE_CADASTRALE_CIBLE}*.
 
 4. You will need to reproduce this architecture in the `./config/plu_tree.yaml` file while separing the general documents and the specific documents for zones as such :
 

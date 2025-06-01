@@ -3,13 +3,13 @@
   "items": {
     "type": "OBJECT",
     "properties": {
-      "name_zoning": {
+      "categorie_generale": {
         "type": "STRING",
-        "description": "The name of the zoning"
+        "description": "Type général de zones (ex: 'Zones Urbaines', 'Zones À Urbaniser', 'Zones Agricoles', 'Zones Naturelles et Forestières') OU 'Dispositions Générales'"
       },
-      "name_zone": {
+      "code_zone": {
         "type": "STRING",
-        "description": "The name of the zone"
+        "description": "Code technique officiel (ex: UA, UB, UC, 1AU, 2AU, A, Ap, N, Nh, etc.) OU 'Dispositions Générales'"
       },
       "list_pages": {
         "type": "ARRAY",

@@ -8,7 +8,6 @@ Author: Grey Panda
 
 import os
 
-from loguru import logger
 from mistralai import Mistral
 
 from src.api.ocr_mistral import ocr_with_mistral, push_to_mistral

@@ -1,0 +1,57 @@
+metadata:
+  description: Raw PLU data files before processing
+  generated_at: /home/greypanda/projets/mwplu_analysis
+  total_items: 3
+data:
+  grenoble:
+    type: directory
+    path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble
+    contents:
+      dispositions_generales.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/dispositions_generales.json
+        size_bytes: 2592028
+      zones_a_urbaniser.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_a_urbaniser.json
+        size_bytes: 2237331
+      zones_agricoles_et_naturelles.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_agricoles_et_naturelles.json
+        size_bytes: 1236333
+      zones_dediees.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_dediees.json
+        size_bytes: 3047155
+      zones_urbaines_mixtes.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_urbaines_mixtes.json
+        size_bytes: 8112339
+  lille:
+    type: directory
+    path: /home/greypanda/projets/mwplu_analysis/data/raw/lille
+    contents:
+      dispositions_generales.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/dispositions_generales.json
+        size_bytes: 410580
+      zones_constructibles.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_constructibles.json
+        size_bytes: 1833933
+      zones_inconstructibles.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_inconstructibles.json
+        size_bytes: 90860
+      zones_specifiques.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_specifiques.json
+        size_bytes: 2297149
+  nantes:
+    type: directory
+    path: /home/greypanda/projets/mwplu_analysis/data/raw/nantes
+    contents:
+      plu_general.json:
+        type: file
+        path: /home/greypanda/projets/mwplu_analysis/data/raw/nantes/plu_general.json
+        size_bytes: 4853853

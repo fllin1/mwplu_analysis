@@ -1,19 +1,37 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "mwplu"
-version = "0.1.0"
-description = ""
+name = "plu"
+version = "0.2.0"
+description = "This project offers an end-to-end solution for automated document management that handles extraction, analysis, and synthesis of document data. Using API calls including Mistral OCR and Gemini-pro, the system processes both text and images to generate synthesis according to a template from unstructured documents."
 authors = [
-    {name = "Panda",email = "naviredelest@gmail.com"}
+    {name = "Grey Panda", email = "naviredelest@gmail.com"}
 ]
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-]
+requires-python = ">=3.12,<4.0"
+
+[tool.setuptools]
+packages = ["src"]
 
 [tool.poetry]
-packages = [{include = "mwplu", from = "src"}]
+name = "plu"
+version = "0.1.2"
+authors = ["Grey Panda"]
+packages = [
+    { include = "src" },
+]
 
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.dependencies]
+typer = "^0.15.2"
+pyyaml = "^6.0.2"
+loguru = "^0.7.3"
+tqdm = "^4.67.1"
+python-dotenv = "^1.1.0"
+mistralai = "^1.6.0"
+google-genai = "^1.9.0"
+pillow = "^11.1.0"
+reportlab = "^4.3.1"
+pypdf = "^5.4.0"
+supabase = "^2.15.0"
+svglib = "^1.5.1"

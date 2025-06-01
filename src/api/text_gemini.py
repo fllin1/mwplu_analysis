@@ -20,16 +20,18 @@ def generate(
     model: str,
     parts: list[types.Part],
     generate_content_config: types.GenerateContentConfig,
-) -> Generator[str, None, None]:
+) -> types.GenerateContentConfig:
     """
     Generate content with Gemini API.
+
     Args:
         client (genai.Client): The client to use.
         model (str): The model to use.
         parts (list[types.Part]): The parts to use.
         generate_content_config (types.GenerateContentConfig): The config to use.
+
     Returns:
-        Generator[str, None, None]: The generator of the content.
+        types.GenerateContentConfig: The generator of the content.
     """
     contents = [types.Content(role="user", parts=parts)]
 
@@ -39,7 +41,7 @@ def generate(
         config=generate_content_config,
     )
 
-    return response.text
+    return response
 
 
 def generate_stream(
@@ -47,14 +49,22 @@ def generate_stream(
     model: str,
     parts: list[types.Part],
     generate_content_config: types.GenerateContentConfig,
-) -> Generator[str, None, None]:
+) -> Generator[types.GenerateContentResponse, None, None]:
     """
     Generate content with Gemini API.
+
+    Args:
+        client (genai.Client): The client to use.
+        model (str): The model to use.
+        parts (list[types.Part]): The parts to use.
+        generate_content_config (types.GenerateContentConfig): The config to use.
+
+    Returns:
+        Generator[types.GenerateContentResponse, None, None]: The generator of the content.
     """
     contents = [types.Content(role="user", parts=parts)]
-    for chunk in client.models.generate_content_stream(
+    yield from client.models.generate_content_stream(
         model=model,
         contents=contents,
         config=generate_content_config,
-    ):
-        yield chunk.text
+    )

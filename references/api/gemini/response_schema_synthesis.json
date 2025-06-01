@@ -1,0 +1,341 @@
+{
+  "type": "object",
+  "properties": {
+    "chapitre_1": {
+      "type": "object",
+      "properties": {
+        "section_1": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["1.1", "1.2", "1.3"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "CONSTRUCTIONS INTERDITES",
+                  "USAGES ET AFFECTATIONS DES SOLS INTERDITS",
+                  "ACTIVITÉS ET INSTALLATIONS INTERDITES"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_2": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["2.1", "2.2", "2.3"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "CONSTRUCTIONS SOUMISES À DES CONDITIONS PARTICULIÈRES",
+                  "USAGES ET AFFECTATIONS DES SOLS SOUMIS À DES CONDITIONS PARTICULIÈRES",
+                  "ACTIVITÉS ET INSTALLATIONS SOUMISES À DES CONDITIONS PARTICULIÈRES"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_3": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["3.1", "3.2", "3.3"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "DISPOSITIONS EN FAVEUR DE LA MIXITÉ COMMERCIALE ET FONCTIONNELLE",
+                  "RÈGLES DIFFÉRENCIÉES ENTRE REZ-DE-CHAUSSÉE ET ÉTAGES SUPÉRIEURS",
+                  "DISPOSITIONS EN FAVEUR DE LA MIXITÉ SOCIALE"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        }
+      }
+    },
+    "chapitre_2": {
+      "type": "object",
+      "properties": {
+        "section_4": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "IMPLANTATION PAR RAPPORT AUX VOIES ET EMPRISES PUBLIQUES",
+                  "IMPLANTATION DES CONSTRUCTIONS PAR RAPPORT AUX LIMITES SÉPARATIVES",
+                  "IMPLANTATION DES CONSTRUCTIONS LES UNES PAR RAPPORT AUX AUTRES SUR UNE MÊME PROPRIÉTÉ",
+                  "EMPRISE AU SOL DES CONSTRUCTIONS",
+                  "COEFFICIENT D'EMPRISE AU SOL MINIMUM ET HAUTEUR MINIMUM AU SEIN DES PÉRIMÈTRES D'INTENSIFICATION URBAINE",
+                  "HAUTEUR DES CONSTRUCTIONS ET DES INSTALLATIONS"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["5.1", "5.2", "5.3", "5.4"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "INSERTION DES CONSTRUCTIONS ET DES INSTALLATIONS DANS LEUR ENVIRONNEMENT",
+                  "CARACTÉRISTIQUES ARCHITECTURALES DES FAÇADES ET TOITURES",
+                  "CARACTÉRISTIQUES DES CLÔTURES",
+                  "PRESCRIPTIONS RELATIVES AU PATRIMOINE BÂTI ET PAYSAGER À PROTÉGER, À CONSERVER, À RESTAURER, À METTRE EN VALEUR OU À REQUALIFIER"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_6": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["6.1", "6.2", "6.3", "6.4", "6.5"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "OBLIGATIONS EN MATIÈRE DE RÉALISATION D'ESPACES LIBRES ET DE PLANTATIONS, D'AIRES DE JEUX ET DE LOISIRS",
+                  "SURFACES VÉGÉTALISÉES OU PERMÉABLES",
+                  "MAINTIEN OU REMISE EN ÉTAT DES CONTINUITÉS ÉCOLOGIQUES",
+                  "GESTION DES EAUX PLUVIALES ET DU RUISSELLEMENT",
+                  "AMÉNAGEMENT D'EMPLACEMENTS SPÉCIFIQUES DÉDIÉS À LA COLLECTE DES DÉCHETS MÉNAGERS ET ASSIMILÉS"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        }
+      }
+    },
+    "chapitre_3": {
+      "type": "object",
+      "properties": {
+        "section_7": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["7.1", "7.2"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "STATIONNEMENT DES VÉHICULES MOTORISÉS",
+                  "STATIONNEMENT DES CYCLES"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_8": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["8.1", "8.2"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": ["ACCÈS", "VOIRIES"]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_9": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["9.1", "9.2", "9.3", "9.4", "9.5", "9.6"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": [
+                  "ALIMENTATION EN EAU POTABLE",
+                  "GESTION DES EAUX USÉES DOMESTIQUES",
+                  "GESTION DES EAUX USÉES NON DOMESTIQUE",
+                  "UTILISATION DU RÉSEAU D'EAUX PLUVIALES",
+                  "RÉSEAUX ÉLECTRIQUES ET TÉLÉPHONIQUES",
+                  "DÉPLOIEMENT DE LA FIBRE OPTIQUE"
+                ]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        },
+        "section_10": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sous_section": {
+                "type": "string",
+                "enum": ["10"]
+              },
+              "titre": {
+                "type": "string",
+                "enum": ["ENERGIE ET PERFORMANCES ÉNERGÉTIQUES"]
+              },
+              "regles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "contenu": { "type": "string" },
+                    "page_source": { "type": "string" }
+                  },
+                  "required": ["contenu", "page_source"]
+                }
+              }
+            },
+            "required": ["sous_section", "titre", "regles"]
+          }
+        }
+      }
+    }
+  },
+  "required": ["chapitre_1", "chapitre_2", "chapitre_3"]
+}

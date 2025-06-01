@@ -8,14 +8,14 @@ Tu es un expert en analyse des Plans Locaux d'Urbanisme. Ta mission : créer un 
 
 ### Zonages principaux
 - **Critère :** Section dédiée dans le règlement avec articles spécifiques
-- **`name_zone` :** Code officiel de la zone (UA, UB, UC, 1AU, 2AU, A, Ap, N, Nh, etc.)
-- **`name_zoning` :** Catégorie générale telle qu'indiquée dans le document (exemples non-exhaustifs : "Zones Urbaines", "Zones À Urbaniser", "Zones Agricoles", "Zones Naturelles et Forestières")
+- **`code_zone` :** Code officiel de la zone (UA, UB, UC, 1AU, 2AU, A, Ap, N, Nh, etc.)
+- **`categorie_generale` :** Catégorie générale telle qu'indiquée dans le document (généralement : "Zones Urbaines", "Zones À Urbaniser", "Zones Agricoles", "Zones Naturelles et Forestières")
 - **Ignorer :** Zones mentionnées sans développement réglementaire propre
 
 ### Dispositions Générales
-Si présentes, traiter comme entité distincte avec :
-- `name_zoning` = `"Dispositions Générales"`
-- `name_zone` = `"Dispositions Générales"`
+Les Dispositions Générales constituent une entité à part entière dans le PLU/PLUi. Elles doivent être traitées ainsi :
+- **Valeurs à utiliser** : `categorie_generale` = `"Dispositions Générales"` ET `code_zone` = `"Dispositions Générales"`
+- **Cas particulier** : Si le document fourni contient UNIQUEMENT des Dispositions Générales (sans zones UA, UB, etc.), renvoyer uniquement cette entité dans la réponse JSON
 
 ## PAGES À INCLURE
 - Articles réglementaires spécifiques au zonage
@@ -38,20 +38,20 @@ Produire **uniquement** ce JSON :
 {
   "response": [
     {
-      "name_zoning": "[Catégorie générale du document]",
-      "name_zone": "[Code officiel de la zone]",
+      "categorie_generale": "[Catégorie générale du document]",
+      "code_zone": "[Code officiel de la zone]",
       "list_pages": [numéros triés par ordre croissant]
     }
   ]
 }
 ```
 
-**Exemples non-exhaustifs de correspondances :**
-- `name_zoning`: "Zones Urbaines" → `name_zone`: "UA", "UB", "UC"...
-- `name_zoning`: "Zones À Urbaniser" → `name_zone`: "1AU", "2AU"...
-- `name_zoning`: "Zones Agricoles" → `name_zone`: "A", "Ap"...
-- `name_zoning`: "Zones Naturelles et Forestières" → `name_zone`: "N", "Nh"...
-- `name_zoning`: "Dispositions Générales" → `name_zone`: "Dispositions Générales"
+**Exemples de correspondances :**
+- `categorie_generale`: "Zones Urbaines" → `code_zone`: "UA", "UB", "UC"...
+- `categorie_generale`: "Zones À Urbaniser" → `code_zone`: "1AU", "2AU"...
+- `categorie_generale`: "Zones Agricoles" → `code_zone`: "A", "Ap"...
+- `categorie_generale`: "Zones Naturelles et Forestières" → `code_zone`: "N", "Nh"...
+- `categorie_generale`: "Dispositions Générales" → `code_zone`: "Dispositions Générales"
 
 ## RÈGLES
 1. Une page multi-zonages apparaît dans chaque zonage concerné
@@ -64,23 +64,23 @@ Produire **uniquement** ce JSON :
 {
   "response": [
     {
-      "name_zoning": "Dispositions Générales",
-      "name_zone": "Dispositions Générales",
+      "categorie_generale": "Dispositions Générales",
+      "code_zone": "Dispositions Générales",
       "list_pages": [3, 4, 5, 6]
     },
     {
-      "name_zoning": "Zones Urbaines",
-      "name_zone": "UA",
+      "categorie_generale": "Zones Urbaines",
+      "code_zone": "UA",
       "list_pages": [12, 13, 14, 15]
     },
     {
-      "name_zoning": "Zones Urbaines",
-      "name_zone": "UB",
+      "categorie_generale": "Zones Urbaines",
+      "code_zone": "UB",
       "list_pages": [19, 20, 21]
     },
     {
-      "name_zoning": "Zones À Urbaniser",
-      "name_zone": "1AU",
+      "categorie_generale": "Zones À Urbaniser",
+      "code_zone": "1AU",
       "list_pages": [45, 46, 47]
     }
   ]

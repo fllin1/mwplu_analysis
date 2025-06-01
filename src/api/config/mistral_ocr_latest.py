@@ -58,8 +58,13 @@ def standardize_ocr_output(
         "metadata": {
             "type_response": table_name,
             "name_city": name_city,
-            "name_zoning": name_zoning if name_zoning != "None" else name_document,
-            "name_document": name_document,
+            "name_zoning": (
+                name_zoning.replace("_", " ").title()
+                if name_zoning != "None"
+                else name_document
+            ),
+            "name_zone": name_document if name_zoning != "None" else name_document,
+            "name_plu": name_document,
             "date_creation_source_document": date_creation_source_document,
             "number_total_page": ocr_response["usage_info"]["pages_processed"],
         },

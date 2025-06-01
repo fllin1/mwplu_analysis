@@ -1,0 +1,78 @@
+---
+# Bulk Processing Configuration Examples
+# This file contains example configurations for different bulk processing scenarios
+
+examples:
+  # Example 1: Full pipeline for a single city
+  full_pipeline_single_city:
+    description: "Process a single city through all pipeline stages"
+    command: "python bulk_runner.py run --all-stages --cities grenoble"
+    stages: ["ocr", "extract_pages", "synthesis", "upload_supabase"]
+    cities: ["grenoble"]
+    
+  # Example 2: OCR only for multiple cities
+  ocr_multiple_cities:
+    description: "Run OCR processing for multiple cities"
+    command: "python bulk_runner.py run --stages ocr --cities bordeaux --cities nantes --cities grenoble"
+    stages: ["ocr"]
+    cities: ["bordeaux", "nantes", "grenoble"]
+    
+  # Example 3: Upload all processed data to Supabase (includes report generation)
+  upload_all_processed:
+    description: "Generate reports and upload all processed JSON files to Supabase"
+    command: "python bulk_runner.py upload_all"
+    stages: ["upload_supabase"]
+    cities: ["all"]
+    
+  # Example 4: Generate reports and upload for specific cities
+  generate_reports_and_upload:
+    description: "Generate PDF reports and upload processed zones to Supabase"
+    command: "python bulk_runner.py run --stages upload_supabase --cities all"
+    stages: ["upload_supabase"]
+    cities: ["all"]
+    
+  # Example 5: Dry run to see what would be executed
+  dry_run_example:
+    description: "See what tasks would be executed without running them"
+    command: "python bulk_runner.py run --stages synthesis upload_supabase --cities nantes --dry-run"
+    stages: ["synthesis", "upload_supabase"]
+    cities: ["nantes"]
+    dry_run: true
+
+# Quick reference commands
+quick_commands:
+  status: "python bulk_runner.py status"
+  list_cities: "python bulk_runner.py list-cities"
+  list_stages: "python bulk_runner.py list-stages"
+  help: "python bulk_runner.py --help"
+  multiple_cities: "python bulk_runner.py run --stages STAGE --cities CITY1 --cities CITY2"
+
+# Common workflow patterns
+workflows:
+  new_city_complete:
+    description: "Complete processing workflow for a new city"
+    steps:
+      1: "python bulk_runner.py run --stages ocr --cities CITY_NAME"
+      2: "python bulk_runner.py run --stages extract_pages --cities CITY_NAME"
+      3: "python bulk_runner.py run --stages synthesis --cities CITY_NAME"
+      4: "python bulk_runner.py run --stages upload_supabase --cities CITY_NAME"
+  
+  update_existing_city:
+    description: "Re-process and update existing city data"
+    steps:
+      1: "python bulk_runner.py run --stages synthesis --cities CITY_NAME"
+      2: "python bulk_runner.py run --stages upload_supabase --cities CITY_NAME"
+  
+  batch_processing:
+    description: "Process multiple cities efficiently"
+    steps:
+      1: "python bulk_runner.py run --stages ocr extract_pages --cities all"
+      2: "python bulk_runner.py run --stages synthesis --cities all"
+      3: "python bulk_runner.py run --stages upload_supabase --cities all"
+
+# Pipeline stage descriptions
+stage_descriptions:
+  ocr: "Extract text from PDF documents using Mistral OCR"
+  extract_pages: "Extract and categorize pages using Gemini"
+  synthesis: "Generate structured analysis using Gemini"
+  upload_supabase: "Generate PDF reports and upload processed data and HTML to Supabase database" 
