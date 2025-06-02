@@ -1,0 +1,22 @@
+{
+  "type": "ARRAY",
+  "items": {
+    "type": "OBJECT",
+    "properties": {
+      "categorie_generale": {
+        "type": "STRING",
+        "description": "Type général de zones (ex: 'Zones Urbaines', 'Zones À Urbaniser', 'Zones Agricoles', 'Zones Naturelles et Forestières') OU 'Dispositions Générales'"
+      },
+      "code_zone": {
+        "type": "STRING",
+        "description": "Code technique officiel (ex: UA, UB, UC, 1AU, 2AU, A, Ap, N, Nh, etc.) OU 'Dispositions Générales'"
+      },
+      "list_pages": {
+        "type": "ARRAY",
+        "items": {
+          "type": "INTEGER"
+        }
+      }
+    }
+  }
+}

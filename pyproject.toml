@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "plu"
-version = "0.1.2"
+version = "0.2.0"
 description = "This project offers an end-to-end solution for automated document management that handles extraction, analysis, and synthesis of document data. Using API calls including Mistral OCR and Gemini-pro, the system processes both text and images to generate synthesis according to a template from unstructured documents."
 authors = [
     {name = "Grey Panda", email = "naviredelest@gmail.com"}
@@ -34,3 +34,4 @@ pillow = "^11.1.0"
 reportlab = "^4.3.1"
 pypdf = "^5.4.0"
 supabase = "^2.15.0"
+svglib = "^1.5.1"

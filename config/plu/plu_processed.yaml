@@ -1,0 +1,308 @@
+metadata:
+  description: Processed PLU data ready for analysis
+  generated_at: /home/greypanda/projets/mwplu_analysis
+  total_items: 2
+data:
+  grenoble:
+    type: directory
+    path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble
+    contents:
+      Zones Agricoles:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+          Agricoles
+        contents:
+          A.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Agricoles/A.json
+            size_bytes: 69908
+          AL.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Agricoles/AL.json
+            size_bytes: 48392
+      Zones Naturelles et Forestières:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+          Naturelles et Forestières
+        contents:
+          N.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Naturelles et Forestières/N.json
+            size_bytes: 58041
+          NL.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Naturelles et Forestières/NL.json
+            size_bytes: 71796
+      Zones Urbaines:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+          Urbaines
+        contents:
+          UA1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UA1.json
+            size_bytes: 60593
+          UA2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UA2.json
+            size_bytes: 63769
+          UA3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UA3.json
+            size_bytes: 74311
+          UB.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UB.json
+            size_bytes: 54178
+          UC1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UC1.json
+            size_bytes: 85932
+          UC2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UC2.json
+            size_bytes: 57209
+          UC3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UC3.json
+            size_bytes: 61992
+          UCRU1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU1.json
+            size_bytes: 69294
+          UCRU11.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU11.json
+            size_bytes: 74081
+          UCRU2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU2.json
+            size_bytes: 68319
+          UCRU3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU3.json
+            size_bytes: 73435
+          UCRU4.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU4.json
+            size_bytes: 70334
+          UCRU5.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU5.json
+            size_bytes: 71162
+          UCRU6.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU6.json
+            size_bytes: 53304
+          UCRU7.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU7.json
+            size_bytes: 47675
+          UCRU9.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UCRU9.json
+            size_bytes: 82095
+          UD1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UD1.json
+            size_bytes: 81216
+          UD2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UD2.json
+            size_bytes: 59950
+          UD3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UD3.json
+            size_bytes: 58187
+          UE1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UE1.json
+            size_bytes: 56428
+          UE2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UE2.json
+            size_bytes: 76033
+          UE3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UE3.json
+            size_bytes: 62345
+          UE4.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UE4.json
+            size_bytes: 64651
+          UV.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UV.json
+            size_bytes: 68853
+          UZ1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UZ1.json
+            size_bytes: 61098
+          UZ2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UZ2.json
+            size_bytes: 58360
+          UZ3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UZ3.json
+            size_bytes: 62650
+          UZ4.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              Urbaines/UZ4.json
+            size_bytes: 66085
+      Zones À Urbaniser:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+          À Urbaniser
+        contents:
+          AU.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AU.json
+            size_bytes: 45177
+          AUC1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUC1.json
+            size_bytes: 43960
+          AUC2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUC2.json
+            size_bytes: 62034
+          AUC3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUC3.json
+            size_bytes: 43006
+          AUCRU10.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUCRU10.json
+            size_bytes: 56362
+          AUD1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUD1.json
+            size_bytes: 45137
+          AUD2.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUD2.json
+            size_bytes: 55268
+          AUD3.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUD3.json
+            size_bytes: 53569
+          AUD4.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUD4.json
+            size_bytes: 103559
+          AUE1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUE1.json
+            size_bytes: 85644
+          AUP1r.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUP1r.json
+            size_bytes: 64039
+          AUZ1.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+              À Urbaniser/AUZ1.json
+            size_bytes: 45927
+    source_plu_url: https://cloud.grenoblealpesmetropole.fr/index.php/s/Db4aYze8MYkdJdo
+  nantes:
+    type: directory
+    path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes
+    contents:
+      Zones Agricoles:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Agricoles
+        contents:
+          A.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              Agricoles/A.json
+            size_bytes: 69649
+      Zones Naturelles et Forestières:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Naturelles
+          et Forestières
+        contents:
+          N.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              Naturelles et Forestières/N.json
+            size_bytes: 62480
+      Zones Urbaines:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Urbaines
+        contents:
+          UE.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              Urbaines/UE.json
+            size_bytes: 58107
+          UM.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              Urbaines/UM.json
+            size_bytes: 74083
+          US.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              Urbaines/US.json
+            size_bytes: 37397
+      Zones À Urbaniser:
+        type: directory
+        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones À
+          Urbaniser
+        contents:
+          1AU.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              À Urbaniser/1AU.json
+            size_bytes: 38768
+          2AU.json:
+            type: file
+            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
+              À Urbaniser/2AU.json
+            size_bytes: 51653
+    source_plu_url: https://metropole.nantes.fr/mes-services-mon-quotidien/le-plan-local-d-urbanisme-metropolitain-le-plum#sync_doc-98437

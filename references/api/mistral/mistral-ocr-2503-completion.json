@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "index": 1,
+      "markdown": "The text from first page ![img_0.jpeg](img_0.jpeg) ![img_1.jpeg](img_1.jpeg)",
+      "images": [
+        {
+          "id": "img_0.jpeg",
+          "image_base64": "base64_encoded_image_0"
+        },
+        {
+          "name_img": "img_1.jpeg",
+          "top_left": 0,
+          "top_right": 0,
+          "bottom_left": 0,
+          "bottom_right": 0,
+          "image_base64": "base64_encoded_image_1"
+        }
+      ],
+      "dimensions": {
+        "dpi": 300,
+        "height": 297,
+        "width": 210
+      }
+    }
+  ],
+  "model": "model_name",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 200
+  }
+}
