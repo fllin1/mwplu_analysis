@@ -41,16 +41,19 @@ def ocr(
         ...,
         "--date-creation-source-document",
         "-dc",
-        help="The date of the source document.",
+        help="The date of the source document. (ex: 2024-07-05)",
     ),
     name_city: str = typer.Option(
-        ..., "--name-city", "-nc", help="The name of the city."
+        ..., "--name-city", "-nc", help="The name of the city. (ex: grenoble)"
     ),
     name_zoning: str = typer.Option(
-        "None", "--name-zoning", "-nz", help="The name of the zoning."
+        "None",
+        "--name-zoning",
+        "-nz",
+        help="The name of the zoning. (ex: Zones Urbaines)",
     ),
     name_document: str = typer.Option(
-        ..., "--name-document", "-nd", help="The name of the document."
+        ..., "--name-document", "-nd", help="The name of the document. (ex: UA3)"
     ),
 ) -> None:
     """
@@ -106,9 +109,14 @@ def ocr(
 
 @app.command()
 def extract_pages(
-    name_city: str = typer.Option(..., "--name-city", "-nc", help="The city name."),
+    name_city: str = typer.Option(
+        ..., "--name-city", "-nc", help="The city name. (ex: grenoble)"
+    ),
     name_document: str = typer.Option(
-        ..., "--name-document", "-nd", help="The name of the document."
+        ...,
+        "--name-document",
+        "-nd",
+        help="The name of the document. (ex: Zones Urbaines)",
     ),
 ) -> None:
     """
@@ -143,18 +151,20 @@ def extract_pages(
 
 @app.command()
 def synthesis(
-    name_city: str = typer.Option(..., "--name-city", "-nc", help="The city name."),
+    name_city: str = typer.Option(
+        ..., "--name-city", "-nc", help="The city name. (ex: grenoble)"
+    ),
     name_zoning: str = typer.Option(
-        ..., "--name-zoning", "-nz", help="The name of the zoning."
+        ..., "--name-zoning", "-nz", help="The name of the zoning. (ex: Zones Urbaines)"
     ),
     name_document: str = typer.Option(
-        ..., "--name-document", "-nd", help="The name of the document."
+        ..., "--name-document", "-nd", help="The name of the document. (ex: UA3)"
     ),
     dispositions_generales: str = typer.Option(
         "None",
         "--dispositions-generales",
         "-dg",
-        help="Whether to synthesize with the dispositions générales.",
+        help="Whether to synthesize with the dispositions générales. (ex: Dispositions Générales)",
     ),
 ) -> None:
     """
@@ -196,12 +206,14 @@ def synthesis(
 
 @app.command()
 def reports(
-    name_city: str = typer.Option(..., "--name-city", "-nc", help="The city name."),
+    name_city: str = typer.Option(
+        ..., "--name-city", "-nc", help="The city name. (ex: grenoble)"
+    ),
     name_zoning: str = typer.Option(
-        ..., "--name-zoning", "-nz", help="The name of the zoning."
+        ..., "--name-zoning", "-nz", help="The name of the zoning. (ex: Zones Urbaines)"
     ),
     name_document: str = typer.Option(
-        ..., "--name-document", "-nd", help="The name of the document."
+        ..., "--name-document", "-nd", help="The name of the document. (ex: UA3)"
     ),
 ) -> None:
     """
@@ -212,10 +224,10 @@ def reports(
         name_document (str): The name of the document.
     """
     input_path = PROCESSED_DATA_DIR / name_city / name_zoning / f"{name_document}.json"
-    assert input_path.exists()
+
     references = {
         "source_plu_url": get_source_plu_url(name_city),
-        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
+        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",  # pylint: disable=C0301
         "politiques_vente": "https://mwplu.com/politiques-de-ventes",
         "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
         "cgu": "https://mwplu.com/terms",
@@ -276,39 +288,18 @@ def upload_supabase(
         json_files = list(PROCESSED_DATA_DIR.glob("**/*.json"))
 
         for json_file in json_files:
-            try:
-                # Extract metadata from file path
-                parts = json_file.relative_to(PROCESSED_DATA_DIR).parts
-                if len(parts) >= 3:
-                    city = parts[0]
-                    zoning = parts[1]
-                    document = json_file.stem
+            # Extract metadata from file path
+            parts = json_file.relative_to(PROCESSED_DATA_DIR).parts
+            if len(parts) >= 3:
+                city = parts[0]
+                zoning = parts[1]
+                document = json_file.stem
 
-                    # Generate PDF report first
-                    references = {
-                        "source_plu_url": get_source_plu_url(city),
-                        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
-                        "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-                        "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-                        "cgu": "https://mwplu.com/terms",
-                    }
-
-                    output_path = PDF_DIR / city / zoning / f"{document}.pdf"
-                    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-                    generate_pdf_report(
-                        json_path=str(json_file),
-                        logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-                        references=references,
-                        output_path=str(output_path),
-                        page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
-                    )
-
-            except Exception as e:
-                logger.error(f"Error generating report for {json_file}: {e}")
+                # Generate PDF report
+                reports(name_city=city, name_zoning=zoning, name_document=document)
 
         # Then upload all data to Supabase
-        process_all_json_files(supabase, get_source_plu_url)
+        process_all_json_files(supabase=supabase)
 
     else:
         # Process specific file(s)
@@ -325,32 +316,17 @@ def upload_supabase(
             logger.error(f"File not found: {json_file}")
             return
 
-        # Generate PDF report first
-        references = {
-            "source_plu_url": get_source_plu_url(name_city),
-            "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
-            "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-            "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-            "cgu": "https://mwplu.com/terms",
-        }
-
-        output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-
-        generate_pdf_report(
-            json_path=str(json_file),
-            logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-            references=references,
-            output_path=str(output_path),
-            page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
+        # Generate PDF report
+        reports(
+            name_city=name_city, name_zoning=name_zoning, name_document=name_document
         )
 
         # Upload to Supabase
         logger.info(f"Uploading {json_file} to Supabase...")
-        result = process_json_file(supabase, json_file, get_source_plu_url)
-        logger.success(f"✅ Uploaded document: {result['id']}")
+        process_json_file(supabase=supabase, json_file_path=json_file)
+        logger.success(f"Uploaded document: {json_file}")
 
-    logger.success("🚀 Upload to Supabase completed!")
+    logger.success("Upload to Supabase completed!")
 
 
 if __name__ == "__main__":
