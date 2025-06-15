@@ -59,7 +59,12 @@ def get_or_create_zoning(supabase: Client, zoning_name: str, city_id: str) -> st
     return insert_result.data[0]["id"]
 
 
-def get_or_create_zone_en(supabase: Client, zone_name: str, zoning_id: str) -> str:
+def get_or_create_zone(
+    supabase: Client,
+    zone_name: str,
+    zoning_id: str,
+    zones_constructibles: Optional[bool] = None,
+) -> str:
     """
     Get or create a zone in the database.
 
@@ -67,6 +72,7 @@ def get_or_create_zone_en(supabase: Client, zone_name: str, zoning_id: str) -> s
         supabase (Client): The Supabase client.
         zone_name (str): The name of the zone.
         zoning_id (str): The id of the zoning.
+        zones_constructibles (Optional[bool]): Whether the zone is constructible.
     """
     result = (
         supabase.table("zones")
@@ -76,12 +82,20 @@ def get_or_create_zone_en(supabase: Client, zone_name: str, zoning_id: str) -> s
         .execute()
     )
     if result.data and len(result.data) > 0:
-        return result.data[0]["id"]
-    insert_result = (
-        supabase.table("zones")
-        .insert({"name": zone_name, "zoning_id": zoning_id})
-        .execute()
-    )
+        zone_id = result.data[0]["id"]
+        # Update zones_constructibles if provided and different
+        if zones_constructibles is not None:
+            supabase.table("zones").update(
+                {"zones_constructibles": zones_constructibles}
+            ).eq("id", zone_id).execute()
+        return zone_id
+
+    # Create new zone with zones_constructibles field
+    zone_data = {"name": zone_name, "zoning_id": zoning_id}
+    if zones_constructibles is not None:
+        zone_data["zones_constructibles"] = zones_constructibles
+
+    insert_result = supabase.table("zones").insert(zone_data).execute()
     return insert_result.data[0]["id"]
 
 
@@ -332,11 +346,12 @@ def pipeline_upload_document(
     name_zoning = metadata.get("name_zoning")
     name_zone = metadata.get("name_zone")
     name_typology = metadata.get("name_typology", "Aucune")
+    zones_constructibles = metadata.get("zones_constructibles")
 
     # Get or create all related entities
     city_id = get_or_create_city(supabase, name_city)
     zoning_id = get_or_create_zoning(supabase, name_zoning, city_id)
-    zone_id = get_or_create_zone_en(supabase, name_zone, zoning_id)
+    zone_id = get_or_create_zone(supabase, name_zone, zoning_id, zones_constructibles)
     typology_id = get_or_create_typology(supabase, name_typology)
 
     # Upload PDF to storage

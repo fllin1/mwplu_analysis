@@ -1,41 +1,43 @@
 # -*- coding: utf-8 -*-
 """
 This module provides functions to retrieve the source_plu_url for a given city from the
-plu_processed.yaml configuration.
+config/plu/references.json configuration.
 """
 
-import yaml
-from loguru import logger
+import json
 
 from src.config import CONFIG_DIR
 
 
-def get_source_plu_url(city_name: str) -> str:
+def get_references(city_name: str) -> str:
     """
-    Retrieve the source_plu_url for a given city from the plu_processed.yaml configuration.
+    Retrieve the references for a given city from the references.json configuration.
 
     Args:
         city_name (str): The name of the city
 
     Returns:
-        str: The source PLU URL for the city, or a default URL if not found
+        dict: The references for the city
     """
-    try:
-        config_file = CONFIG_DIR / "plu" / "plu_processed.yaml"
-        with open(config_file, "r", encoding="utf-8") as f:
-            config = yaml.safe_load(f)
+    config_file = CONFIG_DIR / "plu" / "references.json"
+    with open(config_file, "r", encoding="utf-8") as f:
+        config = json.load(f)
 
-        city_data = config.get("data", {}).get(city_name, {})
-        source_url = city_data.get("source_plu_url")
+    global_references = config.get("mwplu", {})
+    vocabulaire = global_references.get("vocabulaire")
+    politiques_vente = global_references.get("politiques_vente")
+    politique_confidentialite = global_references.get("politique_confidentialite")
+    cgu = global_references.get("cgu")
 
-        if source_url and source_url != "null":
-            return source_url
-        else:
-            logger.warning(
-                f"No source_plu_url configured for {city_name}, using default"
-            )
-            return "https://example.com/plu-not-configured"
+    city_data = config.get(city_name, {})
+    source_url = city_data.get("source_plu_url")
 
-    except Exception as e:
-        logger.error(f"Error reading source_plu_url for {city_name}: {e}")
-        return "https://example.com/plu-error"
+    references = {
+        "source_plu_url": source_url,
+        "vocabulaire": vocabulaire,
+        "politiques_vente": politiques_vente,
+        "politique_confidentialite": politique_confidentialite,
+        "cgu": cgu,
+    }
+
+    return references

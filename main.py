@@ -26,7 +26,7 @@ from src.mwplu.ocr import ocr_mistral
 from src.mwplu.post_data import process_all_json_files, process_json_file
 from src.mwplu.synthesis import synthesis_gemini
 from src.utils.json import save_as_json
-from src.utils.plu import get_source_plu_url
+from src.utils.plu import get_references
 
 # Configure logging to reduce verbosity
 logging.getLogger("httpx").setLevel(logging.WARNING)
@@ -213,13 +213,7 @@ def reports(
     """
     input_path = PROCESSED_DATA_DIR / name_city / name_zoning / f"{name_document}.json"
     assert input_path.exists()
-    references = {
-        "source_plu_url": get_source_plu_url(name_city),
-        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
-        "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-        "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-        "cgu": "https://mwplu.com/terms",
-    }
+    references = get_references(name_city)
 
     output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -285,30 +279,22 @@ def upload_supabase(
                     document = json_file.stem
 
                     # Generate PDF report first
-                    references = {
-                        "source_plu_url": get_source_plu_url(city),
-                        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
-                        "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-                        "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-                        "cgu": "https://mwplu.com/terms",
-                    }
-
                     output_path = PDF_DIR / city / zoning / f"{document}.pdf"
                     output_path.parent.mkdir(parents=True, exist_ok=True)
 
                     generate_pdf_report(
                         json_path=str(json_file),
                         logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-                        references=references,
+                        references=get_references(city_name=city),
                         output_path=str(output_path),
                         page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
                     )
 
-            except Exception as e:
+            except Exception as e:  # pylint: disable=broad-exception-caught
                 logger.error(f"Error generating report for {json_file}: {e}")
 
         # Then upload all data to Supabase
-        process_all_json_files(supabase, get_source_plu_url)
+        process_all_json_files(supabase=supabase)
 
     else:
         # Process specific file(s)
@@ -326,28 +312,20 @@ def upload_supabase(
             return
 
         # Generate PDF report first
-        references = {
-            "source_plu_url": get_source_plu_url(name_city),
-            "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",
-            "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-            "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-            "cgu": "https://mwplu.com/terms",
-        }
-
         output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         generate_pdf_report(
             json_path=str(json_file),
             logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-            references=references,
+            references=get_references(name_city),
             output_path=str(output_path),
             page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
         )
 
         # Upload to Supabase
         logger.info(f"Uploading {json_file} to Supabase...")
-        result = process_json_file(supabase, json_file, get_source_plu_url)
+        result = process_json_file(supabase=supabase, json_file_path=json_file)
         logger.success(f"✅ Uploaded document: {result['id']}")
 
     logger.success("🚀 Upload to Supabase completed!")

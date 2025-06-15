@@ -10,6 +10,7 @@ Author: Grey Panda
 """
 
 import os
+import re
 import subprocess
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -26,7 +27,6 @@ from src.config import (
     PROCESSED_DATA_DIR,
 )
 from src.mwplu.post_data import process_all_json_files, process_json_file
-from src.utils.plu import get_source_plu_url
 
 
 class PipelineStage(Enum):
@@ -71,8 +71,7 @@ class BaseProcessor(ABC):
             try:
                 with open(yaml_file, "r", encoding="utf-8") as f:
                     configs[config_name] = yaml.safe_load(f)
-                logger.debug(f"Loaded config: {config_name}")
-            except Exception as e:
+            except Exception as e:  # pylint: disable=broad-exception-caught
                 logger.error(f"Error loading {yaml_file}: {e}")
 
         return configs
@@ -80,16 +79,16 @@ class BaseProcessor(ABC):
     @abstractmethod
     def generate_tasks(self) -> List[ProcessingTask]:
         """Generate a list of processing tasks."""
-        pass
+        pass  # pylint: disable=unnecessary-pass
 
     @abstractmethod
     def execute_task(self, task: ProcessingTask) -> bool:
         """Execute a single task. Returns True if successful."""
-        pass
+        pass  # pylint: disable=unnecessary-pass
 
 
 class MainPipelineProcessor(BaseProcessor):
-    """Processor for main.py pipeline commands (OCR, extract_pages, synthesis, reports)."""
+    """Processor for main.py pipeline commands (OCR, extract_pages, synthesis)."""
 
     def __init__(self, config_dir: Path = CONFIG_DIR):
         super().__init__(config_dir)
@@ -290,7 +289,7 @@ class MainPipelineProcessor(BaseProcessor):
                     cmd.extend(["--name-document", task.document])
 
             logger.info(f"Executing: {' '.join(cmd)}")
-            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            subprocess.run(cmd, capture_output=True, text=True, check=True)
             logger.success(f"Task completed: {task.stage.value} for {task.city}")
             return True
 
@@ -299,7 +298,7 @@ class MainPipelineProcessor(BaseProcessor):
             logger.error(f"Command: {' '.join(cmd)}")
             logger.error(f"Error: {e.stderr}")
             return False
-        except Exception as e:
+        except Exception as e:  # pylint: disable=broad-exception-caught
             logger.error(
                 f"Unexpected error in task {task.stage.value} for {task.city}: {e}"
             )
@@ -307,8 +306,6 @@ class MainPipelineProcessor(BaseProcessor):
 
     def _is_date_format(self, date_str: str) -> bool:
         """Check if string matches date format YYYY-MM-DD."""
-        import re
-
         return bool(re.match(r"^\d{4}-\d{2}-\d{2}$", date_str))
 
 
@@ -357,21 +354,21 @@ class SupabaseProcessor(BaseProcessor):
         try:
             if task.city == "all":
                 # Process all JSON files
-                process_all_json_files(self.supabase, get_source_plu_url)
+                process_all_json_files(self.supabase)
             else:
                 # Process specific city files
                 city_dir = PROCESSED_DATA_DIR / task.city
                 json_files = list(city_dir.glob("**/*.json"))
 
                 success_count = 0
-                for json_file in json_files:
+                for json_file_path in json_files:
                     try:
-                        result = process_json_file(
-                            self.supabase, json_file, get_source_plu_url
+                        process_json_file(
+                            supabase=self.supabase, json_file_path=json_file_path
                         )
                         success_count += 1
-                    except Exception as e:
-                        logger.error(f"Error uploading {json_file}: {e}")
+                    except Exception as e:  # pylint: disable=broad-exception-caught
+                        logger.error(f"Error uploading {json_file_path}: {e}")
 
                 logger.info(
                     f"Uploaded {success_count}/{len(json_files)} files for {task.city}"
@@ -379,7 +376,7 @@ class SupabaseProcessor(BaseProcessor):
 
             return True
 
-        except Exception as e:
+        except Exception as e:  # pylint: disable=broad-exception-caught
             logger.error(f"Error in Supabase upload task for {task.city}: {e}")
             return False
 
@@ -446,7 +443,7 @@ class BulkProcessor:
         """Get list of available cities from all configurations."""
         cities = set()
 
-        for config_name, config_data in self.main_processor.yaml_configs.items():
+        for config_data in self.main_processor.yaml_configs.values():
             data = config_data.get("data", {})
             cities.update(data.keys())
 

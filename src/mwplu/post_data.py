@@ -18,12 +18,12 @@ from supabase import Client
 from src.api.supabase import pipeline_upload_document
 from src.mwplu.generator.html_generator import generate_html_report
 from src.config import HTML_DIR, PROCESSED_DATA_DIR
+from src.utils.plu import get_references
 
 
 def process_plu_document(
     supabase: Client,
     json_content: Dict[str, Any],
-    source_plu_url: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Process a PLU document: generate HTML and upload to Supabase.
@@ -62,7 +62,7 @@ def process_plu_document(
         supabase=supabase,
         content_json=json_content,
         html_content=html_content,
-        source_plu_url=source_plu_url,
+        source_plu_url=get_references(city_name),
     )
     return result
 
@@ -70,7 +70,6 @@ def process_plu_document(
 def process_json_file(
     supabase: Client,
     json_file_path: Path,
-    get_source_plu_url_func=None,
 ) -> Dict[str, Any]:
     """
     Process a single JSON file.
@@ -78,7 +77,7 @@ def process_json_file(
     Args:
         supabase: The Supabase client
         json_file_path: Path to the JSON file
-        get_source_plu_url_func: Function to get source PLU URL for a city
+        source_plu_url: The source PLU URL for a city
 
     Returns:
         Dict[str, Any]: The inserted document data from Supabase
@@ -86,42 +85,27 @@ def process_json_file(
     with open(json_file_path, "r", encoding="utf-8") as f:
         json_content = json.load(f)
 
-    # Get source_plu_url if function is provided
-    source_plu_url = None
-    if get_source_plu_url_func:
-        metadata = json_content.get("metadata", {})
-        city_name = metadata.get("name_city")
-        if city_name:
-            source_plu_url = get_source_plu_url_func(city_name)
-            logger.debug(f"Retrieved source_plu_url for {city_name}: {source_plu_url}")
-        else:
-            logger.warning(f"No city_name found in metadata for {json_file_path}")
-    else:
-        logger.warning(f"No get_source_plu_url_func provided for {json_file_path}")
-
-    return process_plu_document(supabase, json_content, source_plu_url)
+    return process_plu_document(supabase, json_content)
 
 
 def process_all_json_files(
     supabase: Client,
-    get_source_plu_url_func=None,
 ) -> None:
     """
     Process all JSON files in the processed directory.
 
     Args:
         supabase: The Supabase client
-        get_source_plu_url_func: Function to get source PLU URL for a city
     """
     json_files = list(PROCESSED_DATA_DIR.glob("**/*.json"))
 
     success_count = 0
     error_count = 0
 
-    for json_file in json_files:
+    for json_file_path in json_files:
         try:
-            result = process_json_file(supabase, json_file, get_source_plu_url_func)
+            process_json_file(supabase=supabase, json_file_path=json_file_path)
             success_count += 1
         except Exception as e:  # pylint: disable=broad-exception-caught
-            logger.error(f"Error processing {json_file}: {e}")
+            logger.error(f"Error processing {json_file_path}: {e}")
             error_count += 1
