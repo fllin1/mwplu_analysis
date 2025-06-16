@@ -218,13 +218,10 @@ def reports(
     output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    logger.debug(f"Generating PDF report for {input_path}")
     generate_pdf_report(
         json_path=str(input_path),
-        logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
         references=references,
         output_path=str(output_path),
-        page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
     )
 
 
@@ -278,17 +275,29 @@ def upload_supabase(
                     zoning = parts[1]
                     document = json_file.stem
 
-                    # Generate PDF report first
+                    # Generate PDF report directly
+                    input_path = json_file
                     output_path = PDF_DIR / city / zoning / f"{document}.pdf"
-                    output_path.parent.mkdir(parents=True, exist_ok=True)
 
-                    generate_pdf_report(
-                        json_path=str(json_file),
-                        logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-                        references=get_references(city_name=city),
-                        output_path=str(output_path),
-                        page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
-                    )
+                    # Check if PDF already exists
+                    if not output_path.exists():
+                        logger.info(f"Generating PDF for {city}/{zoning}/{document}")
+
+                        # Create output directory
+                        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+                        # Get references
+                        references = get_references(city)
+
+                        # Generate PDF report
+                        generate_pdf_report(
+                            json_path=str(input_path),
+                            references=references,
+                            output_path=str(output_path),
+                        )
+                        logger.success(f"✅ Generated PDF: {output_path}")
+                    else:
+                        logger.debug(f"PDF already exists: {output_path}")
 
             except Exception as e:  # pylint: disable=broad-exception-caught
                 logger.error(f"Error generating report for {json_file}: {e}")
@@ -311,22 +320,33 @@ def upload_supabase(
             logger.error(f"File not found: {json_file}")
             return
 
-        # Generate PDF report first
+        # Generate PDF report directly
         output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
-        output_path.parent.mkdir(parents=True, exist_ok=True)
 
-        generate_pdf_report(
-            json_path=str(json_file),
-            logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
-            references=get_references(name_city),
-            output_path=str(output_path),
-            page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
-        )
+        # Check if PDF already exists
+        if not output_path.exists():
+            logger.info(f"Generating PDF for {name_city}/{name_zoning}/{name_document}")
+
+            # Create output directory
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+
+            # Get references
+            references = get_references(name_city)
+
+            # Generate PDF report
+            generate_pdf_report(
+                json_path=str(json_file),
+                references=references,
+                output_path=str(output_path),
+            )
+            logger.success(f"✅ Generated PDF: {output_path}")
+        else:
+            logger.debug(f"PDF already exists: {output_path}")
 
         # Upload to Supabase
-        logger.info(f"Uploading {json_file} to Supabase...")
+        logger.info(f"📤 Uploading {json_file} to Supabase...")
         result = process_json_file(supabase=supabase, json_file_path=json_file)
-        logger.success(f"✅ Uploaded document: {result['id']}")
+        logger.success(f"✅ Uploaded document to Supabase: {result['id']}")
 
     logger.success("🚀 Upload to Supabase completed!")
 

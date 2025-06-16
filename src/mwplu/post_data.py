@@ -10,7 +10,7 @@ Author: Grey Panda
 
 import json
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 from loguru import logger
 from supabase import Client
@@ -49,6 +49,8 @@ def process_plu_document(
             "Missing required metadata fields: name_city, name_zoning, or name_zone"
         )
 
+    logger.info(f"Processing document: {city_name}/{zoning_name}/{zone_name}")
+
     # Generate HTML content and save it
     html_output_path = HTML_DIR / city_name / zoning_name / f"{zone_name}.html"
     html_output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -62,8 +64,9 @@ def process_plu_document(
         supabase=supabase,
         content_json=json_content,
         html_content=html_content,
-        source_plu_url=get_references(city_name),
+        source_plu_url=get_references(city_name)["source_plu_url"],
     )
+    logger.success(f"Uploaded to Supabase: {city_name}/{zoning_name}/{zone_name}")
     return result
 
 
@@ -98,14 +101,25 @@ def process_all_json_files(
         supabase: The Supabase client
     """
     json_files = list(PROCESSED_DATA_DIR.glob("**/*.json"))
+    total_files = len(json_files)
+
+    logger.info(f"🚀 Starting bulk upload to Supabase: {total_files} files to process")
 
     success_count = 0
     error_count = 0
 
-    for json_file_path in json_files:
+    for i, json_file_path in enumerate(json_files, 1):
         try:
-            process_json_file(supabase=supabase, json_file_path=json_file_path)
+            logger.info(f"📂 Processing file {i}/{total_files}: {json_file_path.name}")
+            result = process_json_file(supabase=supabase, json_file_path=json_file_path)
             success_count += 1
+            logger.debug(f"File {i}/{total_files} completed successfully")
         except Exception as e:  # pylint: disable=broad-exception-caught
-            logger.error(f"Error processing {json_file_path}: {e}")
+            logger.error(
+                f"❌ Error processing file {i}/{total_files} ({json_file_path}): {e}"
+            )
             error_count += 1
+
+    logger.info(
+        f"📊 Bulk upload completed: {success_count} successful, {error_count} failed out of {total_files} total"
+    )

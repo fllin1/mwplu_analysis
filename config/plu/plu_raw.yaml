@@ -1,57 +1,73 @@
 metadata:
   description: Raw PLU data files before processing
-  generated_at: /home/greypanda/projets/mwplu_analysis
-  total_items: 3
+  generated_at: C:\Users\Regium\Repositories\mwplu_analysis
+  total_items: 4
 data:
+  desktop.ini:
+    type: file
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\desktop.ini
+    size_bytes: 246
   grenoble:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble
     contents:
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\desktop.ini
+        size_bytes: 246
       dispositions_generales.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/dispositions_generales.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\dispositions_generales.json
         size_bytes: 2592028
       zones_a_urbaniser.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_a_urbaniser.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\zones_a_urbaniser.json
         size_bytes: 2237331
       zones_agricoles_et_naturelles.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_agricoles_et_naturelles.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\zones_agricoles_et_naturelles.json
         size_bytes: 1236333
       zones_dediees.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_dediees.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\zones_dediees.json
         size_bytes: 3047155
       zones_urbaines_mixtes.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/grenoble/zones_urbaines_mixtes.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\grenoble\zones_urbaines_mixtes.json
         size_bytes: 8112339
   lille:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/raw/lille
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille
     contents:
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille\desktop.ini
+        size_bytes: 246
       dispositions_generales.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/dispositions_generales.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille\dispositions_generales.json
         size_bytes: 410580
       zones_constructibles.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_constructibles.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille\zones_constructibles.json
         size_bytes: 1833933
       zones_inconstructibles.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_inconstructibles.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille\zones_inconstructibles.json
         size_bytes: 90860
       zones_specifiques.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/lille/zones_specifiques.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\lille\zones_specifiques.json
         size_bytes: 2297149
   nantes:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/raw/nantes
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\nantes
     contents:
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\nantes\desktop.ini
+        size_bytes: 246
       plu_general.json:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/raw/nantes/plu_general.json
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\raw\nantes\plu_general.json
         size_bytes: 4853853

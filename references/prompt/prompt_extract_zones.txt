@@ -9,7 +9,7 @@ Tu es un expert en analyse des Plans Locaux d'Urbanisme. Ta mission : créer un 
 ### Zonages principaux
 - **Critère :** Section dédiée dans le règlement avec articles spécifiques
 - **`code_zone` :** Code officiel de la zone (UA, UB, UC, 1AU, 2AU, A, Ap, N, Nh, etc.)
-- **`categorie_generale` :** Catégorie générale telle qu'indiquée dans le document (généralement : "Zones Urbaines", "Zones À Urbaniser", "Zones Agricoles", "Zones Naturelles et Forestières")
+- **`categorie_generale` :** Catégorie générale telle qu'indiquée dans le document (généralement : "Zones Urbaines", "Zones À Urbaniser", "Zones Agricoles", "Zones Naturelles et Forestières", "Zones Spécifiques")
 - **Ignorer :** Zones mentionnées sans développement réglementaire propre
 
 ### Dispositions Générales
