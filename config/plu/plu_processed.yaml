@@ -1,308 +1,1662 @@
 metadata:
   description: Processed PLU data ready for analysis
-  generated_at: /home/greypanda/projets/mwplu_analysis
-  total_items: 2
+  generated_at: C:\Users\Regium\Repositories\mwplu_analysis
+  total_items: 4
 data:
+  desktop.ini:
+    type: file
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\desktop.ini
+    size_bytes: 246
   grenoble:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble
     contents:
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\desktop.ini
+        size_bytes: 246
       Zones Agricoles:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           Agricoles
         contents:
           A.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Agricoles/A.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Agricoles\A.json
             size_bytes: 69908
           AL.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Agricoles/AL.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Agricoles\AL.json
             size_bytes: 48392
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Agricoles\desktop.ini
+            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           Naturelles et Forestières
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Naturelles et Forestières\desktop.ini
+            size_bytes: 246
           N.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Naturelles et Forestières/N.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Naturelles et Forestières\N.json
             size_bytes: 58041
           NL.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Naturelles et Forestières/NL.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Naturelles et Forestières\NL.json
             size_bytes: 71796
       Zones Urbaines:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           Urbaines
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\desktop.ini
+            size_bytes: 246
           UA1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UA1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UA1.json
             size_bytes: 60593
           UA2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UA2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UA2.json
             size_bytes: 63769
           UA3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UA3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UA3.json
             size_bytes: 74311
           UB.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UB.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UB.json
             size_bytes: 54178
           UC1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UC1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UC1.json
             size_bytes: 85932
           UC2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UC2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UC2.json
             size_bytes: 57209
           UC3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UC3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UC3.json
             size_bytes: 61992
           UCRU1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU1.json
             size_bytes: 69294
           UCRU11.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU11.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU11.json
             size_bytes: 74081
           UCRU2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU2.json
             size_bytes: 68319
           UCRU3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU3.json
             size_bytes: 73435
           UCRU4.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU4.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU4.json
             size_bytes: 70334
           UCRU5.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU5.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU5.json
             size_bytes: 71162
           UCRU6.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU6.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU6.json
             size_bytes: 53304
           UCRU7.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU7.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU7.json
             size_bytes: 47675
           UCRU9.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UCRU9.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UCRU9.json
             size_bytes: 82095
           UD1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UD1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UD1.json
             size_bytes: 81216
           UD2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UD2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UD2.json
             size_bytes: 59950
           UD3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UD3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UD3.json
             size_bytes: 58187
           UE1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UE1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UE1.json
             size_bytes: 56428
           UE2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UE2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UE2.json
             size_bytes: 76033
           UE3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UE3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UE3.json
             size_bytes: 62345
           UE4.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UE4.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UE4.json
             size_bytes: 64651
           UV.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UV.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UV.json
             size_bytes: 68853
           UZ1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UZ1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UZ1.json
             size_bytes: 61098
           UZ2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UZ2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UZ2.json
             size_bytes: 58360
           UZ3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UZ3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UZ3.json
             size_bytes: 62650
           UZ4.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              Urbaines/UZ4.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              Urbaines\UZ4.json
             size_bytes: 66085
       Zones À Urbaniser:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           À Urbaniser
         contents:
           AU.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AU.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AU.json
             size_bytes: 45177
           AUC1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUC1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUC1.json
             size_bytes: 43960
           AUC2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUC2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUC2.json
             size_bytes: 62034
           AUC3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUC3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUC3.json
             size_bytes: 43006
           AUCRU10.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUCRU10.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUCRU10.json
             size_bytes: 56362
           AUD1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUD1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUD1.json
             size_bytes: 45137
           AUD2.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUD2.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUD2.json
             size_bytes: 55268
           AUD3.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUD3.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUD3.json
             size_bytes: 53569
           AUD4.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUD4.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUD4.json
             size_bytes: 103559
           AUE1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUE1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUE1.json
             size_bytes: 85644
           AUP1r.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUP1r.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUP1r.json
             size_bytes: 64039
           AUZ1.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/grenoble/Zones
-              À Urbaniser/AUZ1.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\AUZ1.json
             size_bytes: 45927
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
+              À Urbaniser\desktop.ini
+            size_bytes: 246
     source_plu_url: https://cloud.grenoblealpesmetropole.fr/index.php/s/Db4aYze8MYkdJdo
-  nantes:
+  lille:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille
     contents:
       Zones Agricoles:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Agricoles
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+          Agricoles
         contents:
           A.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              Agricoles/A.json
-            size_bytes: 69649
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Agricoles\A.json
+            size_bytes: 16029
+          AS1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Agricoles\AS1.json
+            size_bytes: 18676
+          AS2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Agricoles\AS2.json
+            size_bytes: 16276
       Zones Naturelles et Forestières:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Naturelles
-          et Forestières
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+          Naturelles et Forestières
         contents:
           N.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              Naturelles et Forestières/N.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\N.json
+            size_bytes: 12857
+          NE.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NE.json
+            size_bytes: 18962
+          NJ.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NJ.json
+            size_bytes: 10755
+          NP.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NP.json
+            size_bytes: 20689
+          NS1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NS1.json
+            size_bytes: 22410
+          NS2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NS2.json
+            size_bytes: 19761
+          NZ.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Naturelles et Forestières\NZ.json
+            size_bytes: 15105
+      Zones Spécifiques:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+          Spécifiques
+        contents:
+          AUCAOP2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\AUCAOP2.json
+            size_bytes: 37505
+          AUCMZ13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\AUCMZ13.json
+            size_bytes: 35744
+          UAL.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UAL.json
+            size_bytes: 9819
+          UCH.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UCH.json
+            size_bytes: 42659
+          UCJ.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UCJ.json
+            size_bytes: 65301
+          UCP.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UCP.json
+            size_bytes: 49617
+          UEP 1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UEP 1.json
+            size_bytes: 42178
+          UEP.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UEP.json
+            size_bytes: 38064
+          UGS.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UGS.json
+            size_bytes: 33515
+          UH.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UH.json
+            size_bytes: 29847
+          ULM.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\ULM.json
+            size_bytes: 31999
+          UOP1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP1.json
+            size_bytes: 52005
+          UOP10.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP10.json
+            size_bytes: 38435
+          UOP11.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP11.json
+            size_bytes: 52539
+          UOP12.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP12.json
+            size_bytes: 72686
+          UOP13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP13.json
+            size_bytes: 38178
+          UOP14.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP14.json
+            size_bytes: 38506
+          UOP15.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP15.json
+            size_bytes: 52205
+          UOP16.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP16.json
+            size_bytes: 58682
+          UOP17.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP17.1.json
+            size_bytes: 43550
+          UOP17.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP17.2.json
+            size_bytes: 30741
+          UOP17.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP17.3.json
+            size_bytes: 54689
+          UOP18.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP18.json
+            size_bytes: 57324
+          UOP3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP3.json
+            size_bytes: 80665
+          UOP4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP4.json
+            size_bytes: 64194
+          UOP5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP5.json
+            size_bytes: 70950
+          UOP6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP6.json
+            size_bytes: 42454
+          UOP7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP7.json
+            size_bytes: 53360
+          UOP8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP8.json
+            size_bytes: 41500
+          UOP9.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP9.1.json
+            size_bytes: 40171
+          UOP9.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UOP9.2.json
+            size_bytes: 43930
+          UP.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UP.json
+            size_bytes: 37648
+          UPL 1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPL 1.1.json
+            size_bytes: 42653
+          UPL 1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPL 1.2.json
+            size_bytes: 49699
+          UPL.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPL.json
+            size_bytes: 37998
+          UPZ37.5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPZ37.5.json
+            size_bytes: 43147
+          UPZ47.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPZ47.3.json
+            size_bytes: 39377
+          UPZ48.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UPZ48.2.json
+            size_bytes: 27381
+          UU.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UU.json
+            size_bytes: 27478
+          UV1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UV1.json
+            size_bytes: 38639
+          UV2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UV2.1.json
+            size_bytes: 49252
+          UV2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UV2.json
+            size_bytes: 50346
+          UZ11.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ11.1.json
+            size_bytes: 39163
+          UZ11.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ11.2.json
+            size_bytes: 42031
+          UZ11.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ11.3.json
+            size_bytes: 40433
+          UZ12.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ12.1.json
+            size_bytes: 50125
+          UZ12.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ12.2.json
+            size_bytes: 41308
+          UZ15.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ15.json
+            size_bytes: 46618
+          UZ17.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ17.1.json
+            size_bytes: 40344
+          UZ17.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ17.2.json
+            size_bytes: 48285
+          UZ18.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ18.json
+            size_bytes: 46747
+          UZ2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ2.json
+            size_bytes: 55226
+          UZ20.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ20.json
+            size_bytes: 59088
+          UZ21.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ21.1.json
+            size_bytes: 38624
+          UZ22.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ22.json
+            size_bytes: 51209
+          UZ24.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ24.json
+            size_bytes: 49552
+          UZ25.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ25.json
+            size_bytes: 60750
+          UZ26.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ26.1.json
+            size_bytes: 46577
+          UZ26.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ26.2.json
+            size_bytes: 40715
+          UZ27.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ27.json
+            size_bytes: 54370
+          UZ29.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ29.json
+            size_bytes: 46658
+          UZ30.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ30.1.json
+            size_bytes: 42713
+          UZ30.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ30.2.json
+            size_bytes: 45401
+          UZ30.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ30.3.json
+            size_bytes: 49087
+          UZ31.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ31.1.json
+            size_bytes: 39914
+          UZ31.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ31.2.json
+            size_bytes: 50445
+          UZ33.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ33.json
+            size_bytes: 35985
+          UZ37.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ37.1.json
+            size_bytes: 51991
+          UZ37.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ37.2.json
+            size_bytes: 51966
+          UZ37.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ37.3.json
+            size_bytes: 53663
+          UZ37.4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ37.4.json
+            size_bytes: 46976
+          UZ39.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ39.json
+            size_bytes: 50975
+          UZ41.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ41.1.json
+            size_bytes: 29858
+          UZ41.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ41.2.json
+            size_bytes: 37404
+          UZ42.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ42.1.json
+            size_bytes: 59919
+          UZ42.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ42.2.json
+            size_bytes: 39404
+          UZ43.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ43.1.json
+            size_bytes: 61384
+          UZ43.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ43.2.json
+            size_bytes: 49221
+          UZ44.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ44.1.json
+            size_bytes: 44799
+          UZ44.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ44.2.json
+            size_bytes: 39788
+          UZ45.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ45.1.json
+            size_bytes: 58682
+          UZ45.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ45.2.json
+            size_bytes: 45559
+          UZ45.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ45.3.json
+            size_bytes: 62584
+          UZ45.4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ45.4.json
+            size_bytes: 35642
+          UZ45.5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ45.5.json
+            size_bytes: 43830
+          UZ47.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ47.1.json
+            size_bytes: 36935
+          UZ47.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ47.2.json
+            size_bytes: 47929
+          UZ48.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ48.1.json
+            size_bytes: 38314
+          UZ49.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ49.json
+            size_bytes: 41570
+          UZ5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ5.json
+            size_bytes: 40224
+          UZ50.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ50.2.json
+            size_bytes: 68415
+          UZ50.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ50.3.json
+            size_bytes: 49694
+          UZ50.4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ50.4.json
+            size_bytes: 51614
+          UZ51.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ51.json
+            size_bytes: 35166
+          UZ55.2 À UZ55.15.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ55.2 À UZ55.15.json
+            size_bytes: 59388
+          UZ9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Spécifiques\UZ9.json
+            size_bytes: 23597
+      Zones Urbaines:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+          Urbaines
+        contents:
+          UAR1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR1.1.json
+            size_bytes: 23452
+          UAR1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR1.2.json
+            size_bytes: 14137
+          UAR2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR2.1.json
+            size_bytes: 15214
+          UAR2.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR2.2.json
+            size_bytes: 13851
+          UAR3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR3.1.json
+            size_bytes: 15711
+          UAR4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR4.1.json
+            size_bytes: 15584
+          UAR4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR4.2.json
+            size_bytes: 12284
+          UAR5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR5.1.json
+            size_bytes: 21707
+          UAR6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR6.1.json
+            size_bytes: 22043
+          UAR7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR7.1.json
+            size_bytes: 15876
+          UAR7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR7.2.json
+            size_bytes: 17210
+          UAR8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UAR8.1.json
+            size_bytes: 10896
+          UCA1.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA1.1.1.json
+            size_bytes: 17409
+          UCA1.1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA1.1.2.json
+            size_bytes: 11121
+          UCA1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA1.1.json
+            size_bytes: 10893
+          UCA2.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA2.1.1.json
+            size_bytes: 15099
+          UCA2.1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA2.1.2.json
+            size_bytes: 16172
+          UCA2.1.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA2.1.3.json
+            size_bytes: 14201
+          UCA2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA2.1.json
+            size_bytes: 18938
+          UCA3.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA3.1.1.json
+            size_bytes: 16927
+          UCA3.1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA3.1.2.json
+            size_bytes: 24706
+          UCA3.1.3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA3.1.3.json
+            size_bytes: 11190
+          UCA3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA3.1.json
+            size_bytes: 24157
+          UCA4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA4.1.json
+            size_bytes: 19489
+          UCA4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA4.2.json
+            size_bytes: 16794
+          UCA5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA5.1.json
+            size_bytes: 19329
+          UCA6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA6.1.json
+            size_bytes: 20022
+          UCA6.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA6.2.json
+            size_bytes: 21567
+          UCA7.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA7.1.1.json
+            size_bytes: 11823
+          UCA7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA7.1.json
+            size_bytes: 19967
+          UCA7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCA7.2.json
+            size_bytes: 17738
+          UCM1.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM1.1.1.json
+            size_bytes: 26357
+          UCM2.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM2.1.1.json
+            size_bytes: 32823
+          UCM3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM3.1.json
+            size_bytes: 17282
+          UCM4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM4.1.json
+            size_bytes: 11853
+          UCM4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM4.2.json
+            size_bytes: 20538
+          UCM5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM5.1.json
+            size_bytes: 20754
+          UCM7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM7.1.json
+            size_bytes: 11779
+          UCM7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCM7.2.json
+            size_bytes: 10936
+          UCO1.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO1.1.1.json
+            size_bytes: 29802
+          UCO1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO1.1.json
+            size_bytes: 18940
+          UCO1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO1.2.json
+            size_bytes: 14204
+          UCO2.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO2.1.1.json
+            size_bytes: 28893
+          UCO2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO2.1.json
+            size_bytes: 13986
+          UCO2.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO2.2.json
+            size_bytes: 19744
+          UCO3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO3.1.json
+            size_bytes: 12927
+          UCO4.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO4.1.1.json
+            size_bytes: 33511
+          UCO4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO4.1.json
+            size_bytes: 11488
+          UCO4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO4.2.json
+            size_bytes: 20908
+          UCO5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO5.1.json
+            size_bytes: 20490
+          UCO6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO6.1.json
+            size_bytes: 20319
+          UCO6.2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO6.2.1.json
+            size_bytes: 17124
+          UCO6.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO6.2.json
+            size_bytes: 20503
+          UCO7.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO7.1.1.json
+            size_bytes: 31253
+          UCO7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO7.1.json
+            size_bytes: 20284
+          UCO7.2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO7.2.1.json
+            size_bytes: 29550
+          UCO7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO7.2.json
+            size_bytes: 11821
+          UCO8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UCO8.1.json
+            size_bytes: 9626
+          UE.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UE.json
+            size_bytes: 14993
+          UE1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UE1.json
+            size_bytes: 9948
+          UE2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UE2.json
+            size_bytes: 19195
+          UE3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UE3.json
+            size_bytes: 19445
+          UGB1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB1.1.json
+            size_bytes: 19214
+          UGB1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB1.2.json
+            size_bytes: 12647
+          UGB2.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB2.1.1.json
+            size_bytes: 36948
+          UGB2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB2.1.json
+            size_bytes: 22002
+          UGB2.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB2.2.json
+            size_bytes: 20075
+          UGB3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB3.1.json
+            size_bytes: 16975
+          UGB4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB4.1.json
+            size_bytes: 12877
+          UGB4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB4.2.json
+            size_bytes: 20369
+          UGB5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB5.1.json
+            size_bytes: 15991
+          UGB6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB6.1.json
+            size_bytes: 21254
+          UGB6.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB6.2.json
+            size_bytes: 13636
+          UGB7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB7.1.json
+            size_bytes: 21525
+          UGB7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB7.2.json
+            size_bytes: 12689
+          UGB8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGB8.1.json
+            size_bytes: 20108
+          UGE1.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE1.1.1.json
+            size_bytes: 21594
+          UGE1.1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE1.1.2.json
+            size_bytes: 23293
+          UGE1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE1.1.json
+            size_bytes: 22377
+          UGE2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE2.1.json
+            size_bytes: 23516
+          UGE3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE3.1.json
+            size_bytes: 20181
+          UGE4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE4.1.json
+            size_bytes: 22254
+          UGE4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE4.2.json
+            size_bytes: 19102
+          UGE5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE5.1.json
+            size_bytes: 18132
+          UGE6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE6.1.json
+            size_bytes: 18056
+          UGE7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE7.1.json
+            size_bytes: 18370
+          UGE8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UGE8.1.json
+            size_bytes: 18517
+          UI.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UI.json
+            size_bytes: 12990
+          USE1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE1.1.json
+            size_bytes: 21777
+          USE1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE1.2.json
+            size_bytes: 24138
+          USE2.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE2.1.1.json
+            size_bytes: 36910
+          USE2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE2.1.json
+            size_bytes: 13895
+          USE2.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE2.2.json
+            size_bytes: 15369
+          USE3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE3.1.json
+            size_bytes: 15490
+          USE4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE4.1.json
+            size_bytes: 14319
+          USE4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE4.2.json
+            size_bytes: 15070
+          USE5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE5.1.json
+            size_bytes: 15800
+          USE6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE6.1.json
+            size_bytes: 43007
+          USE6.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE6.2.json
+            size_bytes: 47542
+          USE7.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE7.1.1.json
+            size_bytes: 64492
+          USE7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE7.1.json
+            size_bytes: 40820
+          USE7.2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE7.2.1.json
+            size_bytes: 55858
+          USE7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE7.2.json
+            size_bytes: 51227
+          USE8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\USE8.1.json
+            size_bytes: 50633
+          UVC1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC1.1.json
+            size_bytes: 62026
+          UVC1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC1.2.json
+            size_bytes: 53241
+          UVC2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC2.1.json
+            size_bytes: 62114
+          UVC2.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC2.2.json
+            size_bytes: 51315
+          UVC3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC3.1.json
+            size_bytes: 32610
+          UVC4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC4.1.json
+            size_bytes: 36375
+          UVC4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC4.2.json
+            size_bytes: 57684
+          UVC5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC5.1.json
+            size_bytes: 81741
+          UVC6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC6.1.json
+            size_bytes: 31286
+          UVC7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC7.1.json
+            size_bytes: 55066
+          UVC7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC7.2.json
+            size_bytes: 47326
+          UVC8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVC8.1.json
+            size_bytes: 64318
+          UVD1.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD1.1.1.json
+            size_bytes: 44404
+          UVD1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD1.1.json
+            size_bytes: 43228
+          UVD1.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD1.2.json
+            size_bytes: 39915
+          UVD2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD2.1.json
+            size_bytes: 54496
+          UVD3.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD3.1.json
+            size_bytes: 60418
+          UVD4.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD4.1.json
+            size_bytes: 33654
+          UVD4.2.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD4.2.1.json
+            size_bytes: 72094
+          UVD4.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD4.2.json
+            size_bytes: 43583
+          UVD5.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD5.1.json
+            size_bytes: 66572
+          UVD6.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD6.1.1.json
+            size_bytes: 45927
+          UVD6.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD6.1.json
+            size_bytes: 54347
+          UVD7.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD7.1.1.json
+            size_bytes: 52816
+          UVD7.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD7.1.json
+            size_bytes: 36191
+          UVD7.2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD7.2.json
+            size_bytes: 43966
+          UVD8.1.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD8.1.1.json
+            size_bytes: 42823
+          UVD8.1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UVD8.1.json
+            size_bytes: 41343
+          UX.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX.json
+            size_bytes: 41883
+          UX1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX1.json
+            size_bytes: 43231
+          UX11.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX11.json
+            size_bytes: 36803
+          UX12.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX12.json
+            size_bytes: 31727
+          UX13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX13.json
+            size_bytes: 33474
+          UX14.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX14.json
+            size_bytes: 42857
+          UX2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX2.json
+            size_bytes: 31697
+          UX3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX3.json
+            size_bytes: 45088
+          UX4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX4.json
+            size_bytes: 36702
+          UX6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX6.json
+            size_bytes: 61254
+          UX7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX7.json
+            size_bytes: 40279
+          UX8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX8.json
+            size_bytes: 33007
+          UX9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              Urbaines\UX9.json
+            size_bytes: 40887
+      Zones À Urbaniser:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+          À Urbaniser
+        contents:
+          AUCa.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              À Urbaniser\AUCa.json
+            size_bytes: 52639
+          AUCm.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              À Urbaniser\AUCm.json
+            size_bytes: 59766
+          AUD.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\lille\Zones
+              À Urbaniser\AUD.json
+            size_bytes: 42781
+    source_plu_url: null
+  nantes:
+    type: directory
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes
+    contents:
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\desktop.ini
+        size_bytes: 246
+      Zones Agricoles:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+          Agricoles
+        contents:
+          A.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Agricoles\A.json
+            size_bytes: 69649
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Agricoles\desktop.ini
+            size_bytes: 246
+      Zones Naturelles et Forestières:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+          Naturelles et Forestières
+        contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Naturelles et Forestières\desktop.ini
+            size_bytes: 246
+          N.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Naturelles et Forestières\N.json
             size_bytes: 62480
       Zones Urbaines:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones Urbaines
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+          Urbaines
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Urbaines\desktop.ini
+            size_bytes: 246
           UE.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              Urbaines/UE.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Urbaines\UE.json
             size_bytes: 58107
           UM.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              Urbaines/UM.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Urbaines\UM.json
             size_bytes: 74083
           US.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              Urbaines/US.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              Urbaines\US.json
             size_bytes: 37397
       Zones À Urbaniser:
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones À
-          Urbaniser
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+          À Urbaniser
         contents:
           1AU.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              À Urbaniser/1AU.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              À Urbaniser\1AU.json
             size_bytes: 38768
           2AU.json:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/processed/nantes/Zones
-              À Urbaniser/2AU.json
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              À Urbaniser\2AU.json
             size_bytes: 51653
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
+              À Urbaniser\desktop.ini
+            size_bytes: 246
     source_plu_url: https://metropole.nantes.fr/mes-services-mon-quotidien/le-plan-local-d-urbanisme-metropolitain-le-plum#sync_doc-98437

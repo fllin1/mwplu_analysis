@@ -7,6 +7,9 @@ Version: 1.2
 Date: 2025-05-28
 Author: Grey Panda
 """
+
+import re
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -16,6 +19,82 @@ from supabase import Client
 
 from src.config import LOGS_DIR, PDF_DIR
 from src.utils.path_bucket import normalize_path
+
+
+def sanitize_filename(filename: str) -> str:
+    """
+    Sanitize a filename by replacing special characters with safe alternatives.
+
+    Args:
+        filename (str): The original filename
+
+    Returns:
+        str: The sanitized filename safe for storage
+    """
+    # Common replacements for French characters and special symbols
+    replacements = {
+        " À ": "_A_",
+        " à ": "_a_",
+        " É ": "_E_",
+        " é ": "_e_",
+        " È ": "_E_",
+        " è ": "_e_",
+        " Ê ": "_E_",
+        " ê ": "_e_",
+        " Ç ": "_C_",
+        " ç ": "_c_",
+        " Ù ": "_U_",
+        " ù ": "_u_",
+        " Ô ": "_O_",
+        " ô ": "_o_",
+        " Î ": "_I_",
+        " î ": "_i_",
+        " Â ": "_A_",
+        " â ": "_a_",
+        " Û ": "_U_",
+        " û ": "_u_",
+        " œ ": "_oe_",
+        " Œ ": "_OE_",
+        "À": "A",
+        "à": "a",
+        "É": "E",
+        "é": "e",
+        "È": "E",
+        "è": "e",
+        "Ê": "E",
+        "ê": "e",
+        "Ç": "C",
+        "ç": "c",
+        "Ù": "U",
+        "ù": "u",
+        "Ô": "O",
+        "ô": "o",
+        "Î": "I",
+        "î": "i",
+        "Â": "A",
+        "â": "a",
+        "Û": "U",
+        "û": "u",
+        "œ": "oe",
+        "Œ": "OE",
+    }
+
+    # Apply replacements
+    sanitized = filename
+    for original, replacement in replacements.items():
+        sanitized = sanitized.replace(original, replacement)
+
+    # Remove any remaining problematic characters
+    # Keep alphanumeric, dots, hyphens, underscores, and spaces
+    sanitized = re.sub(r"[^\w\s\-\.]", "_", sanitized)
+
+    # Replace multiple spaces or underscores with single underscore
+    sanitized = re.sub(r"[\s_]+", "_", sanitized)
+
+    # Remove leading/trailing underscores
+    sanitized = sanitized.strip("_")
+
+    return sanitized
 
 
 def get_or_create_city(supabase: Client, city_name: str) -> str:
@@ -59,7 +138,11 @@ def get_or_create_zoning(supabase: Client, zoning_name: str, city_id: str) -> st
     return insert_result.data[0]["id"]
 
 
-def get_or_create_zone_en(supabase: Client, zone_name: str, zoning_id: str) -> str:
+def get_or_create_zone(
+    supabase: Client,
+    zone_name: str,
+    zoning_id: str,
+) -> str:
     """
     Get or create a zone in the database.
 
@@ -76,7 +159,9 @@ def get_or_create_zone_en(supabase: Client, zone_name: str, zoning_id: str) -> s
         .execute()
     )
     if result.data and len(result.data) > 0:
-        return result.data[0]["id"]
+        zone_id = result.data[0]["id"]
+        return zone_id
+
     insert_result = (
         supabase.table("zones")
         .insert({"name": zone_name, "zoning_id": zoning_id})
@@ -129,9 +214,20 @@ def upload_pdf_to_storage(
 
     try:
         # Normalize storage path for Supabase (e.g. "city/zoning/zone.pdf")
-        normalized_storage_path = (
-            normalize_path(storage_path.parent.as_posix()) + "/" + storage_path.name
+        # Ensure all separators are forward slashes for Supabase storage
+        normalized_parent_path = normalize_path(storage_path.parent.as_posix()).replace(
+            "\\", "/"
         )
+
+        # Sanitize the filename to remove special characters
+        sanitized_filename = sanitize_filename(storage_path.name)
+        normalized_storage_path = f"{normalized_parent_path}/{sanitized_filename}"
+
+        # Log if filename was changed
+        if sanitized_filename != storage_path.name:
+            logger.info(
+                f"Sanitized filename: '{storage_path.name}' → '{sanitized_filename}'"
+            )
 
         with open(local_pdf_path, "rb") as f:
             res = supabase.storage.from_(bucket).upload(
@@ -159,7 +255,7 @@ def upload_pdf_to_storage(
             logger.error(f"Upload response does not indicate success: {res}")
             return None
 
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-exception-caught
         logger.error(
             f"Error uploading PDF {local_pdf_path} to {bucket}/{normalized_storage_path}: {e}"
         )
@@ -194,7 +290,7 @@ def find_existing_document(
         if result.data:
             return result.data[0]["id"]
         return None
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-exception-caught
         logger.error(f"Error finding existing document: {e}")
         return None
 
@@ -336,7 +432,7 @@ def pipeline_upload_document(
     # Get or create all related entities
     city_id = get_or_create_city(supabase, name_city)
     zoning_id = get_or_create_zoning(supabase, name_zoning, city_id)
-    zone_id = get_or_create_zone_en(supabase, name_zone, zoning_id)
+    zone_id = get_or_create_zone(supabase, name_zone, zoning_id)
     typology_id = get_or_create_typology(supabase, name_typology)
 
     # Upload PDF to storage

@@ -10,7 +10,7 @@ Author: Grey Panda
 
 import json
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 from loguru import logger
 from supabase import Client
@@ -18,13 +18,13 @@ from supabase import Client
 from src.api.supabase import pipeline_upload_document
 from src.config import HTML_DIR, PROCESSED_DATA_DIR
 from src.mwplu.generator.html_generator import generate_html_report
-from src.utils.plu import get_source_plu_url
+from src.config import HTML_DIR, PROCESSED_DATA_DIR
+from src.utils.plu import get_references
 
 
 def process_plu_document(
     supabase: Client,
     json_content: Dict[str, Any],
-    source_plu_url: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Process a PLU document: generate HTML and upload to Supabase.
@@ -50,6 +50,8 @@ def process_plu_document(
             "Missing required metadata fields: name_city, name_zoning, or name_zone"
         )
 
+    logger.info(f"Processing document: {city_name}/{zoning_name}/{zone_name}")
+
     # Generate HTML content and save it
     html_output_path = HTML_DIR / city_name / zoning_name / f"{zone_name}.html"
     html_output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -63,8 +65,9 @@ def process_plu_document(
         supabase=supabase,
         content_json=json_content,
         html_content=html_content,
-        source_plu_url=source_plu_url,
+        source_plu_url=get_references(city_name)["source_plu_url"],
     )
+    logger.success(f"Uploaded to Supabase: {city_name}/{zoning_name}/{zone_name}")
     return result
 
 
@@ -85,19 +88,7 @@ def process_json_file(
     with open(json_file_path, "r", encoding="utf-8") as f:
         json_content = json.load(f)
 
-    # Get source_plu_url if function is provided
-    source_plu_url = None
-    metadata = json_content.get("metadata", {})
-    city_name = metadata.get("name_city")
-    if city_name:
-        source_plu_url = get_source_plu_url(city_name)
-        logger.debug(f"Retrieved source_plu_url for {city_name}: {source_plu_url}")
-    else:
-        logger.warning(f"No city_name found in metadata for {json_file_path}")
-
-    return process_plu_document(
-        supabase=supabase, json_content=json_content, source_plu_url=source_plu_url
-    )
+    return process_plu_document(supabase, json_content)
 
 
 def process_all_json_files(
@@ -111,5 +102,5 @@ def process_all_json_files(
     """
     json_files = list(PROCESSED_DATA_DIR.glob("**/*.json"))
 
-    for json_file in json_files:
-        process_json_file(supabase=supabase, json_file_path=json_file)
+    for json_file_path in enumerate(json_files, 1):
+        process_json_file(supabase=supabase, json_file_path=json_file_path)

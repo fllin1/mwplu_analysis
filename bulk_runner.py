@@ -6,7 +6,7 @@ A user-friendly command-line interface for running PLU processing pipelines in b
 Usage:
     python bulk_runner.py --help
     python bulk_runner.py status
-    python bulk_runner.py run --stages ocr synthesis --cities grenoble nantes
+    python bulk_runner.py run --stages ocr --stages synthesis --cities grenoble --cities nantes
     python bulk_runner.py run --stages upload_supabase --cities all
     python bulk_runner.py run --all-stages --dry-run
 
@@ -36,7 +36,7 @@ console = Console()
 
 @app.command()
 def status(
-    refresh: bool = typer.Option(
+    refresh: bool = typer.Option(  # pylint: disable=redefined-outer-name
         False,
         "--refresh",
         "-r",
@@ -103,7 +103,7 @@ def run(
         None,
         "--stages",
         "-s",
-        help="Pipeline stages to run (ocr, extract_pages, synthesis, reports, upload_supabase)",
+        help="Pipeline stages to run (ocr, extract_pages, synthesis, upload_supabase)",
     ),
     cities: List[str] = typer.Option(
         None, "--cities", "-c", help="Cities to process (or 'all' for all cities)"
@@ -202,7 +202,7 @@ def run(
                     "\n[bold yellow]⚠️  Some tasks failed. Check logs for details.[/bold yellow]"
                 )
 
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-exception-caught
         console.print(f"[red]Error during execution: {e}[/red]")
         logger.exception("Bulk processing failed")
         sys.exit(1)
@@ -252,7 +252,7 @@ def upload_all():
         if results["failed"] > 0:
             console.print(f"[red]Failed: {results['failed']}[/red]")
 
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-exception-caught
         console.print(f"[red]Error during upload: {e}[/red]")
         logger.exception("Upload failed")
 

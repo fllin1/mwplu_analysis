@@ -27,6 +27,7 @@ from reportlab.platypus import (
     Spacer,
 )
 from reportlab.platypus.flowables import Flowable
+from src.config import IMAGES_DIR
 from svglib.svglib import svg2rlg  # Re-added for SVG
 
 
@@ -531,10 +532,10 @@ def _add_chapitre(story, chapitre: Dict[str, Any], chapitre_key: str) -> None:
 
 def generate_pdf_report(
     json_path: str,
-    logo_path: str,  # Now expects an SVG path
-    references: Optional[Dict[str, str]],
     output_path: str,
-    page_logo_path: Optional[str] = None,  # Now expects an SVG path
+    logo_path: str = str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
+    page_logo_path: Optional[str] = str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
+    references: Optional[Dict[str, str]] = None,
 ) -> None:
     """
     Generate a sober, elegant, minimalist PDF report from the given JSON file, using SVG logos.

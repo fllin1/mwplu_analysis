@@ -26,7 +26,7 @@ from src.mwplu.ocr import ocr_mistral
 from src.mwplu.post_data import process_all_json_files, process_json_file
 from src.mwplu.synthesis import synthesis_gemini
 from src.utils.json import save_as_json
-from src.utils.plu import get_source_plu_url
+from src.utils.plu import get_references
 
 # Configure logging to reduce verbosity
 logging.getLogger("httpx").setLevel(logging.WARNING)
@@ -224,25 +224,16 @@ def reports(
         name_document (str): The name of the document.
     """
     input_path = PROCESSED_DATA_DIR / name_city / name_zoning / f"{name_document}.json"
-
-    references = {
-        "source_plu_url": get_source_plu_url(name_city),
-        "vocabulaire": "https://outil2amenagement.cerema.fr/ressources/guides-fiches/lexique-national-durbanisme",  # pylint: disable=C0301
-        "politiques_vente": "https://mwplu.com/politiques-de-ventes",
-        "politique_confidentialite": "https://mwplu.com/politique-de-confidentialite",
-        "cgu": "https://mwplu.com/terms",
-    }
+    assert input_path.exists()
+    references = get_references(name_city)
 
     output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    logger.debug(f"Generating PDF report for {input_path}")
     generate_pdf_report(
         json_path=str(input_path),
-        logo_path=str(IMAGES_DIR / "svg" / "BLACK-MATRIX.svg"),
         references=references,
         output_path=str(output_path),
-        page_logo_path=str(IMAGES_DIR / "svg" / "BLANK-MEWE.svg"),
     )
 
 
@@ -295,8 +286,29 @@ def upload_supabase(
                 zoning = parts[1]
                 document = json_file.stem
 
-                # Generate PDF report
-                reports(name_city=city, name_zoning=zoning, name_document=document)
+                # Generate PDF report directly
+                input_path = json_file
+                output_path = PDF_DIR / city / zoning / f"{document}.pdf"
+
+                # Check if PDF already exists
+                if not output_path.exists():
+                    logger.info(f"Generating PDF for {city}/{zoning}/{document}")
+
+                    # Create output directory
+                    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+                    # Get references
+                    references = get_references(city)
+
+                    # Generate PDF report
+                    generate_pdf_report(
+                        json_path=str(input_path),
+                        references=references,
+                        output_path=str(output_path),
+                    )
+                    logger.success(f"✅ Generated PDF: {output_path}")
+                else:
+                    logger.debug(f"PDF already exists: {output_path}")
 
         # Then upload all data to Supabase
         process_all_json_files(supabase=supabase)
@@ -316,10 +328,28 @@ def upload_supabase(
             logger.error(f"File not found: {json_file}")
             return
 
-        # Generate PDF report
-        reports(
-            name_city=name_city, name_zoning=name_zoning, name_document=name_document
-        )
+        # Generate PDF report directly
+        output_path = PDF_DIR / name_city / name_zoning / f"{name_document}.pdf"
+
+        # Check if PDF already exists
+        if not output_path.exists():
+            logger.info(f"Generating PDF for {name_city}/{name_zoning}/{name_document}")
+
+            # Create output directory
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+
+            # Get references
+            references = get_references(name_city)
+
+            # Generate PDF report
+            generate_pdf_report(
+                json_path=str(json_file),
+                references=references,
+                output_path=str(output_path),
+            )
+            logger.success(f"✅ Generated PDF: {output_path}")
+        else:
+            logger.debug(f"PDF already exists: {output_path}")
 
         # Upload to Supabase
         logger.info(f"Uploading {json_file} to Supabase...")

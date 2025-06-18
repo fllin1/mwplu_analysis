@@ -1,1136 +1,1312 @@
 metadata:
   description: External PLU data files and resources
-  generated_at: /home/greypanda/projets/mwplu_analysis
-  total_items: 13
+  generated_at: C:\Users\Regium\Repositories\mwplu_analysis
+  total_items: 14
 data:
   bordeaux:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux
     contents:
       '2020-01-24':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2020-01-24
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\desktop.ini
+            size_bytes: 246
           zones_UPZ:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2020-01-24/zones_UPZ
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ\desktop.ini
+                size_bytes: 246
               UPZ7.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2020-01-24/zones_UPZ/UPZ7.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ\UPZ7.pdf
                 size_bytes: 3529638
       '2022-01-28':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\desktop.ini
+            size_bytes: 246
           zones_UP:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28/zones_UP
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP\desktop.ini
+                size_bytes: 246
               UP87.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28/zones_UP/UP87.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP\UP87.pdf
                 size_bytes: 3323872
               UP88.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28/zones_UP/UP88.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP\UP88.pdf
                 size_bytes: 2824572
           zones_UPZ:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28/zones_UPZ
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ\desktop.ini
+                size_bytes: 246
               UPZ1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2022-01-28/zones_UPZ/UPZ1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ\UPZ1.pdf
                 size_bytes: 2899924
       '2023-11-28':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2023-11-28
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\desktop.ini
+            size_bytes: 246
           zones_UP:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2023-11-28/zones_UP
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP\desktop.ini
+                size_bytes: 246
               UP89.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2023-11-28/zones_UP/UP89.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP\UP89.pdf
                 size_bytes: 3450372
           zones_UPZ:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2023-11-28/zones_UPZ
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ\desktop.ini
+                size_bytes: 246
               UPZ7-1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2023-11-28/zones_UPZ/UPZ7-1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ\UPZ7-1.pdf
                 size_bytes: 4135905
       '2024-02-02':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\desktop.ini
+            size_bytes: 246
           zones_A:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_A
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A
             contents:
               Ab.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_A/Ab.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\Ab.pdf
                 size_bytes: 2855490
               Ag.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_A/Ag.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\Ag.pdf
                 size_bytes: 2800039
               Ah1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_A/Ah1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\Ah1.pdf
                 size_bytes: 2885421
               Ah2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_A/Ah2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\Ah2.pdf
                 size_bytes: 2810179
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\desktop.ini
+                size_bytes: 246
           zones_AU:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU
             contents:
               AU1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU1.pdf
                 size_bytes: 3716612
               AU10.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU10.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU10.pdf
                 size_bytes: 2912566
               AU11.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU11.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU11.pdf
                 size_bytes: 2957305
               AU12.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU12.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU12.pdf
                 size_bytes: 2999797
               AU13.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU13.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU13.pdf
                 size_bytes: 3061973
               AU15.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU15.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU15.pdf
                 size_bytes: 3801279
               AU16.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU16.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU16.pdf
                 size_bytes: 3790970
               AU17.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU17.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU17.pdf
                 size_bytes: 2862304
               AU19.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU19.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU19.pdf
                 size_bytes: 3750209
               AU2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU2.pdf
                 size_bytes: 3405952
               AU20.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU20.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU20.pdf
                 size_bytes: 3831667
               AU3.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU3.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU3.pdf
                 size_bytes: 3728118
               AU4.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU4.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU4.pdf
                 size_bytes: 3784508
               AU5.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU5.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU5.pdf
                 size_bytes: 3801720
               AU6.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU6.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU6.pdf
                 size_bytes: 2986143
               AU7.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU7.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU7.pdf
                 size_bytes: 2807792
               AU8.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU8.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU8.pdf
                 size_bytes: 2952644
               AU9.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU9.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU9.pdf
                 size_bytes: 2955158
               AU99.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_AU/AU99.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU99.pdf
                 size_bytes: 2545950
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\desktop.ini
+                size_bytes: 246
           zones_N:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\desktop.ini
+                size_bytes: 246
               Nb.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nb.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nb.pdf
                 size_bytes: 2831848
               Ne.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Ne.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Ne.pdf
                 size_bytes: 2898280
               Nf.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nf.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nf.pdf
                 size_bytes: 2791851
               Ng.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Ng.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Ng.pdf
                 size_bytes: 2801872
               Nh1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nh1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nh1.pdf
                 size_bytes: 2805159
               Nh2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nh2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nh2.pdf
                 size_bytes: 2629037
               Nm.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nm.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nm.pdf
                 size_bytes: 2786461
               Nu.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_N/Nu.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nu.pdf
                 size_bytes: 2786864
           zones_UM:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\desktop.ini
+                size_bytes: 246
               UM1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM1.pdf
                 size_bytes: 3046282
               UM10.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM10.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM10.pdf
                 size_bytes: 3314062
               UM11.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM11.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM11.pdf
                 size_bytes: 3317485
               UM12.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM12.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM12.pdf
                 size_bytes: 3299357
               UM13.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM13.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM13.pdf
                 size_bytes: 3145415
               UM14.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM14.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM14.pdf
                 size_bytes: 3082021
               UM15.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM15.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM15.pdf
                 size_bytes: 3329996
               UM16.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM16.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM16.pdf
                 size_bytes: 3311728
               UM17.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM17.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM17.pdf
                 size_bytes: 3130570
               UM18.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM18.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM18.pdf
                 size_bytes: 3453591
               UM19.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM19.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM19.pdf
                 size_bytes: 3651907
               UM2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM2.pdf
                 size_bytes: 3346004
               UM20.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM20.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM20.pdf
                 size_bytes: 3321504
               UM21.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM21.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM21.pdf
                 size_bytes: 3299865
               UM22.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM22.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM22.pdf
                 size_bytes: 3306685
               UM23.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM23.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM23.pdf
                 size_bytes: 3143778
               UM24.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM24.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM24.pdf
                 size_bytes: 3334335
               UM25.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM25.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM25.pdf
                 size_bytes: 3342642
               UM26.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM26.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM26.pdf
                 size_bytes: 3293211
               UM27.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM27.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM27.pdf
                 size_bytes: 3262426
               UM28.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM28.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM28.pdf
                 size_bytes: 3359839
               UM29.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM29.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM29.pdf
                 size_bytes: 3330962
               UM3.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM3.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM3.pdf
                 size_bytes: 3307884
               UM30.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM30.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM30.pdf
                 size_bytes: 3324119
               UM31.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM31.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM31.pdf
                 size_bytes: 3320877
               UM32.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM32.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM32.pdf
                 size_bytes: 3070261
               UM33.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM33.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM33.pdf
                 size_bytes: 3302339
               UM35.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM35.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM35.pdf
                 size_bytes: 3444913
               UM36.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM36.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM36.pdf
                 size_bytes: 3296528
               UM37.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM37.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM37.pdf
                 size_bytes: 3301180
               UM38.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM38.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM38.pdf
                 size_bytes: 3613121
               UM39.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM39.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM39.pdf
                 size_bytes: 3317224
               UM4.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM4.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM4.pdf
                 size_bytes: 3334329
               UM40.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM40.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM40.pdf
                 size_bytes: 3340982
               UM41.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM41.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM41.pdf
                 size_bytes: 3337843
               UM42.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM42.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM42.pdf
                 size_bytes: 3308543
               UM5.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM5.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM5.pdf
                 size_bytes: 2997980
               UM6.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM6.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM6.pdf
                 size_bytes: 3206433
               UM7.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM7.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM7.pdf
                 size_bytes: 2880745
               UM8.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM8.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM8.pdf
                 size_bytes: 3312013
               UM9.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UM/UM9.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM9.pdf
                 size_bytes: 3277178
           zones_UP:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\desktop.ini
+                size_bytes: 246
               UP1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP1.pdf
                 size_bytes: 5200754
               UP10.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP10.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP10.pdf
                 size_bytes: 2807226
               UP11.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP11.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP11.pdf
                 size_bytes: 2867061
               UP12.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP12.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP12.pdf
                 size_bytes: 3850608
               UP13.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP13.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP13.pdf
                 size_bytes: 3150477
               UP14.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP14.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP14.pdf
                 size_bytes: 3231457
               UP15.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP15.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP15.pdf
                 size_bytes: 3639652
               UP16.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP16.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP16.pdf
                 size_bytes: 2863766
               UP17.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP17.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP17.pdf
                 size_bytes: 2657254
               UP18.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP18.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP18.pdf
                 size_bytes: 3186405
               UP19.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP19.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP19.pdf
                 size_bytes: 3362078
               UP2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP2.pdf
                 size_bytes: 5393266
               UP20.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP20.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP20.pdf
                 size_bytes: 3592240
               UP21.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP21.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP21.pdf
                 size_bytes: 3173707
               UP22.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP22.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP22.pdf
                 size_bytes: 4288112
               UP23.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP23.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP23.pdf
                 size_bytes: 2794514
               UP24.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP24.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP24.pdf
                 size_bytes: 3252306
               UP25.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP25.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP25.pdf
                 size_bytes: 3434611
               UP26.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP26.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP26.pdf
                 size_bytes: 3189091
               UP27.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP27.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP27.pdf
                 size_bytes: 4155678
               UP28.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP28.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP28.pdf
                 size_bytes: 2849716
               UP29.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP29.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP29.pdf
                 size_bytes: 2871577
               UP3.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP3.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP3.pdf
                 size_bytes: 2836281
               UP30.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP30.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP30.pdf
                 size_bytes: 3180379
               UP31.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP31.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP31.pdf
                 size_bytes: 2791908
               UP32.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP32.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP32.pdf
                 size_bytes: 2829130
               UP33.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP33.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP33.pdf
                 size_bytes: 2866381
               UP34.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP34.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP34.pdf
                 size_bytes: 2808041
               UP35.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP35.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP35.pdf
                 size_bytes: 2808048
               UP36.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP36.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP36.pdf
                 size_bytes: 2876168
               UP37.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP37.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP37.pdf
                 size_bytes: 3343470
               UP38.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP38.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP38.pdf
                 size_bytes: 2845416
               UP39.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP39.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP39.pdf
                 size_bytes: 8425613
               UP4.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP4.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP4.pdf
                 size_bytes: 2828296
               UP40.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP40.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP40.pdf
                 size_bytes: 2886273
               UP41.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP41.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP41.pdf
                 size_bytes: 4249092
               UP42.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP42.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP42.pdf
                 size_bytes: 4317690
               UP43.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP43.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP43.pdf
                 size_bytes: 4247091
               UP44.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP44.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP44.pdf
                 size_bytes: 3915857
               UP45.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP45.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP45.pdf
                 size_bytes: 2891538
               UP46.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP46.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP46.pdf
                 size_bytes: 2803997
               UP47.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP47.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP47.pdf
                 size_bytes: 2810416
               UP48.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP48.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP48.pdf
                 size_bytes: 2912495
               UP49.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP49.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP49.pdf
                 size_bytes: 3063149
               UP5.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP5.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP5.pdf
                 size_bytes: 2843604
               UP50.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP50.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP50.pdf
                 size_bytes: 2929624
               UP51.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP51.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP51.pdf
                 size_bytes: 3910708
               UP52.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP52.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP52.pdf
                 size_bytes: 3501217
               UP53.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP53.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP53.pdf
                 size_bytes: 2789132
               UP54.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP54.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP54.pdf
                 size_bytes: 4234417
               UP55.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP55.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP55.pdf
                 size_bytes: 3116100
               UP56.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP56.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP56.pdf
                 size_bytes: 3111198
               UP57.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP57.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP57.pdf
                 size_bytes: 2863275
               UP59.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP59.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP59.pdf
                 size_bytes: 8336582
               UP6.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP6.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP6.pdf
                 size_bytes: 2817672
               UP60.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP60.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP60.pdf
                 size_bytes: 2807987
               UP61.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP61.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP61.pdf
                 size_bytes: 4651311
               UP62.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP62.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP62.pdf
                 size_bytes: 2833438
               UP63.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP63.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP63.pdf
                 size_bytes: 2903953
               UP64.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP64.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP64.pdf
                 size_bytes: 3634143
               UP66.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP66.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP66.pdf
                 size_bytes: 3390519
               UP67.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP67.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP67.pdf
                 size_bytes: 2939645
               UP68.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP68.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP68.pdf
                 size_bytes: 8182796
               UP69.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP69.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP69.pdf
                 size_bytes: 3278422
               UP7.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP7.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP7.pdf
                 size_bytes: 2630919
               UP70.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP70.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP70.pdf
                 size_bytes: 2821365
               UP71.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP71.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP71.pdf
                 size_bytes: 2833382
               UP73.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP73.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP73.pdf
                 size_bytes: 2929126
               UP74.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP74.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP74.pdf
                 size_bytes: 3189676
               UP75.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP75.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP75.pdf
                 size_bytes: 3817417
               UP76.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP76.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP76.pdf
                 size_bytes: 2820815
               UP77.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP77.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP77.pdf
                 size_bytes: 2656516
               UP79.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP79.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP79.pdf
                 size_bytes: 2829250
               UP8.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP8.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP8.pdf
                 size_bytes: 2834209
               UP81.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP81.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP81.pdf
                 size_bytes: 2775986
               UP82.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP82.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP82.pdf
                 size_bytes: 2915308
               UP83.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP83.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP83.pdf
                 size_bytes: 2803468
               UP84.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP84.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP84.pdf
                 size_bytes: 3402737
               UP85.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP85.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP85.pdf
                 size_bytes: 3181933
               UP86.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP86.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP86.pdf
                 size_bytes: 3216879
               UP9.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UP/UP9.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP9.pdf
                 size_bytes: 2870447
           zones_UPZ:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\desktop.ini
+                size_bytes: 246
               UPZ2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ2.pdf
                 size_bytes: 2693633
               UPZ3.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ3.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ3.pdf
                 size_bytes: 3344845
               UPZ4.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ4.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ4.pdf
                 size_bytes: 2894257
               UPZ5.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ5.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ5.pdf
                 size_bytes: 2840174
               UPZ6.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ6.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ6.pdf
                 size_bytes: 2890039
               UPZ7-2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ7-2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ7-2.pdf
                 size_bytes: 4088084
               UPZ8.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ8.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ8.pdf
                 size_bytes: 2891546
               UPZ9.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_UPZ/UPZ9.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ9.pdf
                 size_bytes: 2684616
           zones_US:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\desktop.ini
+                size_bytes: 246
               US1.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US1.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US1.pdf
                 size_bytes: 2739878
               US10.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US10.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US10.pdf
                 size_bytes: 2795802
               US11.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US11.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US11.pdf
                 size_bytes: 2793496
               US12.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US12.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US12.pdf
                 size_bytes: 2660623
               US13.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US13.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US13.pdf
                 size_bytes: 2740924
               US2.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US2.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US2.pdf
                 size_bytes: 3030752
               US3.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US3.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US3.pdf
                 size_bytes: 2737201
               US4.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US4.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US4.pdf
                 size_bytes: 2721198
               US5.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US5.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US5.pdf
                 size_bytes: 2723301
               US6.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US6.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US6.pdf
                 size_bytes: 2677466
               US7.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US7.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US7.pdf
                 size_bytes: 2763007
               US8.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US8.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US8.pdf
                 size_bytes: 2766396
               US9.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-02-02/zones_US/US9.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US9.pdf
                 size_bytes: 2769041
       '2024-12-06':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-12-06
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\desktop.ini
+            size_bytes: 246
           zones_UM:
             type: directory
-            path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-12-06/zones_UM
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM
             contents:
+              desktop.ini:
+                type: file
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\desktop.ini
+                size_bytes: 246
               UM34.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-12-06/zones_UM/UM34.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\UM34.pdf
                 size_bytes: 2973497
               UM43.pdf:
                 type: file
-                path: /home/greypanda/projets/mwplu_analysis/data/external/bordeaux/2024-12-06/zones_UM/UM43.pdf
+                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\UM43.pdf
                 size_bytes: 3420967
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\desktop.ini
+        size_bytes: 246
+  desktop.ini:
+    type: file
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\desktop.ini
+    size_bytes: 246
   grenoble:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble
     contents:
       '2022-12-16':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2022-12-16
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\desktop.ini
+            size_bytes: 246
           zones_a_urbaniser.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2022-12-16/zones_a_urbaniser.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\zones_a_urbaniser.pdf
             size_bytes: 2949846
           zones_agricoles_et_natuelles.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2022-12-16/zones_agricoles_et_natuelles.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\zones_agricoles_et_natuelles.pdf
             size_bytes: 1607215
           zones_dediees.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2022-12-16/zones_dediees.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\zones_dediees.pdf
             size_bytes: 2602962
           zones_urbaines_mixtes.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2022-12-16/zones_urbaines_mixtes.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\zones_urbaines_mixtes.pdf
             size_bytes: 8651724
       '2024-07-05':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\desktop.ini
+            size_bytes: 246
           dispositions_generales.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05/dispositions_generales.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\dispositions_generales.pdf
             size_bytes: 3960760
           zones_a_urbaniser.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05/zones_a_urbaniser.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\zones_a_urbaniser.pdf
             size_bytes: 3889696
           zones_agricoles_et_naturelles.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05/zones_agricoles_et_naturelles.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\zones_agricoles_et_naturelles.pdf
             size_bytes: 2283717
           zones_dediees.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05/zones_dediees.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\zones_dediees.pdf
             size_bytes: 4011038
           zones_urbaines_mixtes.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/grenoble/2024-07-05/zones_urbaines_mixtes.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\zones_urbaines_mixtes.pdf
             size_bytes: 56202951
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\desktop.ini
+        size_bytes: 246
   le_revest_les_eaux:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux
     contents:
       '2011-04-18':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18
         contents:
           A.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/A.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\A.pdf
             size_bytes: 524606
           AUa.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/AUa.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\AUa.pdf
             size_bytes: 438561
           AUc.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/AUc.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\AUc.pdf
             size_bytes: 372627
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\desktop.ini
+            size_bytes: 246
+          dispositions_generales.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\dispositions_generales.pdf
+            size_bytes: 1419339
           N.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/N.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\N.pdf
             size_bytes: 629114
           Nm.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Nm.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Nm.pdf
             size_bytes: 387779
           Np.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Np.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Np.pdf
             size_bytes: 288005
           Ua.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Ua.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ua.pdf
             size_bytes: 664871
           Ub.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Ub.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ub.pdf
             size_bytes: 962121
           Uc.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Uc.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Uc.pdf
             size_bytes: 784035
           Ud.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Ud.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ud.pdf
             size_bytes: 717837
           Ue.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Ue.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ue.pdf
             size_bytes: 618958
           Uf.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Uf.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Uf.pdf
             size_bytes: 488809
           Ug.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/Ug.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ug.pdf
             size_bytes: 1098382
-          dispositions_generales.pdf:
-            type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/le_revest_les_eaux/2011-04-18/dispositions_generales.pdf
-            size_bytes: 1419339
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\desktop.ini
+        size_bytes: 246
   lille:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/lille
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille
     contents:
       '2024-06-28':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28
         contents:
           annexes_documentaires_t1.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/annexes_documentaires_t1.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\annexes_documentaires_t1.pdf
             size_bytes: 13338789
           annexes_documentaires_t2.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/annexes_documentaires_t2.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\annexes_documentaires_t2.pdf
             size_bytes: 10392146
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\desktop.ini
+            size_bytes: 246
           dispositions_generales.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/dispositions_generales.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\dispositions_generales.pdf
             size_bytes: 6152959
           zones_constructibles.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/zones_constructibles.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\zones_constructibles.pdf
             size_bytes: 7443452
           zones_inconstructibles.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/zones_inconstructibles.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\zones_inconstructibles.pdf
             size_bytes: 3589453
           zones_specifiques.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/lille/2024-06-28/zones_specifiques.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\zones_specifiques.pdf
             size_bytes: 7814320
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\desktop.ini
+        size_bytes: 246
   montpellier:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/montpellier
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier
     contents:
       '2023-08-17':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/montpellier/2023-08-17
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17\desktop.ini
+            size_bytes: 246
           plu_general.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/montpellier/2023-08-17/plu_general.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17\plu_general.pdf
             size_bytes: 10917781
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\desktop.ini
+        size_bytes: 246
   nantes:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/nantes
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes
     contents:
       '2023-12-15':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/nantes/2023-12-15
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15\desktop.ini
+            size_bytes: 246
           plu_general.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nantes/2023-12-15/plu_general.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15\plu_general.pdf
             size_bytes: 23694461
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\desktop.ini
+        size_bytes: 246
   nice:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/nice
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice
     contents:
       '2023-10-04':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04
         contents:
           cahier_des_prescriptions_architecturales.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/cahier_des_prescriptions_architecturales.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\cahier_des_prescriptions_architecturales.pdf
             size_bytes: 2711816
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\desktop.ini
+            size_bytes: 246
           dispositions_generales.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/dispositions_generales.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\dispositions_generales.pdf
             size_bytes: 1771308
           plu_tome_1.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/plu_tome_1.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\plu_tome_1.pdf
             size_bytes: 5382890
           plu_tome_2.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/plu_tome_2.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\plu_tome_2.pdf
             size_bytes: 5629633
           plu_tome_3.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/plu_tome_3.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\plu_tome_3.pdf
             size_bytes: 5396656
           plu_tome_4.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/nice/2023-10-04/plu_tome_4.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\plu_tome_4.pdf
             size_bytes: 1608906
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\desktop.ini
+        size_bytes: 246
   rennes:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/rennes
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes
     contents:
       '2024-03-21':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/rennes/2024-03-21
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21\desktop.ini
+            size_bytes: 246
           plu_general.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/rennes/2024-03-21/plu_general.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21\plu_general.pdf
             size_bytes: 6414542
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\desktop.ini
+        size_bytes: 246
   rnu_national:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/rnu_national
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national
     contents:
       '2024-01-05':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/rnu_national/2024-01-05
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05\desktop.ini
+            size_bytes: 246
           rnu_national.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/rnu_national/2024-01-05/rnu_national.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05\rnu_national.pdf
             size_bytes: 537988
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\desktop.ini
+        size_bytes: 246
   rouen:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/rouen
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen
     contents:
       '2025-03-31':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/rouen/2025-03-31
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\desktop.ini
+            size_bytes: 246
           dispositions_generales.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/rouen/2025-03-31/dispositions_generales.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\dispositions_generales.pdf
             size_bytes: 2043554
           livre_2_titre_1.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/rouen/2025-03-31/livre_2_titre_1.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\livre_2_titre_1.pdf
             size_bytes: 3462123
           livre_2_titre_2.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/rouen/2025-03-31/livre_2_titre_2.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\livre_2_titre_2.pdf
             size_bytes: 3646180
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\desktop.ini
+        size_bytes: 246
   strasbourg:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/strasbourg
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg
     contents:
       '2024-05-31':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/strasbourg/2024-05-31
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31\desktop.ini
+            size_bytes: 246
           plu_general.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/strasbourg/2024-05-31/plu_general.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31\plu_general.pdf
             size_bytes: 2874550
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\desktop.ini
+        size_bytes: 246
   toulon:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/toulon
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon
     contents:
       11 - 01 - La Crau - Réglement Modif 21.12.2023.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 01
-          - La Crau - Réglement Modif 21.12.2023.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 01 - La Crau - Réglement Modif 21.12.2023.pdf
         size_bytes: 2680290
       11 - 02 - La Garde - plu_m01_-_2023_-_reglement_ecrit_complet.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 02
-          - La Garde - plu_m01_-_2023_-_reglement_ecrit_complet.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 02 - La Garde - plu_m01_-_2023_-_reglement_ecrit_complet.pdf
         size_bytes: 74973837
       11 - 03 - Hyeres - 5_reglement_modification_simplifiee_n3_2022.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 03
-          - Hyeres - 5_reglement_modification_simplifiee_n3_2022.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 03 - Hyeres - 5_reglement_modification_simplifiee_n3_2022.pdf
         size_bytes: 10834259
       11 - 04 - Ollioules- 1C-Reglement.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 04
-          - Ollioules- 1C-Reglement.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 04 - Ollioules- 1C-Reglement.pdf
         size_bytes: 48242624
       11 - 05 -Le-Pradet-réglement-appro-2011.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 05
-          -Le-Pradet-réglement-appro-2011.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 05 -Le-Pradet-réglement-appro-2011.pdf
         size_bytes: 1463268
       11 - 07 - Saint-Mandrier-sur-Mer PLU-Reglement-2019.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 07
-          - Saint-Mandrier-sur-Mer PLU-Reglement-2019.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 07 - Saint-Mandrier-sur-Mer PLU-Reglement-2019.pdf
         size_bytes: 11324177
       11 - 08 - La Seyne-sur-Mer 03-Reglement-decembre-2019.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 08
-          - La Seyne-sur-Mer 03-Reglement-decembre-2019.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 08 - La Seyne-sur-Mer 03-Reglement-decembre-2019.pdf
         size_bytes: 2865791
       11 - 09 - Six-Fours-les-Plages PLU-SFP-_Mo1_4.2_Reglement_App.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 09
-          - Six-Fours-les-Plages PLU-SFP-_Mo1_4.2_Reglement_App.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 09 - Six-Fours-les-Plages PLU-SFP-_Mo1_4.2_Reglement_App.pdf
         size_bytes: 9318681
       11 - 10 Toulon - reglement_-_m6_-_27.03.25.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 10
-          Toulon - reglement_-_m6_-_27.03.25.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 10 Toulon - reglement_-_m6_-_27.03.25.pdf
         size_bytes: 6172382
       11 - 11 - La Valette-du-VarPLU-REGLEMENT-MODIFICATION-SIMPLIFIEE-09.02.pdf:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/11 - 11
-          - La Valette-du-VarPLU-REGLEMENT-MODIFICATION-SIMPLIFIEE-09.02.pdf
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
+          - 11 - La Valette-du-VarPLU-REGLEMENT-MODIFICATION-SIMPLIFIEE-09.02.pdf
         size_bytes: 1603381
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\desktop.ini
+        size_bytes: 246
       REGARDE CA.txt:
         type: file
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulon/REGARDE
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\REGARDE
           CA.txt
         size_bytes: 986
   toulouse:
     type: directory
-    path: /home/greypanda/projets/mwplu_analysis/data/external/toulouse
+    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse
     contents:
       '2024-12-12':
         type: directory
-        path: /home/greypanda/projets/mwplu_analysis/data/external/toulouse/2024-12-12
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12
         contents:
+          desktop.ini:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12\desktop.ini
+            size_bytes: 246
           plu_genral.pdf:
             type: file
-            path: /home/greypanda/projets/mwplu_analysis/data/external/toulouse/2024-12-12/plu_genral.pdf
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12\plu_genral.pdf
             size_bytes: 11027617
+      desktop.ini:
+        type: file
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\desktop.ini
+        size_bytes: 246
