@@ -8,10 +8,8 @@ Author: Grey Panda
 
 from .image import base64_to_image
 from .json import save_as_json
-from .logger import save_gemini_response
 
 __all__ = [
     "base64_to_image",
     "save_as_json",
-    "save_gemini_response",
 ]

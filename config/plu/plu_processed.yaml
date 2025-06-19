@@ -1,20 +1,12 @@
 metadata:
   description: Processed PLU data ready for analysis
   generated_at: C:\Users\Regium\Repositories\mwplu_analysis
-  total_items: 4
+  total_items: 3
 data:
-  desktop.ini:
-    type: file
-    path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\desktop.ini
-    size_bytes: 246
   grenoble:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\desktop.ini
-        size_bytes: 246
       Zones Agricoles:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
@@ -30,21 +22,11 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
               Agricoles\AL.json
             size_bytes: 48392
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
-              Agricoles\desktop.ini
-            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           Naturelles et Forestières
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
-              Naturelles et Forestières\desktop.ini
-            size_bytes: 246
           N.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
@@ -60,11 +42,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
           Urbaines
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
-              Urbaines\desktop.ini
-            size_bytes: 246
           UA1.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
@@ -270,11 +247,6 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
               À Urbaniser\AUZ1.json
             size_bytes: 45927
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\grenoble\Zones
-              À Urbaniser\desktop.ini
-            size_bytes: 246
     source_plu_url: https://cloud.grenoblealpesmetropole.fr/index.php/s/Db4aYze8MYkdJdo
   lille:
     type: directory
@@ -1580,10 +1552,6 @@ data:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\desktop.ini
-        size_bytes: 246
       Zones Agricoles:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
@@ -1594,21 +1562,11 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
               Agricoles\A.json
             size_bytes: 69649
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
-              Agricoles\desktop.ini
-            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
           Naturelles et Forestières
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
-              Naturelles et Forestières\desktop.ini
-            size_bytes: 246
           N.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
@@ -1619,11 +1577,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
           Urbaines
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
-              Urbaines\desktop.ini
-            size_bytes: 246
           UE.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
@@ -1654,9 +1607,4 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
               À Urbaniser\2AU.json
             size_bytes: 51653
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\processed\nantes\Zones
-              À Urbaniser\desktop.ini
-            size_bytes: 246
     source_plu_url: https://metropole.nantes.fr/mes-services-mon-quotidien/le-plan-local-d-urbanisme-metropolitain-le-plum#sync_doc-98437

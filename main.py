@@ -14,7 +14,6 @@ from supabase import create_client
 from src.config import (
     BACKUP_DIR,
     EXTERNAL_DATA_DIR,
-    IMAGES_DIR,
     INTERIM_DATA_DIR,
     PDF_DIR,
     PROCESSED_DATA_DIR,
@@ -178,6 +177,10 @@ def synthesis(
     """
     input_path = INTERIM_DATA_DIR / name_city / name_zoning / f"{name_document}.json"
     output_path = PROCESSED_DATA_DIR / name_city / name_zoning / f"{name_document}.json"
+
+    if output_path.exists():
+        logger.debug(f"Synthesis already done for {output_path.resolve()}")
+        return
 
     with open(input_path, mode="r", encoding="utf-8") as file:
         interim_data = json.load(file)

@@ -82,55 +82,48 @@ def _draw_page_logo(canvas, logo_path_tl: str, width_cm: float = 2.0):
     """
     if not logo_path_tl:
         return
+
+    drawing_tl = svg2rlg(logo_path_tl)
+    if not drawing_tl:
+        return
+
+    if drawing_tl.width == 0 or drawing_tl.height == 0:
+        if drawing_tl.width == 0 and drawing_tl.height == 0:
+            return
+
+    target_width_pt = width_cm * cm
+
+    if drawing_tl.width == 0 and drawing_tl.height != 0:
+        scale_tl = target_width_pt / (
+            drawing_tl.height * (target_width_pt / (A4[1] * 0.05))
+        )  # Heuristic
+    elif drawing_tl.height == 0 and drawing_tl.width != 0:
+        scale_tl = target_width_pt / drawing_tl.width
+    elif drawing_tl.width != 0 and drawing_tl.height != 0:
+        scale_tl = target_width_pt / drawing_tl.width
+    else:  # Both zero
+        return
+
+    scaled_width_tl = drawing_tl.width * scale_tl
+    scaled_height_tl = drawing_tl.height * scale_tl
+
+    if scaled_width_tl == 0 or scaled_height_tl == 0:
+        if scaled_width_tl == 0 and scaled_height_tl == 0:
+            return
+
+    drawing_tl.width = scaled_width_tl
+    drawing_tl.height = scaled_height_tl
+    drawing_tl.scale(scale_tl, scale_tl)
+    drawing_tl.translate(0, 0)
+
+    x_pos_pt = 1.6 * cm
+    y_pos_pt = 0.2 * cm  # Now from the bottom edge
+
+    canvas.saveState()
     try:
-        drawing_tl = svg2rlg(logo_path_tl)
-        if not drawing_tl:
-            return
-
-        if drawing_tl.width == 0 or drawing_tl.height == 0:
-            if drawing_tl.width == 0 and drawing_tl.height == 0:
-                return
-
-        target_width_pt = width_cm * cm
-
-        if drawing_tl.width == 0 and drawing_tl.height != 0:
-            scale_tl = target_width_pt / (
-                drawing_tl.height * (target_width_pt / (A4[1] * 0.05))
-            )  # Heuristic
-        elif drawing_tl.height == 0 and drawing_tl.width != 0:
-            scale_tl = target_width_pt / drawing_tl.width
-        elif drawing_tl.width != 0 and drawing_tl.height != 0:
-            scale_tl = target_width_pt / drawing_tl.width
-        else:  # Both zero
-            return
-
-        scaled_width_tl = drawing_tl.width * scale_tl
-        scaled_height_tl = drawing_tl.height * scale_tl
-
-        if scaled_width_tl == 0 or scaled_height_tl == 0:
-            if scaled_width_tl == 0 and scaled_height_tl == 0:
-                return
-
-        drawing_tl.width = scaled_width_tl
-        drawing_tl.height = scaled_height_tl
-        drawing_tl.scale(scale_tl, scale_tl)
-        drawing_tl.translate(0, 0)
-
-        x_pos_pt = 1.6 * cm
-        y_pos_pt = 0.2 * cm  # Now from the bottom edge
-
-        canvas.saveState()
-        try:
-            renderPDF.draw(drawing_tl, canvas, x_pos_pt, y_pos_pt)
-        finally:
-            canvas.restoreState()
-
-    except FileNotFoundError:
-        print(f"Error: Bottom-left SVG logo file not found at {logo_path_tl}")
-    except Exception as e:
-        print(
-            f"Error processing or drawing bottom-left SVG logo from {logo_path_tl}: {e}"
-        )
+        renderPDF.draw(drawing_tl, canvas, x_pos_pt, y_pos_pt)
+    finally:
+        canvas.restoreState()
 
 
 def _parse_json(json_path: str) -> Dict:

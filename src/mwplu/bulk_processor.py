@@ -12,6 +12,7 @@ Author: Grey Panda
 import os
 import re
 import subprocess
+import sys
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
@@ -24,6 +25,8 @@ from supabase import Client, create_client
 
 from src.config import (
     CONFIG_DIR,
+    INTERIM_DATA_DIR,
+    RAW_DATA_DIR,
     PROCESSED_DATA_DIR,
 )
 from src.mwplu.post_data import process_all_json_files, process_json_file
@@ -250,62 +253,94 @@ class MainPipelineProcessor(BaseProcessor):
 
         return tasks
 
-    def execute_task(self, task: ProcessingTask) -> bool:
-        """Execute a main.py pipeline task."""
-        try:
-            cmd = ["python", str(self.main_py), task.stage.value]
+    def execute_task(self, task: ProcessingTask):
+        """Execute a single main.py task."""
+        # Quick check to avoid subprocess overhead for already-completed tasks
+        cmd = ["python", str(self.main_py)]
 
-            # Add city parameter
+        # Add stage command first
+        cmd.append(task.stage.value)
+
+        # Add common arguments
+        if task.city:
             cmd.extend(["--name-city", task.city])
+        if task.document:
+            cmd.extend(["--name-document", task.document])
 
-            # Add stage-specific parameters
-            if task.stage == PipelineStage.OCR:
-                if task.date_creation:
-                    cmd.extend(["--date-creation-source-document", task.date_creation])
-                if task.zoning and task.zoning != "None":
-                    cmd.extend(["--name-zoning", task.zoning])
-                if task.document:
-                    cmd.extend(["--name-document", task.document])
+        # Add stage-specific arguments
+        if task.stage == PipelineStage.OCR:
+            if task.zoning:
+                cmd.extend(["--name-zoning", task.zoning])
+            if task.date_creation:
+                cmd.extend(["--date-creation-source-document", task.date_creation])
+        elif task.stage == PipelineStage.SYNTHESIS:
+            if task.zoning:
+                cmd.extend(["--name-zoning", task.zoning])
+            if "dispositions_generales" in task.extra_params:
+                cmd.extend(
+                    [
+                        "--dispositions-generales",
+                        task.extra_params["dispositions_generales"],
+                    ]
+                )
 
-            elif task.stage in [PipelineStage.EXTRACT_PAGES]:
-                if task.document:
-                    cmd.extend(["--name-document", task.document])
+        if self._should_skip_task(task):
+            logger.debug(f"Skipping {' '.join(cmd)} - output already exists")
+            return
 
-            elif task.stage in [PipelineStage.SYNTHESIS]:
-                if task.zoning:
-                    cmd.extend(["--name-zoning", task.zoning])
-                if task.document:
-                    cmd.extend(["--name-document", task.document])
-
-                if task.stage == PipelineStage.SYNTHESIS:
-                    dg = task.extra_params.get("dispositions_generales", "None")
-                    cmd.extend(["--dispositions-generales", dg])
-
-            elif task.stage == PipelineStage.UPLOAD_SUPABASE:
-                # For upload_supabase, we need city, zoning, and document parameters
-                if task.zoning:
-                    cmd.extend(["--name-zoning", task.zoning])
-                if task.document:
-                    cmd.extend(["--name-document", task.document])
-
-            logger.info(f"Executing: {' '.join(cmd)}")
-            subprocess.run(cmd, capture_output=True, text=True, check=True)
-            logger.success(f"Task completed: {task.stage.value} for {task.city}")
-            return True
-
+        logger.trace(f"Executing: {' '.join(cmd)}")
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
         except subprocess.CalledProcessError as e:
-            logger.error(f"Task failed: {task.stage.value} for {task.city}")
-            logger.error(f"Command: {' '.join(cmd)}")
-            logger.error(f"Error: {e.stderr}")
-            return False
-        except Exception as e:  # pylint: disable=broad-exception-caught
-            logger.error(
-                f"Unexpected error in task {task.stage.value} for {task.city}: {e}"
-            )
-            return False
+            # Display the actual error from the subprocess without showing our traceback
+            logger.error(f"Command failed: {' '.join(e.cmd)}")
+            logger.error(f"Exit code: {e.returncode}")
+
+            if e.stdout and e.stdout.strip():
+                logger.error(f"Stdout:\n{e.stdout}")
+
+            if e.stderr and e.stderr.strip():
+                logger.error(f"Error details:\n{e.stderr}")
+
+            # Re-raise without showing our own traceback stack
+            sys.exit(1)
+
+    def _should_skip_task(self, task: ProcessingTask) -> bool:
+        """Check if a task should be skipped because output already exists."""
+        if task.stage == PipelineStage.SYNTHESIS:
+            # Check if synthesis output already exists
+            if task.city and task.zoning and task.document:
+                output_path = (
+                    PROCESSED_DATA_DIR
+                    / task.city
+                    / task.zoning
+                    / f"{task.document}.json"
+                )
+                return output_path.exists()
+
+        elif task.stage == PipelineStage.OCR:
+            # Check if OCR output already exists
+            if task.city and task.zoning and task.document:
+                output_path = (
+                    RAW_DATA_DIR / task.city / task.zoning / f"{task.document}.json"
+                )
+                return output_path.exists()
+
+        elif task.stage == PipelineStage.EXTRACT_PAGES:
+            # Check if extract_pages output already exists
+            if task.city and task.document:
+                output_path = (
+                    INTERIM_DATA_DIR
+                    / task.city
+                    / task.document
+                    / f"{task.document}.json"
+                )
+                return output_path.exists()
+
+        return False
 
     def _is_date_format(self, date_str: str) -> bool:
-        """Check if string matches date format YYYY-MM-DD."""
+        """Check if a string matches the YYYY-MM-DD format."""
         return bool(re.match(r"^\d{4}-\d{2}-\d{2}$", date_str))
 
 
@@ -345,44 +380,34 @@ class SupabaseProcessor(BaseProcessor):
 
         return tasks
 
-    def execute_task(self, task: ProcessingTask) -> bool:
-        """Execute Supabase upload task."""
+    def execute_task(self, task: ProcessingTask):
+        """Execute a single Supabase upload task."""
         if not self.supabase:
-            logger.error("Supabase client not available")
-            return False
+            logger.error("Supabase client not initialized. Cannot execute task.")
+            return
 
-        try:
-            if task.city == "all":
-                # Process all JSON files
-                process_all_json_files(self.supabase)
+        if task.city == "all":
+            logger.info("Uploading all processed files to Supabase...")
+            process_all_json_files(self.supabase)
+        else:
+            # Construct the path safely
+            path_parts = [task.city]
+            if task.zoning:
+                path_parts.append(task.zoning)
+            if task.document:
+                path_parts.append(f"{task.document}.json")
+
+            file_path = PROCESSED_DATA_DIR.joinpath(*path_parts)
+
+            if file_path.exists():
+                logger.info(f"Uploading {file_path} to Supabase...")
+                process_json_file(self.supabase, file_path)
             else:
-                # Process specific city files
-                city_dir = PROCESSED_DATA_DIR / task.city
-                json_files = list(city_dir.glob("**/*.json"))
-
-                success_count = 0
-                for json_file_path in json_files:
-                    try:
-                        process_json_file(
-                            supabase=self.supabase, json_file_path=json_file_path
-                        )
-                        success_count += 1
-                    except Exception as e:  # pylint: disable=broad-exception-caught
-                        logger.error(f"Error uploading {json_file_path}: {e}")
-
-                logger.info(
-                    f"Uploaded {success_count}/{len(json_files)} files for {task.city}"
-                )
-
-            return True
-
-        except Exception as e:  # pylint: disable=broad-exception-caught
-            logger.error(f"Error in Supabase upload task for {task.city}: {e}")
-            return False
+                logger.warning(f"File not found, skipping upload: {file_path}")
 
 
 class BulkProcessor:
-    """Main bulk processor that orchestrates different processors."""
+    """Orchestrates the bulk processing pipeline."""
 
     def __init__(self, config_dir: Path = CONFIG_DIR):
         self.config_dir = config_dir
@@ -394,53 +419,72 @@ class BulkProcessor:
         stages: List[PipelineStage],
         cities: Optional[List[str]] = None,
         dry_run: bool = False,
-    ) -> Dict[str, Any]:
-        """Run specific pipeline stages for selected cities."""
+        limit: Optional[int] = None,
+    ):
+        """
+        Run the specified pipeline stages for the given cities.
 
-        # Generate tasks
+        Args:
+            stages: List of pipeline stages to run
+            cities: List of cities to process (None for all)
+            dry_run: If True, show what would be executed without running
+            limit: Maximum number of tasks to execute (None for all tasks)
+        """
+        all_cities = self.get_available_cities()
+        target_cities = all_cities if not cities or "all" in cities else set(cities)
+
+        main_processor = MainPipelineProcessor(self.config_dir)
+        supabase_processor = SupabaseProcessor(config_dir=self.config_dir)
+
+        # Generate all possible tasks
+        all_main_tasks = main_processor.generate_tasks(stages)
+        all_supabase_tasks = supabase_processor.generate_tasks()
+
+        # Filter tasks by city
+        tasks_to_run = [
+            task
+            for task in all_main_tasks
+            if task.city in target_cities and task.stage in stages
+        ]
+
         if PipelineStage.UPLOAD_SUPABASE in stages:
-            supabase_tasks = self.supabase_processor.generate_tasks()
-            if cities:
-                supabase_tasks = [
-                    t for t in supabase_tasks if t.city in cities or "all" in cities
+            tasks_to_run.extend(
+                [
+                    task
+                    for task in all_supabase_tasks
+                    if task.city in target_cities
+                    or (task.city == "all" and (not cities or "all" in cities))
                 ]
-        else:
-            supabase_tasks = []
+            )
 
-        main_tasks = self.main_processor.generate_tasks(stages)
-        if cities:
-            main_tasks = [t for t in main_tasks if t.city in cities]
-
-        all_tasks = main_tasks + supabase_tasks
+        # Apply limit if specified
+        if limit is not None and limit > 0:
+            tasks_to_run = tasks_to_run[:limit]
 
         if dry_run:
-            logger.info(f"DRY RUN: Would execute {len(all_tasks)} tasks:")
-            for task in all_tasks:
+            logger.info("[DRY RUN] The following tasks would be executed:")
+            for task in tasks_to_run:
                 logger.info(
-                    f"  - {task.stage.value}: {task.city} / {task.zoning} / {task.document}"
+                    f"  - Stage: {task.stage.value}, City: {task.city}, "
+                    f"Zoning: {task.zoning}, Document: {task.document}"
                 )
-            return {"total_tasks": len(all_tasks), "tasks": all_tasks}
+            logger.info(f"Total tasks: {len(tasks_to_run)}")
+            return
 
-        # Execute tasks
-        results = {"successful": 0, "failed": 0, "total": len(all_tasks)}
+        logger.info(f"Starting bulk processing for {len(tasks_to_run)} tasks...")
 
-        for i, task in enumerate(all_tasks, 1):
-            logger.info(f"Processing task {i}/{len(all_tasks)}: {task.stage.value}")
-
+        for i, task in enumerate(tasks_to_run):
+            print("\n")
+            logger.info(f"Executing task {i + 1}/{len(tasks_to_run)}")
             if task.stage == PipelineStage.UPLOAD_SUPABASE:
-                success = self.supabase_processor.execute_task(task)
+                supabase_processor.execute_task(task)
             else:
-                success = self.main_processor.execute_task(task)
+                main_processor.execute_task(task)
 
-            if success:
-                results["successful"] += 1
-            else:
-                results["failed"] += 1
-
-        return results
+        logger.info("Bulk processing finished.")
 
     def get_available_cities(self) -> Set[str]:
-        """Get list of available cities from all configurations."""
+        """Get a set of all available cities from the external config."""
         cities = set()
 
         for config_data in self.main_processor.yaml_configs.values():

@@ -1,7 +1,7 @@
 metadata:
   description: External PLU data files and resources
   generated_at: C:\Users\Regium\Repositories\mwplu_analysis
-  total_items: 14
+  total_items: 13
 data:
   bordeaux:
     type: directory
@@ -11,18 +11,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\desktop.ini
-            size_bytes: 246
           zones_UPZ:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ\desktop.ini
-                size_bytes: 246
               UPZ7.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2020-01-24\zones_UPZ\UPZ7.pdf
@@ -31,18 +23,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\desktop.ini
-            size_bytes: 246
           zones_UP:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP\desktop.ini
-                size_bytes: 246
               UP87.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UP\UP87.pdf
@@ -55,10 +39,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ\desktop.ini
-                size_bytes: 246
               UPZ1.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2022-01-28\zones_UPZ\UPZ1.pdf
@@ -67,18 +47,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\desktop.ini
-            size_bytes: 246
           zones_UP:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP\desktop.ini
-                size_bytes: 246
               UP89.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UP\UP89.pdf
@@ -87,10 +59,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ\desktop.ini
-                size_bytes: 246
               UPZ7-1.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2023-11-28\zones_UPZ\UPZ7-1.pdf
@@ -99,10 +67,6 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\desktop.ini
-            size_bytes: 246
           zones_A:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A
@@ -123,10 +87,6 @@ data:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\Ah2.pdf
                 size_bytes: 2810179
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_A\desktop.ini
-                size_bytes: 246
           zones_AU:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU
@@ -207,18 +167,10 @@ data:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\AU99.pdf
                 size_bytes: 2545950
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_AU\desktop.ini
-                size_bytes: 246
           zones_N:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\desktop.ini
-                size_bytes: 246
               Nb.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_N\Nb.pdf
@@ -255,10 +207,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\desktop.ini
-                size_bytes: 246
               UM1.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UM\UM1.pdf
@@ -427,10 +375,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\desktop.ini
-                size_bytes: 246
               UP1.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UP\UP1.pdf
@@ -759,10 +703,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\desktop.ini
-                size_bytes: 246
               UPZ2.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_UPZ\UPZ2.pdf
@@ -799,10 +739,6 @@ data:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\desktop.ini
-                size_bytes: 246
               US1.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-02-02\zones_US\US1.pdf
@@ -859,18 +795,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\desktop.ini
-            size_bytes: 246
           zones_UM:
             type: directory
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM
             contents:
-              desktop.ini:
-                type: file
-                path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\desktop.ini
-                size_bytes: 246
               UM34.pdf:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\UM34.pdf
@@ -879,14 +807,3821 @@ data:
                 type: file
                 path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\2024-12-06\zones_UM\UM43.pdf
                 size_bytes: 3420967
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\desktop.ini
-        size_bytes: 246
-  desktop.ini:
-    type: file
-    path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\desktop.ini
-    size_bytes: 246
+      Dispositions Paysage Patrimoine:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+          Paysage Patrimoine
+        contents:
+          B1.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B1.pdf
+            size_bytes: 2278904
+          B2.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B2.pdf
+            size_bytes: 278000
+          B3.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B3.pdf
+            size_bytes: 403370
+          B4.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B4.pdf
+            size_bytes: 3157553
+          B5.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B5.pdf
+            size_bytes: 207023
+          B6.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B6.pdf
+            size_bytes: 1270142
+          B7.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B7.pdf
+            size_bytes: 191490
+          B8001.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8001.pdf
+            size_bytes: 202922
+          B8002.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8002.pdf
+            size_bytes: 203282
+          B8003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8003.pdf
+            size_bytes: 203003
+          B8004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8004.pdf
+            size_bytes: 201372
+          B8005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8005.pdf
+            size_bytes: 201868
+          B8006.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8006.pdf
+            size_bytes: 202626
+          B8007.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8007.pdf
+            size_bytes: 202588
+          B8008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8008.pdf
+            size_bytes: 201120
+          B8009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8009.pdf
+            size_bytes: 200663
+          B8010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8010.pdf
+            size_bytes: 201322
+          B8012.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8012.pdf
+            size_bytes: 199004
+          B8013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8013.pdf
+            size_bytes: 199508
+          B8014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8014.pdf
+            size_bytes: 199956
+          B8015.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8015.pdf
+            size_bytes: 200121
+          B8016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8016.pdf
+            size_bytes: 201830
+          B8017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8017.pdf
+            size_bytes: 98362
+          B8018.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8018.pdf
+            size_bytes: 199810
+          B8019.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8019.pdf
+            size_bytes: 200836
+          B8020.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8020.pdf
+            size_bytes: 306739
+          B8021.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8021.pdf
+            size_bytes: 200669
+          B8022.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8022.pdf
+            size_bytes: 199948
+          B8023.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8023.pdf
+            size_bytes: 198837
+          B8024.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8024.pdf
+            size_bytes: 201095
+          B8025.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8025.pdf
+            size_bytes: 200529
+          B8026.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8026.pdf
+            size_bytes: 198770
+          B8027.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8027.pdf
+            size_bytes: 198654
+          B8028.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8028.pdf
+            size_bytes: 198413
+          B8029.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8029.pdf
+            size_bytes: 199717
+          B8030.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8030.pdf
+            size_bytes: 201168
+          B8031.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8031.pdf
+            size_bytes: 200120
+          B8032.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8032.pdf
+            size_bytes: 199792
+          B8033.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8033.pdf
+            size_bytes: 295629
+          B8034.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8034.pdf
+            size_bytes: 313823
+          B8037.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8037.pdf
+            size_bytes: 265601
+          B8038.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8038.pdf
+            size_bytes: 201605
+          B8039.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8039.pdf
+            size_bytes: 200738
+          B8040.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8040.pdf
+            size_bytes: 199982
+          B8044.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8044.pdf
+            size_bytes: 200900
+          B8045.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8045.pdf
+            size_bytes: 201276
+          B8046.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8046.pdf
+            size_bytes: 199957
+          B8047.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8047.pdf
+            size_bytes: 200501
+          B8048.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8048.pdf
+            size_bytes: 199865
+          B8049.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8049.pdf
+            size_bytes: 200228
+          B8050.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8050.pdf
+            size_bytes: 201466
+          B8051.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8051.pdf
+            size_bytes: 200512
+          B8052.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8052.pdf
+            size_bytes: 200435
+          B8053.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8053.pdf
+            size_bytes: 199467
+          B8054.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8054.pdf
+            size_bytes: 201107
+          B8055.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8055.pdf
+            size_bytes: 200512
+          B8056.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8056.pdf
+            size_bytes: 200776
+          B8057.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8057.pdf
+            size_bytes: 199983
+          B8058.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8058.pdf
+            size_bytes: 200865
+          B8059.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8059.pdf
+            size_bytes: 200298
+          B8060.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8060.pdf
+            size_bytes: 199534
+          B8061.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8061.pdf
+            size_bytes: 199887
+          B8062.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8062.pdf
+            size_bytes: 200852
+          B8063.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8063.pdf
+            size_bytes: 202209
+          B8064.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8064.pdf
+            size_bytes: 201816
+          B8065.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8065.pdf
+            size_bytes: 199953
+          B8066.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8066.pdf
+            size_bytes: 198756
+          B8067.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8067.pdf
+            size_bytes: 199194
+          B8068.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8068.pdf
+            size_bytes: 201016
+          B8069.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8069.pdf
+            size_bytes: 200590
+          B8070.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8070.pdf
+            size_bytes: 216834
+          B8071.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8071.pdf
+            size_bytes: 313902
+          B8072.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8072.pdf
+            size_bytes: 277968
+          B8073.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8073.pdf
+            size_bytes: 331085
+          B8074.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8074.pdf
+            size_bytes: 273034
+          B8075.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8075.pdf
+            size_bytes: 263955
+          B8076.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8076.pdf
+            size_bytes: 256200
+          B8077.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8077.pdf
+            size_bytes: 276929
+          B8078.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8078.pdf
+            size_bytes: 263739
+          B8080.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8080.pdf
+            size_bytes: 201773
+          B8081.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8081.pdf
+            size_bytes: 199213
+          B8082.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8082.pdf
+            size_bytes: 200787
+          B8083.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8083.pdf
+            size_bytes: 200589
+          B8084.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8084.pdf
+            size_bytes: 200968
+          B8085.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8085.pdf
+            size_bytes: 200413
+          B8086.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8086.pdf
+            size_bytes: 203594
+          B8087.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8087.pdf
+            size_bytes: 198774
+          B8088.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8088.pdf
+            size_bytes: 223151
+          B8089.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8089.pdf
+            size_bytes: 226726
+          B8090.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8090.pdf
+            size_bytes: 225325
+          B8091.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8091.pdf
+            size_bytes: 433000
+          B8093.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8093.pdf
+            size_bytes: 224392
+          B8094.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8094.pdf
+            size_bytes: 213613
+          B8095.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8095.pdf
+            size_bytes: 282974
+          B8096.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8096.pdf
+            size_bytes: 218577
+          B8097.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8097.pdf
+            size_bytes: 297326
+          B8098.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8098.pdf
+            size_bytes: 248240
+          B8099.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8099.pdf
+            size_bytes: 260735
+          B8100.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8100.pdf
+            size_bytes: 292849
+          B8101.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8101.pdf
+            size_bytes: 242392
+          B8102.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8102.pdf
+            size_bytes: 240420
+          B8103.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8103.pdf
+            size_bytes: 239619
+          B8104.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8104.pdf
+            size_bytes: 246042
+          B8105.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8105.pdf
+            size_bytes: 309263
+          B8106.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8106.pdf
+            size_bytes: 255215
+          B8107.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8107.pdf
+            size_bytes: 265131
+          B8108.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8108.pdf
+            size_bytes: 260890
+          B8109.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8109.pdf
+            size_bytes: 285025
+          B8110.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8110.pdf
+            size_bytes: 307796
+          B8111.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8111.pdf
+            size_bytes: 286956
+          B8112.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8112.pdf
+            size_bytes: 279414
+          B8113.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8113.pdf
+            size_bytes: 258460
+          B8114.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8114.pdf
+            size_bytes: 275436
+          B8115.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8115.pdf
+            size_bytes: 287189
+          B8116.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8116.pdf
+            size_bytes: 274409
+          B8117.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8117.pdf
+            size_bytes: 267540
+          B8119.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8119.pdf
+            size_bytes: 280412
+          B8120.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8120.pdf
+            size_bytes: 279794
+          B8121.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8121.pdf
+            size_bytes: 259304
+          B8123.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8123.pdf
+            size_bytes: 207549
+          B8124.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8124.pdf
+            size_bytes: 212048
+          B8125.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8125.pdf
+            size_bytes: 216361
+          B8130.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8130.pdf
+            size_bytes: 204907
+          B8131.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8131.pdf
+            size_bytes: 210287
+          B8132.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8132.pdf
+            size_bytes: 271344
+          B8133.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8133.pdf
+            size_bytes: 292364
+          B8134.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8134.pdf
+            size_bytes: 284257
+          B8135.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8135.pdf
+            size_bytes: 270541
+          B8136.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8136.pdf
+            size_bytes: 304696
+          B8137.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8137.pdf
+            size_bytes: 310603
+          B8138.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8138.pdf
+            size_bytes: 236211
+          B8139.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8139.pdf
+            size_bytes: 239108
+          B8141.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8141.pdf
+            size_bytes: 208743
+          B8150.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8150.pdf
+            size_bytes: 202136
+          B8151.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8151.pdf
+            size_bytes: 202045
+          B8152.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8152.pdf
+            size_bytes: 200975
+          B8153.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8153.pdf
+            size_bytes: 201337
+          B8154.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8154.pdf
+            size_bytes: 201998
+          B8155.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8155.pdf
+            size_bytes: 201595
+          B8156.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8156.pdf
+            size_bytes: 201450
+          B8157.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8157.pdf
+            size_bytes: 202335
+          B8158.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8158.pdf
+            size_bytes: 201535
+          B8159.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8159.pdf
+            size_bytes: 201411
+          B8160.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8160.pdf
+            size_bytes: 324294
+          B8180.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8180.pdf
+            size_bytes: 110931
+          B8200.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8200.pdf
+            size_bytes: 147368
+          B8220.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8220.pdf
+            size_bytes: 227781
+          B8221.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8221.pdf
+            size_bytes: 270587
+          B8260.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\B8260.pdf
+            size_bytes: 287292
+          C1001.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1001.pdf
+            size_bytes: 317634
+          C1002.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1002.pdf
+            size_bytes: 308749
+          C1003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1003.pdf
+            size_bytes: 325304
+          C1004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1004.pdf
+            size_bytes: 277458
+          C1005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1005.pdf
+            size_bytes: 206641
+          C1006.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1006.pdf
+            size_bytes: 315341
+          C1007.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1007.pdf
+            size_bytes: 203294
+          C1008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1008.pdf
+            size_bytes: 330316
+          C1009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1009.pdf
+            size_bytes: 182175
+          C1010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1010.pdf
+            size_bytes: 180990
+          C1011.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1011.pdf
+            size_bytes: 202537
+          C1013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1013.pdf
+            size_bytes: 205874
+          C1014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1014.pdf
+            size_bytes: 202826
+          C1015.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1015.pdf
+            size_bytes: 203866
+          C1016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1016.pdf
+            size_bytes: 203214
+          C1017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1017.pdf
+            size_bytes: 205011
+          C1018.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1018.pdf
+            size_bytes: 112425
+          C1019.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C1019.pdf
+            size_bytes: 203873
+          C2001.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2001.pdf
+            size_bytes: 203923
+          C2002.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2002.pdf
+            size_bytes: 214713
+          C2003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2003.pdf
+            size_bytes: 206626
+          C2004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2004.pdf
+            size_bytes: 206298
+          C2005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2005.pdf
+            size_bytes: 205690
+          C2006.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2006.pdf
+            size_bytes: 203744
+          C2008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2008.pdf
+            size_bytes: 193018
+          C2009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2009.pdf
+            size_bytes: 207157
+          C2010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2010.pdf
+            size_bytes: 199669
+          C2013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2013.pdf
+            size_bytes: 197760
+          C2014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2014.pdf
+            size_bytes: 202169
+          C2015.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2015.pdf
+            size_bytes: 186823
+          C2016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2016.pdf
+            size_bytes: 207004
+          C2017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2017.pdf
+            size_bytes: 206894
+          C2018.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2018.pdf
+            size_bytes: 208099
+          C2019.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2019.pdf
+            size_bytes: 453329
+          C2020.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2020.pdf
+            size_bytes: 206135
+          C2021.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2021.pdf
+            size_bytes: 203031
+          C2023.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2023.pdf
+            size_bytes: 205682
+          C2024.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2024.pdf
+            size_bytes: 207419
+          C2025.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2025.pdf
+            size_bytes: 207766
+          C2026.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2026.pdf
+            size_bytes: 209987
+          C2027.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2027.pdf
+            size_bytes: 204392
+          C2028.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2028.pdf
+            size_bytes: 206047
+          C2029.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2029.pdf
+            size_bytes: 205994
+          C2030.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2030.pdf
+            size_bytes: 202018
+          C2031.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2031.pdf
+            size_bytes: 200227
+          C2032.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2032.pdf
+            size_bytes: 210023
+          C2033.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2033.pdf
+            size_bytes: 208498
+          C2034.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2034.pdf
+            size_bytes: 202016
+          C2035.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2035.pdf
+            size_bytes: 205756
+          C2036.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2036.pdf
+            size_bytes: 109091
+          C2037.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2037.pdf
+            size_bytes: 202097
+          C2038.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2038.pdf
+            size_bytes: 203084
+          C2039.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2039.pdf
+            size_bytes: 206447
+          C2041.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2041.pdf
+            size_bytes: 452994
+          C2044.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2044.pdf
+            size_bytes: 321813
+          C2045.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2045.pdf
+            size_bytes: 182079
+          C2046.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2046.pdf
+            size_bytes: 206490
+          C2047.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2047.pdf
+            size_bytes: 205419
+          C2048.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2048.pdf
+            size_bytes: 204650
+          C2049.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2049.pdf
+            size_bytes: 102998
+          C2050.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2050.pdf
+            size_bytes: 201849
+          C2052.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2052.pdf
+            size_bytes: 204788
+          C2053.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2053.pdf
+            size_bytes: 208127
+          C2054.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2054.pdf
+            size_bytes: 205579
+          C2055.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2055.pdf
+            size_bytes: 204028
+          C2056.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2056.pdf
+            size_bytes: 204224
+          C2057.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2057.pdf
+            size_bytes: 205360
+          C2058.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2058.pdf
+            size_bytes: 328785
+          C2059.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2059.pdf
+            size_bytes: 199747
+          C2060.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C2060.pdf
+            size_bytes: 106574
+          C3001.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3001.pdf
+            size_bytes: 316160
+          C3002.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3002.pdf
+            size_bytes: 187566
+          C3003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3003.pdf
+            size_bytes: 467830
+          C3004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3004.pdf
+            size_bytes: 469044
+          C3005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3005.pdf
+            size_bytes: 320460
+          C3006.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3006.pdf
+            size_bytes: 326416
+          C3007.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3007.pdf
+            size_bytes: 309508
+          C3008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3008.pdf
+            size_bytes: 203762
+          C3009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3009.pdf
+            size_bytes: 397979
+          C3010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3010.pdf
+            size_bytes: 407081
+          C3012.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3012.pdf
+            size_bytes: 346857
+          C3013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3013.pdf
+            size_bytes: 441693
+          C3014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3014.pdf
+            size_bytes: 328439
+          C3015.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3015.pdf
+            size_bytes: 417449
+          C3016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3016.pdf
+            size_bytes: 332840
+          C3017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3017.pdf
+            size_bytes: 202747
+          C3018.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3018.pdf
+            size_bytes: 348465
+          C3019.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3019.pdf
+            size_bytes: 199049
+          C3020.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3020.pdf
+            size_bytes: 367365
+          C3021.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3021.pdf
+            size_bytes: 336536
+          C3024.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3024.pdf
+            size_bytes: 390688
+          C3025.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3025.pdf
+            size_bytes: 190029
+          C3026.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3026.pdf
+            size_bytes: 204495
+          C3027.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3027.pdf
+            size_bytes: 2008772
+          C3028.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3028.pdf
+            size_bytes: 305174
+          C3030.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3030.pdf
+            size_bytes: 361361
+          C3031.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3031.pdf
+            size_bytes: 314063
+          C3032.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3032.pdf
+            size_bytes: 203973
+          C3033.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3033.pdf
+            size_bytes: 292038
+          C3034.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3034.pdf
+            size_bytes: 309265
+          C3035.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3035.pdf
+            size_bytes: 201799
+          C3037.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3037.pdf
+            size_bytes: 257432
+          C3038.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3038.pdf
+            size_bytes: 203517
+          C3039.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3039.pdf
+            size_bytes: 184614
+          C3040.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3040.pdf
+            size_bytes: 198857
+          C3041.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3041.pdf
+            size_bytes: 197980
+          C3042.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3042.pdf
+            size_bytes: 306624
+          C3044.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3044.pdf
+            size_bytes: 198721
+          C3045.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3045.pdf
+            size_bytes: 199350
+          C3046.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3046.pdf
+            size_bytes: 198762
+          C3047.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3047.pdf
+            size_bytes: 203606
+          C3048.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3048.pdf
+            size_bytes: 199284
+          C3049.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3049.pdf
+            size_bytes: 201123
+          C3051.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3051.pdf
+            size_bytes: 193121
+          C3052.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3052.pdf
+            size_bytes: 290372
+          C3056.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3056.pdf
+            size_bytes: 476899
+          C3057.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3057.pdf
+            size_bytes: 204817
+          C3058.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3058.pdf
+            size_bytes: 331644
+          C3061.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3061.pdf
+            size_bytes: 201840
+          C3062.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3062.pdf
+            size_bytes: 197116
+          C3063.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3063.pdf
+            size_bytes: 395289
+          C3064.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3064.pdf
+            size_bytes: 208514
+          C3065.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3065.pdf
+            size_bytes: 201391
+          C3066.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3066.pdf
+            size_bytes: 185503
+          C3067.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3067.pdf
+            size_bytes: 197816
+          C3068.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3068.pdf
+            size_bytes: 202254
+          C3069.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3069.pdf
+            size_bytes: 310652
+          C3070.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3070.pdf
+            size_bytes: 201240
+          C3071.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3071.pdf
+            size_bytes: 197386
+          C3072.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3072.pdf
+            size_bytes: 331817
+          C3073.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3073.pdf
+            size_bytes: 205379
+          C3074.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3074.pdf
+            size_bytes: 255241
+          C3075.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3075.pdf
+            size_bytes: 323200
+          C3076.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3076.pdf
+            size_bytes: 274979
+          C3077.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3077.pdf
+            size_bytes: 440235
+          C3078.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3078.pdf
+            size_bytes: 423987
+          C3079.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3079.pdf
+            size_bytes: 223269
+          C3099.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3099.pdf
+            size_bytes: 107118
+          C3119.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3119.pdf
+            size_bytes: 161262
+          C3139.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3139.pdf
+            size_bytes: 160975
+          C3159.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3159.pdf
+            size_bytes: 163972
+          C3179.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3179.pdf
+            size_bytes: 163627
+          C3180.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\C3180.pdf
+            size_bytes: 161266
+          E1003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1003.pdf
+            size_bytes: 281376
+          E1004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1004.pdf
+            size_bytes: 226096
+          E1005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1005.pdf
+            size_bytes: 222252
+          E1008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1008.pdf
+            size_bytes: 285546
+          E1009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1009.pdf
+            size_bytes: 371828
+          E1010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1010.pdf
+            size_bytes: 181598
+          E1012.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1012.pdf
+            size_bytes: 285191
+          E1013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1013.pdf
+            size_bytes: 230139
+          E1014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1014.pdf
+            size_bytes: 225886
+          E1016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1016.pdf
+            size_bytes: 263008
+          E1017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1017.pdf
+            size_bytes: 223117
+          E1018.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1018.pdf
+            size_bytes: 300161
+          E1023.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1023.pdf
+            size_bytes: 221164
+          E1024.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1024.pdf
+            size_bytes: 289140
+          E1026.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1026.pdf
+            size_bytes: 111674
+          E1027.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1027.pdf
+            size_bytes: 281714
+          E1029.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1029.pdf
+            size_bytes: 223023
+          E1030.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1030.pdf
+            size_bytes: 219282
+          E1034.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1034.pdf
+            size_bytes: 220718
+          E1035.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1035.pdf
+            size_bytes: 337674
+          E1036.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1036.pdf
+            size_bytes: 297631
+          E1039.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1039.pdf
+            size_bytes: 258309
+          E1040.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1040.pdf
+            size_bytes: 220267
+          E1041.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1041.pdf
+            size_bytes: 220092
+          E1042.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1042.pdf
+            size_bytes: 220505
+          E1043.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1043.pdf
+            size_bytes: 301395
+          E1047.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1047.pdf
+            size_bytes: 223328
+          E1048.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1048.pdf
+            size_bytes: 223297
+          E1053.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1053.pdf
+            size_bytes: 288698
+          E1054.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1054.pdf
+            size_bytes: 249212
+          E1055.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1055.pdf
+            size_bytes: 221251
+          E1056.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1056.pdf
+            size_bytes: 276814
+          E1058.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1058.pdf
+            size_bytes: 313761
+          E1062.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1062.pdf
+            size_bytes: 218375
+          E1063.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1063.pdf
+            size_bytes: 307642
+          E1064.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1064.pdf
+            size_bytes: 473979
+          E1065.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1065.pdf
+            size_bytes: 221564
+          E1066.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1066.pdf
+            size_bytes: 222421
+          E1067.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1067.pdf
+            size_bytes: 219257
+          E1068.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1068.pdf
+            size_bytes: 221446
+          E1069.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1069.pdf
+            size_bytes: 103983
+          E1070.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1070.pdf
+            size_bytes: 220926
+          E1071.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1071.pdf
+            size_bytes: 218134
+          E1072.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1072.pdf
+            size_bytes: 222588
+          E1073.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1073.pdf
+            size_bytes: 220965
+          E1074.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1074.pdf
+            size_bytes: 181964
+          E1075.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1075.pdf
+            size_bytes: 233301
+          E1076.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1076.pdf
+            size_bytes: 221271
+          E1077.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1077.pdf
+            size_bytes: 281474
+          E1078.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1078.pdf
+            size_bytes: 396232
+          E1079.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1079.pdf
+            size_bytes: 239887
+          E1080.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1080.pdf
+            size_bytes: 276610
+          E1081.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1081.pdf
+            size_bytes: 402690
+          E1082.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1082.pdf
+            size_bytes: 221801
+          E1083.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1083.pdf
+            size_bytes: 224103
+          E1084.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1084.pdf
+            size_bytes: 223130
+          E1085.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1085.pdf
+            size_bytes: 303050
+          E1087.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1087.pdf
+            size_bytes: 115705
+          E1088.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1088.pdf
+            size_bytes: 113252
+          E1089.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1089.pdf
+            size_bytes: 113440
+          E1090.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1090.pdf
+            size_bytes: 112899
+          E1091.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1091.pdf
+            size_bytes: 112568
+          E1092.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1092.pdf
+            size_bytes: 112763
+          E1093.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1093.pdf
+            size_bytes: 229685
+          E1106.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1106.pdf
+            size_bytes: 109720
+          E1107.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1107.pdf
+            size_bytes: 110386
+          E1108.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1108.pdf
+            size_bytes: 108918
+          E1127.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1127.pdf
+            size_bytes: 111899
+          E1128.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1128.pdf
+            size_bytes: 112840
+          E1129.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1129.pdf
+            size_bytes: 130139
+          E1130.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1130.pdf
+            size_bytes: 111019
+          E1131.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1131.pdf
+            size_bytes: 109140
+          E1146.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1146.pdf
+            size_bytes: 111399
+          E1147.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1147.pdf
+            size_bytes: 113027
+          E1166.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1166.pdf
+            size_bytes: 94031
+          E1186.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1186.pdf
+            size_bytes: 112538
+          E1206.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1206.pdf
+            size_bytes: 795479
+          E1207.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1207.pdf
+            size_bytes: 154025
+          E1226.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E1226.pdf
+            size_bytes: 167310
+          E2.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2.pdf
+            size_bytes: 184010
+          E2001.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2001.pdf
+            size_bytes: 206436
+          E2002.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2002.pdf
+            size_bytes: 223221
+          E2003.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2003.pdf
+            size_bytes: 223394
+          E2004.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2004.pdf
+            size_bytes: 134043
+          E2005.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2005.pdf
+            size_bytes: 223205
+          E2006.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2006.pdf
+            size_bytes: 109428
+          E2007.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2007.pdf
+            size_bytes: 223053
+          E2008.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2008.pdf
+            size_bytes: 223692
+          E2009.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2009.pdf
+            size_bytes: 223264
+          E2010.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2010.pdf
+            size_bytes: 223378
+          E2011.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2011.pdf
+            size_bytes: 223646
+          E2012.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2012.pdf
+            size_bytes: 223556
+          E2013.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2013.pdf
+            size_bytes: 223398
+          E2014.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2014.pdf
+            size_bytes: 220694
+          E2015.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2015.pdf
+            size_bytes: 220225
+          E2016.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2016.pdf
+            size_bytes: 223285
+          E2017.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2017.pdf
+            size_bytes: 223096
+          E2019.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2019.pdf
+            size_bytes: 223323
+          E2020.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2020.pdf
+            size_bytes: 223461
+          E2021.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2021.pdf
+            size_bytes: 223097
+          E2022.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2022.pdf
+            size_bytes: 223215
+          E2025.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2025.pdf
+            size_bytes: 223123
+          E2026.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2026.pdf
+            size_bytes: 240338
+          E2027.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2027.pdf
+            size_bytes: 251462
+          E2028.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2028.pdf
+            size_bytes: 238449
+          E2029.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2029.pdf
+            size_bytes: 239278
+          E2030.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2030.pdf
+            size_bytes: 307349
+          E2031.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2031.pdf
+            size_bytes: 295019
+          E2032.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2032.pdf
+            size_bytes: 238042
+          E2033.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2033.pdf
+            size_bytes: 238845
+          E2034.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2034.pdf
+            size_bytes: 264393
+          E2035.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2035.pdf
+            size_bytes: 237329
+          E2036.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2036.pdf
+            size_bytes: 205784
+          E2037.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2037.pdf
+            size_bytes: 204406
+          E2038.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2038.pdf
+            size_bytes: 204261
+          E2039.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2039.pdf
+            size_bytes: 223325
+          E2040.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2040.pdf
+            size_bytes: 223581
+          E2041.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2041.pdf
+            size_bytes: 223808
+          E2042.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2042.pdf
+            size_bytes: 223682
+          E2043.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2043.pdf
+            size_bytes: 223625
+          E2044.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2044.pdf
+            size_bytes: 285021
+          E2045.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2045.pdf
+            size_bytes: 326931
+          E2046.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2046.pdf
+            size_bytes: 288169
+          E2047.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2047.pdf
+            size_bytes: 259294
+          E2048.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2048.pdf
+            size_bytes: 223457
+          E2049.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2049.pdf
+            size_bytes: 223183
+          E2050.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2050.pdf
+            size_bytes: 223168
+          E2051.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2051.pdf
+            size_bytes: 223439
+          E2052.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2052.pdf
+            size_bytes: 223155
+          E2054.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2054.pdf
+            size_bytes: 109138
+          E2055.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2055.pdf
+            size_bytes: 223591
+          E2056.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2056.pdf
+            size_bytes: 2788100
+          E2057.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2057.pdf
+            size_bytes: 297803
+          E2058.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2058.pdf
+            size_bytes: 239607
+          E2059.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2059.pdf
+            size_bytes: 222799
+          E2060.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2060.pdf
+            size_bytes: 222967
+          E2061.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2061.pdf
+            size_bytes: 223379
+          E2062.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2062.pdf
+            size_bytes: 222940
+          E2063.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2063.pdf
+            size_bytes: 222619
+          E2064.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2064.pdf
+            size_bytes: 222770
+          E2067.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2067.pdf
+            size_bytes: 222889
+          E2068.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2068.pdf
+            size_bytes: 222747
+          E2069.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2069.pdf
+            size_bytes: 222750
+          E2070.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2070.pdf
+            size_bytes: 222894
+          E2072.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2072.pdf
+            size_bytes: 223284
+          E2073.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2073.pdf
+            size_bytes: 360933
+          E2074.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2074.pdf
+            size_bytes: 265183
+          E2075.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2075.pdf
+            size_bytes: 325624
+          E2076.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2076.pdf
+            size_bytes: 327790
+          E2077.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2077.pdf
+            size_bytes: 321589
+          E2078.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2078.pdf
+            size_bytes: 311064
+          E2080.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2080.pdf
+            size_bytes: 223475
+          E2081.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2081.pdf
+            size_bytes: 223146
+          E2082.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2082.pdf
+            size_bytes: 223118
+          E2083.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2083.pdf
+            size_bytes: 218626
+          E2084.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2084.pdf
+            size_bytes: 331413
+          E2085.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2085.pdf
+            size_bytes: 317649
+          E2086.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2086.pdf
+            size_bytes: 332886
+          E2087.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2087.pdf
+            size_bytes: 223230
+          E2088.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2088.pdf
+            size_bytes: 223017
+          E2089.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2089.pdf
+            size_bytes: 223550
+          E2090.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2090.pdf
+            size_bytes: 222804
+          E2091.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2091.pdf
+            size_bytes: 222976
+          E2092.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2092.pdf
+            size_bytes: 223759
+          E2093.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2093.pdf
+            size_bytes: 224498
+          E2094.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2094.pdf
+            size_bytes: 222826
+          E2095.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2095.pdf
+            size_bytes: 223147
+          E2096.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2096.pdf
+            size_bytes: 222908
+          E2098.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2098.pdf
+            size_bytes: 241584
+          E2099.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2099.pdf
+            size_bytes: 167503
+          E2100.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2100.pdf
+            size_bytes: 406519
+          E2101.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2101.pdf
+            size_bytes: 223361
+          E2102.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2102.pdf
+            size_bytes: 223369
+          E2103.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2103.pdf
+            size_bytes: 223310
+          E2104.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2104.pdf
+            size_bytes: 223793
+          E2105.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2105.pdf
+            size_bytes: 223017
+          E2106.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2106.pdf
+            size_bytes: 204092
+          E2107.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2107.pdf
+            size_bytes: 223459
+          E2108.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2108.pdf
+            size_bytes: 223399
+          E2109.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2109.pdf
+            size_bytes: 222991
+          E2110.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2110.pdf
+            size_bytes: 222993
+          E2112.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2112.pdf
+            size_bytes: 223496
+          E2113.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2113.pdf
+            size_bytes: 223478
+          E2114.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2114.pdf
+            size_bytes: 223650
+          E2115.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2115.pdf
+            size_bytes: 223135
+          E2116.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2116.pdf
+            size_bytes: 223067
+          E2118.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2118.pdf
+            size_bytes: 223041
+          E2122.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2122.pdf
+            size_bytes: 223240
+          E2123.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2123.pdf
+            size_bytes: 223053
+          E2124.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2124.pdf
+            size_bytes: 218858
+          E2125.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2125.pdf
+            size_bytes: 222878
+          E2126.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2126.pdf
+            size_bytes: 223228
+          E2130.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2130.pdf
+            size_bytes: 223144
+          E2131.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2131.pdf
+            size_bytes: 223023
+          E2132.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2132.pdf
+            size_bytes: 223146
+          E2133.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2133.pdf
+            size_bytes: 223281
+          E2135.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2135.pdf
+            size_bytes: 223881
+          E2136.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2136.pdf
+            size_bytes: 223715
+          E2137.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2137.pdf
+            size_bytes: 223279
+          E2138.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2138.pdf
+            size_bytes: 223346
+          E2139.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2139.pdf
+            size_bytes: 223222
+          E2140.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2140.pdf
+            size_bytes: 223322
+          E2141.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2141.pdf
+            size_bytes: 223404
+          E2142.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2142.pdf
+            size_bytes: 167667
+          E2143.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2143.pdf
+            size_bytes: 167146
+          E2144.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2144.pdf
+            size_bytes: 167197
+          E2145.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2145.pdf
+            size_bytes: 167059
+          E2146.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2146.pdf
+            size_bytes: 143310
+          E2147.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2147.pdf
+            size_bytes: 220374
+          E2148.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2148.pdf
+            size_bytes: 223075
+          E2149.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2149.pdf
+            size_bytes: 223482
+          E2150.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2150.pdf
+            size_bytes: 167516
+          E2151.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2151.pdf
+            size_bytes: 222943
+          E2152.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2152.pdf
+            size_bytes: 223013
+          E2154.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2154.pdf
+            size_bytes: 358431
+          E2155.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2155.pdf
+            size_bytes: 278852
+          E2157.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2157.pdf
+            size_bytes: 223075
+          E2158.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2158.pdf
+            size_bytes: 300184
+          E2159.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2159.pdf
+            size_bytes: 242241
+          E2160.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2160.pdf
+            size_bytes: 376997
+          E2161.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2161.pdf
+            size_bytes: 393549
+          E2162.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2162.pdf
+            size_bytes: 223391
+          E2163.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2163.pdf
+            size_bytes: 223265
+          E2164.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2164.pdf
+            size_bytes: 223301
+          E2165.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2165.pdf
+            size_bytes: 223003
+          E2167.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2167.pdf
+            size_bytes: 223814
+          E2168.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2168.pdf
+            size_bytes: 223400
+          E2169.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2169.pdf
+            size_bytes: 223775
+          E2170.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2170.pdf
+            size_bytes: 223782
+          E2171.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2171.pdf
+            size_bytes: 223379
+          E2432.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\E2432.pdf
+            size_bytes: 685849
+          LISTE_B1.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B1.pdf
+            size_bytes: 2278916
+          LISTE_B2.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B2.pdf
+            size_bytes: 2780998
+          LISTE_B3.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B3.pdf
+            size_bytes: 10530104
+          LISTE_B4.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B4.pdf
+            size_bytes: 3157559
+          LISTE_B5.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B5.pdf
+            size_bytes: 2035448
+          LISTE_B6.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B6.pdf
+            size_bytes: 1270154
+          LISTE_B7.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_B7.pdf
+            size_bytes: 2383102
+          LISTE_E2.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\LISTE_E2.pdf
+            size_bytes: 800008
+          P2104.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2104.pdf
+            size_bytes: 345971
+          P2105.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2105.pdf
+            size_bytes: 300620
+          P2106.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2106.pdf
+            size_bytes: 294334
+          P2108.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2108.pdf
+            size_bytes: 318826
+          P2109.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2109.pdf
+            size_bytes: 325202
+          P2110.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2110.pdf
+            size_bytes: 302643
+          P2111.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2111.pdf
+            size_bytes: 306518
+          P2115.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2115.pdf
+            size_bytes: 278203
+          P2121.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2121.pdf
+            size_bytes: 287993
+          P2124.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2124.pdf
+            size_bytes: 221015
+          P2130.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2130.pdf
+            size_bytes: 267890
+          P2131.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2131.pdf
+            size_bytes: 267789
+          P2132.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2132.pdf
+            size_bytes: 220734
+          P2133.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2133.pdf
+            size_bytes: 220912
+          P2134.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2134.pdf
+            size_bytes: 221049
+          P2135.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2135.pdf
+            size_bytes: 220782
+          P2136.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2136.pdf
+            size_bytes: 221326
+          P2137.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2137.pdf
+            size_bytes: 220414
+          P2138.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2138.pdf
+            size_bytes: 220769
+          P2139.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2139.pdf
+            size_bytes: 218079
+          P2203.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2203.pdf
+            size_bytes: 221006
+          P2204.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2204.pdf
+            size_bytes: 284285
+          P2205.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2205.pdf
+            size_bytes: 218262
+          P2207.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2207.pdf
+            size_bytes: 434831
+          P2209.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2209.pdf
+            size_bytes: 218377
+          P2225.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2225.pdf
+            size_bytes: 217996
+          P2226.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2226.pdf
+            size_bytes: 341779
+          P2227.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2227.pdf
+            size_bytes: 218090
+          P2239.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2239.pdf
+            size_bytes: 221608
+          P2241.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2241.pdf
+            size_bytes: 179759
+          P2301.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2301.pdf
+            size_bytes: 218852
+          P2303.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2303.pdf
+            size_bytes: 269572
+          P2304.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2304.pdf
+            size_bytes: 218321
+          P2305.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2305.pdf
+            size_bytes: 274455
+          P2306.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2306.pdf
+            size_bytes: 244064
+          P2311.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2311.pdf
+            size_bytes: 246984
+          P2312.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2312.pdf
+            size_bytes: 246785
+          P2313.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2313.pdf
+            size_bytes: 245579
+          P2314.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2314.pdf
+            size_bytes: 244574
+          P2315.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2315.pdf
+            size_bytes: 238154
+          P2317.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2317.pdf
+            size_bytes: 218059
+          P2318.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2318.pdf
+            size_bytes: 217945
+          P2320.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2320.pdf
+            size_bytes: 237521
+          P2321.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2321.pdf
+            size_bytes: 249808
+          P2324.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2324.pdf
+            size_bytes: 218207
+          P2325.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2325.pdf
+            size_bytes: 220452
+          P2326.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2326.pdf
+            size_bytes: 221215
+          P2327.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2327.pdf
+            size_bytes: 220677
+          P2328.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2328.pdf
+            size_bytes: 220480
+          P2329.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2329.pdf
+            size_bytes: 218109
+          P2330.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2330.pdf
+            size_bytes: 220212
+          P2332.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2332.pdf
+            size_bytes: 217990
+          P2333.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2333.pdf
+            size_bytes: 220189
+          P2334.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2334.pdf
+            size_bytes: 217994
+          P2337.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2337.pdf
+            size_bytes: 218725
+          P2338.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2338.pdf
+            size_bytes: 218041
+          P2340.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2340.pdf
+            size_bytes: 220351
+          P2361.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2361.pdf
+            size_bytes: 159787
+          P2362.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P2362.pdf
+            size_bytes: 160063
+          P3103.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3103.pdf
+            size_bytes: 220473
+          P3105.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3105.pdf
+            size_bytes: 255360
+          P3106.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3106.pdf
+            size_bytes: 229566
+          P3107.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3107.pdf
+            size_bytes: 253350
+          P3108.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3108.pdf
+            size_bytes: 266507
+          P3109.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3109.pdf
+            size_bytes: 259310
+          P3110.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3110.pdf
+            size_bytes: 256764
+          P3111.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3111.pdf
+            size_bytes: 237139
+          P3112.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3112.pdf
+            size_bytes: 266468
+          P3113.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3113.pdf
+            size_bytes: 248035
+          P3114.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3114.pdf
+            size_bytes: 250308
+          P3115.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3115.pdf
+            size_bytes: 236063
+          P3116.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3116.pdf
+            size_bytes: 255386
+          P3117.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3117.pdf
+            size_bytes: 253676
+          P3118.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3118.pdf
+            size_bytes: 258347
+          P3120.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3120.pdf
+            size_bytes: 249333
+          P3121.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3121.pdf
+            size_bytes: 234929
+          P3122.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3122.pdf
+            size_bytes: 244539
+          P3123.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3123.pdf
+            size_bytes: 235255
+          P3124.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3124.pdf
+            size_bytes: 238127
+          P3125.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3125.pdf
+            size_bytes: 278932
+          P3126.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3126.pdf
+            size_bytes: 237211
+          P3128.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3128.pdf
+            size_bytes: 259116
+          P3129.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3129.pdf
+            size_bytes: 237842
+          P3130.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3130.pdf
+            size_bytes: 253697
+          P3131.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3131.pdf
+            size_bytes: 258504
+          P3132.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3132.pdf
+            size_bytes: 270009
+          P3133.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3133.pdf
+            size_bytes: 250571
+          P3136.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3136.pdf
+            size_bytes: 266176
+          P3140.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3140.pdf
+            size_bytes: 267017
+          P3145.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3145.pdf
+            size_bytes: 252782
+          P3146.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3146.pdf
+            size_bytes: 274619
+          P3147.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3147.pdf
+            size_bytes: 244910
+          P3148.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3148.pdf
+            size_bytes: 251310
+          P3149.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3149.pdf
+            size_bytes: 260945
+          P3150.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3150.pdf
+            size_bytes: 263619
+          P3151.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3151.pdf
+            size_bytes: 257731
+          P3152.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3152.pdf
+            size_bytes: 257710
+          P3153.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3153.pdf
+            size_bytes: 258431
+          P3154.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3154.pdf
+            size_bytes: 236885
+          P3155.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3155.pdf
+            size_bytes: 259606
+          P3156.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3156.pdf
+            size_bytes: 230551
+          P3157.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3157.pdf
+            size_bytes: 254296
+          P3158.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3158.pdf
+            size_bytes: 238205
+          P3159.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3159.pdf
+            size_bytes: 257854
+          P3160.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3160.pdf
+            size_bytes: 258433
+          P3161.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3161.pdf
+            size_bytes: 253824
+          P3162.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3162.pdf
+            size_bytes: 331958
+          P3165.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3165.pdf
+            size_bytes: 217904
+          P3168.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3168.pdf
+            size_bytes: 220205
+          P3169.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3169.pdf
+            size_bytes: 220099
+          P3170.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3170.pdf
+            size_bytes: 220511
+          P3171.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3171.pdf
+            size_bytes: 220588
+          P3175.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3175.pdf
+            size_bytes: 220332
+          P3176.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3176.pdf
+            size_bytes: 220360
+          P3177.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3177.pdf
+            size_bytes: 220433
+          P3178.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3178.pdf
+            size_bytes: 179146
+          P3179.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3179.pdf
+            size_bytes: 218164
+          P3180.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3180.pdf
+            size_bytes: 220764
+          P3181.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3181.pdf
+            size_bytes: 220717
+          P3182.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3182.pdf
+            size_bytes: 220721
+          P3183.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3183.pdf
+            size_bytes: 179663
+          P3184.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3184.pdf
+            size_bytes: 179502
+          P3186.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3186.pdf
+            size_bytes: 178606
+          P3187.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3187.pdf
+            size_bytes: 179407
+          P3188.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3188.pdf
+            size_bytes: 218384
+          P3189.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3189.pdf
+            size_bytes: 219939
+          P3190.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3190.pdf
+            size_bytes: 324183
+          P3191.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3191.pdf
+            size_bytes: 161649
+          P3202.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3202.pdf
+            size_bytes: 218144
+          P3203.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3203.pdf
+            size_bytes: 269205
+          P3205.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3205.pdf
+            size_bytes: 268918
+          P3206.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3206.pdf
+            size_bytes: 302109
+          P3207.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3207.pdf
+            size_bytes: 344119
+          P3214.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3214.pdf
+            size_bytes: 217967
+          P3217.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3217.pdf
+            size_bytes: 218001
+          P3218.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3218.pdf
+            size_bytes: 281084
+          P3222.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3222.pdf
+            size_bytes: 257019
+          P3223.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3223.pdf
+            size_bytes: 218160
+          P3225.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3225.pdf
+            size_bytes: 218105
+          P3226.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3226.pdf
+            size_bytes: 217953
+          P3228.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3228.pdf
+            size_bytes: 159769
+          P3229.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3229.pdf
+            size_bytes: 220382
+          P3232.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3232.pdf
+            size_bytes: 220292
+          P3234.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3234.pdf
+            size_bytes: 220691
+          P3235.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3235.pdf
+            size_bytes: 220567
+          P3236.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3236.pdf
+            size_bytes: 220760
+          P3239.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3239.pdf
+            size_bytes: 221357
+          P3240.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3240.pdf
+            size_bytes: 217951
+          P3242.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3242.pdf
+            size_bytes: 179329
+          P3243.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3243.pdf
+            size_bytes: 220349
+          P3244.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3244.pdf
+            size_bytes: 309176
+          P3246.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3246.pdf
+            size_bytes: 221209
+          P3247.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3247.pdf
+            size_bytes: 220439
+          P3248.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3248.pdf
+            size_bytes: 220874
+          P3249.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3249.pdf
+            size_bytes: 220707
+          P3250.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3250.pdf
+            size_bytes: 220787
+          P3251.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3251.pdf
+            size_bytes: 220366
+          P3252.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3252.pdf
+            size_bytes: 220203
+          P3254.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3254.pdf
+            size_bytes: 220636
+          P3255.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3255.pdf
+            size_bytes: 220661
+          P3256.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3256.pdf
+            size_bytes: 220672
+          P3258.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3258.pdf
+            size_bytes: 180087
+          P3260.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3260.pdf
+            size_bytes: 220758
+          P3262.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3262.pdf
+            size_bytes: 220996
+          P3263.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3263.pdf
+            size_bytes: 220617
+          P3264.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3264.pdf
+            size_bytes: 222250
+          P3265.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3265.pdf
+            size_bytes: 220411
+          P3266.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3266.pdf
+            size_bytes: 179968
+          P3267.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3267.pdf
+            size_bytes: 220650
+          P3268.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3268.pdf
+            size_bytes: 218071
+          P3269.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3269.pdf
+            size_bytes: 245433
+          P3270.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3270.pdf
+            size_bytes: 220931
+          P3271.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3271.pdf
+            size_bytes: 104740
+          P3272.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3272.pdf
+            size_bytes: 136497
+          P3301.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3301.pdf
+            size_bytes: 296473
+          P3302.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3302.pdf
+            size_bytes: 290061
+          P3304.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3304.pdf
+            size_bytes: 354614
+          P3305.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3305.pdf
+            size_bytes: 366048
+          P3306.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3306.pdf
+            size_bytes: 304464
+          P3307.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3307.pdf
+            size_bytes: 220333
+          P3308.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3308.pdf
+            size_bytes: 383582
+          P3312.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3312.pdf
+            size_bytes: 366338
+          P3313.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3313.pdf
+            size_bytes: 217979
+          P3314.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3314.pdf
+            size_bytes: 217866
+          P3317.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3317.pdf
+            size_bytes: 218025
+          P3319.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3319.pdf
+            size_bytes: 220611
+          P3320.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3320.pdf
+            size_bytes: 357104
+          P3321.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3321.pdf
+            size_bytes: 220711
+          P3322.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3322.pdf
+            size_bytes: 220573
+          P3323.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3323.pdf
+            size_bytes: 220558
+          P3324.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3324.pdf
+            size_bytes: 220749
+          P3326.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3326.pdf
+            size_bytes: 220754
+          P3327.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3327.pdf
+            size_bytes: 221152
+          P3328.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3328.pdf
+            size_bytes: 220343
+          P3329.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3329.pdf
+            size_bytes: 218074
+          P3330.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3330.pdf
+            size_bytes: 379250
+          P3331.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3331.pdf
+            size_bytes: 217971
+          P3332.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3332.pdf
+            size_bytes: 103980
+          P3333.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3333.pdf
+            size_bytes: 325657
+          P3334.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3334.pdf
+            size_bytes: 343071
+          P3335.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3335.pdf
+            size_bytes: 159775
+          P3336.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3336.pdf
+            size_bytes: 179724
+          P3337.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3337.pdf
+            size_bytes: 179728
+          P3338.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3338.pdf
+            size_bytes: 179905
+          P3339.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3339.pdf
+            size_bytes: 161947
+          P3401.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3401.pdf
+            size_bytes: 252072
+          P3402.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3402.pdf
+            size_bytes: 218367
+          P3408.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3408.pdf
+            size_bytes: 205354
+          P3409.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3409.pdf
+            size_bytes: 220129
+          P3411.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3411.pdf
+            size_bytes: 180274
+          P3412.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3412.pdf
+            size_bytes: 102613
+          P3413.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3413.pdf
+            size_bytes: 181837
+          P3414.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3414.pdf
+            size_bytes: 179378
+          P3501.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3501.pdf
+            size_bytes: 220703
+          P3502.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3502.pdf
+            size_bytes: 369905
+          P3503.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3503.pdf
+            size_bytes: 279954
+          P3505.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3505.pdf
+            size_bytes: 220861
+          P3506.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3506.pdf
+            size_bytes: 220883
+          P3507.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3507.pdf
+            size_bytes: 221106
+          P3508.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3508.pdf
+            size_bytes: 216724
+          P3509.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3509.pdf
+            size_bytes: 161937
+          P3510.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3510.pdf
+            size_bytes: 181648
+          P3511.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3511.pdf
+            size_bytes: 209829
+          P3512.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3512.pdf
+            size_bytes: 299766
+          P3513.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3513.pdf
+            size_bytes: 220559
+          P3514.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3514.pdf
+            size_bytes: 229387
+          P3515.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3515.pdf
+            size_bytes: 156875
+          P3W.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3W.pdf
+            size_bytes: 190953
+          P3X.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3X.pdf
+            size_bytes: 187436
+          P3Y.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3Y.pdf
+            size_bytes: 171331
+          P3Z.pdf:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\bordeaux\Dispositions
+              Paysage Patrimoine\P3Z.pdf
+            size_bytes: 166937
   grenoble:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble
@@ -895,10 +4630,6 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\desktop.ini
-            size_bytes: 246
           zones_a_urbaniser.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2022-12-16\zones_a_urbaniser.pdf
@@ -919,10 +4650,6 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\desktop.ini
-            size_bytes: 246
           dispositions_generales.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\dispositions_generales.pdf
@@ -943,10 +4670,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\2024-07-05\zones_urbaines_mixtes.pdf
             size_bytes: 56202951
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\grenoble\desktop.ini
-        size_bytes: 246
   le_revest_les_eaux:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux
@@ -967,10 +4690,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\AUc.pdf
             size_bytes: 372627
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\desktop.ini
-            size_bytes: 246
           dispositions_generales.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\dispositions_generales.pdf
@@ -1015,10 +4734,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\2011-04-18\Ug.pdf
             size_bytes: 1098382
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\le_revest_les_eaux\desktop.ini
-        size_bytes: 246
   lille:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille
@@ -1035,10 +4750,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\annexes_documentaires_t2.pdf
             size_bytes: 10392146
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\desktop.ini
-            size_bytes: 246
           dispositions_generales.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\dispositions_generales.pdf
@@ -1055,10 +4766,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\2024-06-28\zones_specifiques.pdf
             size_bytes: 7814320
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\lille\desktop.ini
-        size_bytes: 246
   montpellier:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier
@@ -1067,18 +4774,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17\desktop.ini
-            size_bytes: 246
           plu_general.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\2023-08-17\plu_general.pdf
             size_bytes: 10917781
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\montpellier\desktop.ini
-        size_bytes: 246
   nantes:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes
@@ -1087,18 +4786,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15\desktop.ini
-            size_bytes: 246
           plu_general.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\2023-12-15\plu_general.pdf
             size_bytes: 23694461
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nantes\desktop.ini
-        size_bytes: 246
   nice:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice
@@ -1111,10 +4802,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\cahier_des_prescriptions_architecturales.pdf
             size_bytes: 2711816
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\desktop.ini
-            size_bytes: 246
           dispositions_generales.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\dispositions_generales.pdf
@@ -1135,10 +4822,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\2023-10-04\plu_tome_4.pdf
             size_bytes: 1608906
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\nice\desktop.ini
-        size_bytes: 246
   rennes:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes
@@ -1147,18 +4830,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21\desktop.ini
-            size_bytes: 246
           plu_general.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\2024-03-21\plu_general.pdf
             size_bytes: 6414542
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rennes\desktop.ini
-        size_bytes: 246
   rnu_national:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national
@@ -1167,18 +4842,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05\desktop.ini
-            size_bytes: 246
           rnu_national.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\2024-01-05\rnu_national.pdf
             size_bytes: 537988
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rnu_national\desktop.ini
-        size_bytes: 246
   rouen:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen
@@ -1187,10 +4854,6 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\desktop.ini
-            size_bytes: 246
           dispositions_generales.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\dispositions_generales.pdf
@@ -1203,10 +4866,6 @@ data:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\2025-03-31\livre_2_titre_2.pdf
             size_bytes: 3646180
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\rouen\desktop.ini
-        size_bytes: 246
   strasbourg:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg
@@ -1215,18 +4874,10 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31\desktop.ini
-            size_bytes: 246
           plu_general.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\2024-05-31\plu_general.pdf
             size_bytes: 2874550
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\strasbourg\desktop.ini
-        size_bytes: 246
   toulon:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon
@@ -1281,10 +4932,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\11
           - 11 - La Valette-du-VarPLU-REGLEMENT-MODIFICATION-SIMPLIFIEE-09.02.pdf
         size_bytes: 1603381
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\desktop.ini
-        size_bytes: 246
       REGARDE CA.txt:
         type: file
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulon\REGARDE
@@ -1298,15 +4945,7 @@ data:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12\desktop.ini
-            size_bytes: 246
           plu_genral.pdf:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\2024-12-12\plu_genral.pdf
             size_bytes: 11027617
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\external\toulouse\desktop.ini
-        size_bytes: 246

@@ -12,13 +12,11 @@ import json
 from pathlib import Path
 from typing import Any, Dict
 
-from loguru import logger
 from supabase import Client
 
 from src.api.supabase import pipeline_upload_document
 from src.config import HTML_DIR, PROCESSED_DATA_DIR
 from src.mwplu.generator.html_generator import generate_html_report
-from src.config import HTML_DIR, PROCESSED_DATA_DIR
 from src.utils.plu import get_references
 
 
@@ -50,8 +48,6 @@ def process_plu_document(
             "Missing required metadata fields: name_city, name_zoning, or name_zone"
         )
 
-    logger.info(f"Processing document: {city_name}/{zoning_name}/{zone_name}")
-
     # Generate HTML content and save it
     html_output_path = HTML_DIR / city_name / zoning_name / f"{zone_name}.html"
     html_output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -67,7 +63,6 @@ def process_plu_document(
         html_content=html_content,
         source_plu_url=get_references(city_name)["source_plu_url"],
     )
-    logger.success(f"Uploaded to Supabase: {city_name}/{zoning_name}/{zone_name}")
     return result
 
 

@@ -1,1018 +1,951 @@
 metadata:
   description: Intermediate PLU data during processing
   generated_at: C:\Users\Regium\Repositories\mwplu_analysis
-  total_items: 5
+  total_items: 4
 data:
   bordeaux:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\desktop.ini
-        size_bytes: 246
-      Zones A:
+      Zones Agricoles:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          A
+          Agricoles
         contents:
           Ab.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              A\Ab.json
-            size_bytes: 194973
+              Agricoles\Ab.json
+            size_bytes: 195411
           Ag.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              A\Ag.json
-            size_bytes: 198124
+              Agricoles\Ag.json
+            size_bytes: 198532
           Ah1.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              A\Ah1.json
-            size_bytes: 268708
+              Agricoles\Ah1.json
+            size_bytes: 269093
           Ah2.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              A\Ah2.json
-            size_bytes: 193927
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              A\desktop.ini
-            size_bytes: 246
-      Zones AU:
+              Agricoles\Ah2.json
+            size_bytes: 194335
+      Zones Naturelles:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          AU
+          Naturelles
+        contents:
+          Nb.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nb.json
+            size_bytes: 194437
+          Ne.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Ne.json
+            size_bytes: 268824
+          Nf.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nf.json
+            size_bytes: 194296
+          Ng.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Ng.json
+            size_bytes: 195422
+          Nh1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nh1.json
+            size_bytes: 198201
+          Nh2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nh2.json
+            size_bytes: 222887
+          Nm.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nm.json
+            size_bytes: 191442
+          Nu.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Naturelles\Nu.json
+            size_bytes: 191948
+      Zones Urbaines:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+          Urbaines
+        contents:
+          UM1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM1.json
+            size_bytes: 288164
+          UM10.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM10.json
+            size_bytes: 285927
+          UM11.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM11.json
+            size_bytes: 265238
+          UM12.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM12.json
+            size_bytes: 250520
+          UM13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM13.json
+            size_bytes: 279517
+          UM14.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM14.json
+            size_bytes: 283409
+          UM15.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM15.json
+            size_bytes: 294653
+          UM16.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM16.json
+            size_bytes: 297476
+          UM17.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM17.json
+            size_bytes: 300643
+          UM18.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM18.json
+            size_bytes: 374861
+          UM19.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM19.json
+            size_bytes: 284999
+          UM2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM2.json
+            size_bytes: 276851
+          UM20.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM20.json
+            size_bytes: 291303
+          UM21.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM21.json
+            size_bytes: 286665
+          UM22.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM22.json
+            size_bytes: 273794
+          UM23.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM23.json
+            size_bytes: 301019
+          UM24.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM24.json
+            size_bytes: 278924
+          UM25.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM25.json
+            size_bytes: 347700
+          UM26.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM26.json
+            size_bytes: 250518
+          UM27.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM27.json
+            size_bytes: 247272
+          UM28.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM28.json
+            size_bytes: 291406
+          UM29.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM29.json
+            size_bytes: 349993
+          UM3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM3.json
+            size_bytes: 288566
+          UM30.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM30.json
+            size_bytes: 293477
+          UM31.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM31.json
+            size_bytes: 257573
+          UM32.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM32.json
+            size_bytes: 281838
+          UM33.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM33.json
+            size_bytes: 269405
+          UM34.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM34.json
+            size_bytes: 320645
+          UM35.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM35.json
+            size_bytes: 331057
+          UM36.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM36.json
+            size_bytes: 251098
+          UM37.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM37.json
+            size_bytes: 304627
+          UM38.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM38.json
+            size_bytes: 303515
+          UM39.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM39.json
+            size_bytes: 290217
+          UM4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM4.json
+            size_bytes: 277082
+          UM40.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM40.json
+            size_bytes: 251104
+          UM41.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM41.json
+            size_bytes: 283001
+          UM42.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM42.json
+            size_bytes: 253783
+          UM43.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM43.json
+            size_bytes: 413998
+          UM5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM5.json
+            size_bytes: 260898
+          UM6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM6.json
+            size_bytes: 261788
+          UM7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM7.json
+            size_bytes: 293157
+          UM8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM8.json
+            size_bytes: 258532
+          UM9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UM9.json
+            size_bytes: 264698
+          UP1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP1.json
+            size_bytes: 2120973
+          UP10.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP10.json
+            size_bytes: 199908
+          UP11.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP11.json
+            size_bytes: 219009
+          UP12.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP12.json
+            size_bytes: 1275364
+          UP13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP13.json
+            size_bytes: 459120
+          UP14.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP14.json
+            size_bytes: 715380
+          UP15.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP15.json
+            size_bytes: 1226150
+          UP16.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP16.json
+            size_bytes: 214886
+          UP17.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP17.json
+            size_bytes: 197130
+          UP18.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP18.json
+            size_bytes: 511157
+          UP19.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP19.json
+            size_bytes: 613081
+          UP2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP2.json
+            size_bytes: 2229919
+          UP20.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP20.json
+            size_bytes: 1178205
+          UP21.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP21.json
+            size_bytes: 688130
+          UP22.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP22.json
+            size_bytes: 970602
+          UP23.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP23.json
+            size_bytes: 203198
+          UP24.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP24.json
+            size_bytes: 691715
+          UP25.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP25.json
+            size_bytes: 809755
+          UP26.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP26.json
+            size_bytes: 1496864
+          UP27.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP27.json
+            size_bytes: 1458639
+          UP28.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP28.json
+            size_bytes: 287863
+          UP29.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP29.json
+            size_bytes: 211749
+          UP3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP3.json
+            size_bytes: 287302
+          UP30.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP30.json
+            size_bytes: 767025
+          UP31.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP31.json
+            size_bytes: 185089
+          UP32.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP32.json
+            size_bytes: 210764
+          UP33.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP33.json
+            size_bytes: 218557
+          UP34.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP34.json
+            size_bytes: 280205
+          UP35.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP35.json
+            size_bytes: 279931
+          UP36.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP36.json
+            size_bytes: 286389
+          UP37.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP37.json
+            size_bytes: 287275
+          UP38.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP38.json
+            size_bytes: 272027
+          UP39.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP39.json
+            size_bytes: 969810
+          UP4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP4.json
+            size_bytes: 217924
+          UP40.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP40.json
+            size_bytes: 305311
+          UP41.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP41.json
+            size_bytes: 934739
+          UP42.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP42.json
+            size_bytes: 1070077
+          UP43.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP43.json
+            size_bytes: 1057000
+          UP44.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP44.json
+            size_bytes: 806125
+          UP45.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP45.json
+            size_bytes: 223030
+          UP46.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP46.json
+            size_bytes: 202372
+          UP47.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP47.json
+            size_bytes: 202138
+          UP48.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP48.json
+            size_bytes: 232960
+          UP49.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP49.json
+            size_bytes: 722774
+          UP5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP5.json
+            size_bytes: 286955
+          UP50.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP50.json
+            size_bytes: 287267
+          UP51.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP51.json
+            size_bytes: 895067
+          UP52.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP52.json
+            size_bytes: 883481
+          UP53.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP53.json
+            size_bytes: 204011
+          UP54.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP54.json
+            size_bytes: 862002
+          UP55.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP55.json
+            size_bytes: 618357
+          UP56.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP56.json
+            size_bytes: 754971
+          UP57.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP57.json
+            size_bytes: 208737
+          UP59.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP59.json
+            size_bytes: 862171
+          UP6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP6.json
+            size_bytes: 212371
+          UP60.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP60.json
+            size_bytes: 195622
+          UP61.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP61.json
+            size_bytes: 1217832
+          UP62.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP62.json
+            size_bytes: 280991
+          UP63.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP63.json
+            size_bytes: 210614
+          UP64.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP64.json
+            size_bytes: 1028207
+          UP66.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP66.json
+            size_bytes: 849187
+          UP67.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP67.json
+            size_bytes: 219184
+          UP68.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP68.json
+            size_bytes: 881699
+          UP69.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP69.json
+            size_bytes: 578577
+          UP7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP7.json
+            size_bytes: 273467
+          UP70.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP70.json
+            size_bytes: 288622
+          UP71.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP71.json
+            size_bytes: 218934
+          UP73.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP73.json
+            size_bytes: 335553
+          UP74.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP74.json
+            size_bytes: 947215
+          UP75.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP75.json
+            size_bytes: 1202444
+          UP76.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP76.json
+            size_bytes: 208175
+          UP77.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP77.json
+            size_bytes: 191725
+          UP79.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP79.json
+            size_bytes: 203669
+          UP8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP8.json
+            size_bytes: 213270
+          UP81.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP81.json
+            size_bytes: 178091
+          UP82.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP82.json
+            size_bytes: 321303
+          UP83.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP83.json
+            size_bytes: 242889
+          UP84.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP84.json
+            size_bytes: 911862
+          UP85.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP85.json
+            size_bytes: 308557
+          UP86.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP86.json
+            size_bytes: 540569
+          UP87.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP87.json
+            size_bytes: 1279539
+          UP88.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP88.json
+            size_bytes: 928457
+          UP89.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP89.json
+            size_bytes: 313415
+          UP9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UP9.json
+            size_bytes: 211526
+          UPZ1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ1.json
+            size_bytes: 754410
+          UPZ2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ2.json
+            size_bytes: 298903
+          UPZ3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ3.json
+            size_bytes: 694954
+          UPZ4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ4.json
+            size_bytes: 301517
+          UPZ5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ5.json
+            size_bytes: 294695
+          UPZ6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ6.json
+            size_bytes: 229290
+          UPZ7-1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ7-1.json
+            size_bytes: 907372
+          UPZ7-2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ7-2.json
+            size_bytes: 783791
+          UPZ7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ7.json
+            size_bytes: 901719
+          UPZ8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ8.json
+            size_bytes: 296487
+          UPZ9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\UPZ9.json
+            size_bytes: 299047
+          US1.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US1.json
+            size_bytes: 227907
+          US10.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US10.json
+            size_bytes: 286658
+          US11.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US11.json
+            size_bytes: 194134
+          US12.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US12.json
+            size_bytes: 234312
+          US13.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US13.json
+            size_bytes: 209657
+          US2.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US2.json
+            size_bytes: 308383
+          US3.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US3.json
+            size_bytes: 248484
+          US4.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US4.json
+            size_bytes: 228069
+          US5.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US5.json
+            size_bytes: 228361
+          US6.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US6.json
+            size_bytes: 225810
+          US7.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US7.json
+            size_bytes: 224177
+          US8.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US8.json
+            size_bytes: 226883
+          US9.json:
+            type: file
+            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+              Urbaines\US9.json
+            size_bytes: 224038
+      Zones à Urbaniser:
+        type: directory
+        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
+          à Urbaniser
         contents:
           AU1.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU1.json
-            size_bytes: 264273
+              à Urbaniser\AU1.json
+            size_bytes: 264790
           AU10.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU10.json
-            size_bytes: 229689
+              à Urbaniser\AU10.json
+            size_bytes: 230157
           AU11.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU11.json
-            size_bytes: 208407
+              à Urbaniser\AU11.json
+            size_bytes: 208835
           AU12.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU12.json
-            size_bytes: 296303
+              à Urbaniser\AU12.json
+            size_bytes: 296779
           AU13.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU13.json
-            size_bytes: 263027
+              à Urbaniser\AU13.json
+            size_bytes: 263544
           AU15.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU15.json
-            size_bytes: 319796
+              à Urbaniser\AU15.json
+            size_bytes: 320321
           AU16.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU16.json
-            size_bytes: 288626
+              à Urbaniser\AU16.json
+            size_bytes: 289152
           AU17.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU17.json
-            size_bytes: 248353
+              à Urbaniser\AU17.json
+            size_bytes: 248811
           AU19.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU19.json
-            size_bytes: 273219
+              à Urbaniser\AU19.json
+            size_bytes: 273736
           AU2.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU2.json
-            size_bytes: 225250
+              à Urbaniser\AU2.json
+            size_bytes: 225718
           AU20.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU20.json
-            size_bytes: 283964
+              à Urbaniser\AU20.json
+            size_bytes: 284489
           AU3.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU3.json
-            size_bytes: 262111
+              à Urbaniser\AU3.json
+            size_bytes: 262628
           AU4.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU4.json
-            size_bytes: 363426
+              à Urbaniser\AU4.json
+            size_bytes: 363968
           AU5.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU5.json
-            size_bytes: 319621
+              à Urbaniser\AU5.json
+            size_bytes: 320146
           AU6.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU6.json
-            size_bytes: 278174
+              à Urbaniser\AU6.json
+            size_bytes: 278691
           AU7.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU7.json
-            size_bytes: 227398
+              à Urbaniser\AU7.json
+            size_bytes: 227866
           AU8.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU8.json
-            size_bytes: 232399
+              à Urbaniser\AU8.json
+            size_bytes: 232867
           AU9.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU9.json
-            size_bytes: 223458
+              à Urbaniser\AU9.json
+            size_bytes: 223917
           AU99.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\AU99.json
-            size_bytes: 43295
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              AU\desktop.ini
-            size_bytes: 246
-      Zones N:
-        type: directory
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          N
-        contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\desktop.ini
-            size_bytes: 246
-          Nb.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nb.json
-            size_bytes: 194028
-          Ne.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Ne.json
-            size_bytes: 268398
-          Nf.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nf.json
-            size_bytes: 193927
-          Ng.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Ng.json
-            size_bytes: 195013
-          Nh1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nh1.json
-            size_bytes: 197832
-          Nh2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nh2.json
-            size_bytes: 222478
-          Nm.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nm.json
-            size_bytes: 191073
-          Nu.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              N\Nu.json
-            size_bytes: 191579
-      Zones UM:
-        type: directory
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          UM
-        contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\desktop.ini
-            size_bytes: 246
-          UM1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM1.json
-            size_bytes: 287611
-          UM10.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM10.json
-            size_bytes: 285374
-          UM11.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM11.json
-            size_bytes: 264734
-          UM12.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM12.json
-            size_bytes: 250016
-          UM13.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM13.json
-            size_bytes: 278964
-          UM14.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM14.json
-            size_bytes: 282865
-          UM15.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM15.json
-            size_bytes: 294131
-          UM16.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM16.json
-            size_bytes: 296914
-          UM17.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM17.json
-            size_bytes: 300121
-          UM18.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM18.json
-            size_bytes: 374291
-          UM19.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM19.json
-            size_bytes: 284486
-          UM2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM2.json
-            size_bytes: 276307
-          UM20.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM20.json
-            size_bytes: 290781
-          UM21.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM21.json
-            size_bytes: 286161
-          UM22.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM22.json
-            size_bytes: 273281
-          UM23.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM23.json
-            size_bytes: 300457
-          UM24.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM24.json
-            size_bytes: 278371
-          UM25.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM25.json
-            size_bytes: 347170
-          UM26.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM26.json
-            size_bytes: 250014
-          UM27.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM27.json
-            size_bytes: 246768
-          UM28.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM28.json
-            size_bytes: 290853
-          UM29.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM29.json
-            size_bytes: 349455
-          UM3.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM3.json
-            size_bytes: 288053
-          UM30.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM30.json
-            size_bytes: 292955
-          UM31.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM31.json
-            size_bytes: 257060
-          UM32.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM32.json
-            size_bytes: 281325
-          UM33.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM33.json
-            size_bytes: 268901
-          UM34.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM34.json
-            size_bytes: 320133
-          UM35.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM35.json
-            size_bytes: 330544
-          UM36.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM36.json
-            size_bytes: 250594
-          UM37.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM37.json
-            size_bytes: 304106
-          UM38.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM38.json
-            size_bytes: 303034
-          UM39.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM39.json
-            size_bytes: 289704
-          UM4.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM4.json
-            size_bytes: 276538
-          UM40.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM40.json
-            size_bytes: 250600
-          UM41.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM41.json
-            size_bytes: 282448
-          UM42.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM42.json
-            size_bytes: 253239
-          UM43.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM43.json
-            size_bytes: 413468
-          UM5.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM5.json
-            size_bytes: 260385
-          UM6.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM6.json
-            size_bytes: 261284
-          UM7.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM7.json
-            size_bytes: 292596
-          UM8.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM8.json
-            size_bytes: 258028
-          UM9.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UM\UM9.json
-            size_bytes: 264185
-      Zones UP:
-        type: directory
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          UP
-        contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\desktop.ini
-            size_bytes: 246
-          UP1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP1.json
-            size_bytes: 2120132
-          UP10.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP10.json
-            size_bytes: 199522
-          UP11.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP11.json
-            size_bytes: 218563
-          UP12.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP12.json
-            size_bytes: 1274880
-          UP13.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP13.json
-            size_bytes: 458665
-          UP14.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP14.json
-            size_bytes: 714925
-          UP15.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP15.json
-            size_bytes: 1225698
-          UP16.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP16.json
-            size_bytes: 214440
-          UP17.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP17.json
-            size_bytes: 196764
-          UP18.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP18.json
-            size_bytes: 510702
-          UP19.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP19.json
-            size_bytes: 612646
-          UP2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP2.json
-            size_bytes: 2229078
-          UP20.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP20.json
-            size_bytes: 1177753
-          UP21.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP21.json
-            size_bytes: 687695
-          UP22.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP22.json
-            size_bytes: 970187
-          UP23.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP23.json
-            size_bytes: 202812
-          UP24.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP24.json
-            size_bytes: 691243
-          UP25.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP25.json
-            size_bytes: 809320
-          UP26.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP26.json
-            size_bytes: 1496403
-          UP27.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP27.json
-            size_bytes: 1458195
-          UP28.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP28.json
-            size_bytes: 287420
-          UP29.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP29.json
-            size_bytes: 211343
-          UP3.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP3.json
-            size_bytes: 286879
-          UP30.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP30.json
-            size_bytes: 766590
-          UP31.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP31.json
-            size_bytes: 184723
-          UP32.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP32.json
-            size_bytes: 210358
-          UP33.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP33.json
-            size_bytes: 218131
-          UP34.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP34.json
-            size_bytes: 279802
-          UP35.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP35.json
-            size_bytes: 279528
-          UP36.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP36.json
-            size_bytes: 285946
-          UP37.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP37.json
-            size_bytes: 286691
-          UP38.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP38.json
-            size_bytes: 271624
-          UP39.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP39.json
-            size_bytes: 969338
-          UP4.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP4.json
-            size_bytes: 217478
-          UP40.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP40.json
-            size_bytes: 304839
-          UP41.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP41.json
-            size_bytes: 934284
-          UP42.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP42.json
-            size_bytes: 1069565
-          UP43.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP43.json
-            size_bytes: 1056488
-          UP44.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP44.json
-            size_bytes: 805670
-          UP45.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP45.json
-            size_bytes: 222584
-          UP46.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP46.json
-            size_bytes: 201986
-          UP47.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP47.json
-            size_bytes: 201752
-          UP48.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP48.json
-            size_bytes: 232474
-          UP49.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP49.json
-            size_bytes: 722349
-          UP5.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP5.json
-            size_bytes: 286512
-          UP50.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP50.json
-            size_bytes: 286804
-          UP51.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP51.json
-            size_bytes: 894595
-          UP52.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP52.json
-            size_bytes: 883009
-          UP53.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP53.json
-            size_bytes: 203605
-          UP54.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP54.json
-            size_bytes: 861530
-          UP55.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP55.json
-            size_bytes: 617922
-          UP56.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP56.json
-            size_bytes: 754566
-          UP57.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP57.json
-            size_bytes: 208331
-          UP59.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP59.json
-            size_bytes: 861716
-          UP6.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP6.json
-            size_bytes: 211965
-          UP60.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP60.json
-            size_bytes: 195236
-          UP61.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP61.json
-            size_bytes: 1217380
-          UP62.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP62.json
-            size_bytes: 280568
-          UP63.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP63.json
-            size_bytes: 210208
-          UP64.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP64.json
-            size_bytes: 1027715
-          UP66.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP66.json
-            size_bytes: 848733
-          UP67.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP67.json
-            size_bytes: 218738
-          UP68.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP68.json
-            size_bytes: 881244
-          UP69.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP69.json
-            size_bytes: 578016
-          UP7.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP7.json
-            size_bytes: 273064
-          UP70.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP70.json
-            size_bytes: 288199
-          UP71.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP71.json
-            size_bytes: 218551
-          UP73.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP73.json
-            size_bytes: 335041
-          UP74.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP74.json
-            size_bytes: 946723
-          UP75.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP75.json
-            size_bytes: 1201932
-          UP76.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP76.json
-            size_bytes: 207769
-          UP77.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP77.json
-            size_bytes: 191359
-          UP79.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP79.json
-            size_bytes: 203283
-          UP8.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP8.json
-            size_bytes: 212844
-          UP81.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP81.json
-            size_bytes: 177654
-          UP82.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP82.json
-            size_bytes: 320831
-          UP83.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP83.json
-            size_bytes: 242435
-          UP84.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP84.json
-            size_bytes: 911390
-          UP85.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP85.json
-            size_bytes: 308045
-          UP86.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP86.json
-            size_bytes: 540088
-          UP87.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP87.json
-            size_bytes: 1279058
-          UP88.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP88.json
-            size_bytes: 927996
-          UP89.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP89.json
-            size_bytes: 312934
-          UP9.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UP\UP9.json
-            size_bytes: 211120
-      Zones UPZ:
-        type: directory
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          UPZ
-        contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\desktop.ini
-            size_bytes: 246
-          UPZ1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ1.json
-            size_bytes: 753976
-          UPZ2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ2.json
-            size_bytes: 298423
-          UPZ3.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ3.json
-            size_bytes: 694442
-          UPZ4.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ4.json
-            size_bytes: 301037
-          UPZ5.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ5.json
-            size_bytes: 294215
-          UPZ6.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ6.json
-            size_bytes: 228827
-          UPZ7-1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ7-1.json
-            size_bytes: 906843
-          UPZ7-2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ7-2.json
-            size_bytes: 783262
-          UPZ7.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ7.json
-            size_bytes: 901279
-          UPZ8.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ8.json
-            size_bytes: 296007
-          UPZ9.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              UPZ\UPZ9.json
-            size_bytes: 298567
-      Zones US:
-        type: directory
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-          US
-        contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\desktop.ini
-            size_bytes: 246
-          US1.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US1.json
-            size_bytes: 227443
-          US10.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US10.json
-            size_bytes: 286217
-          US11.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US11.json
-            size_bytes: 193768
-          US12.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US12.json
-            size_bytes: 233888
-          US13.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US13.json
-            size_bytes: 209242
-          US2.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US2.json
-            size_bytes: 307862
-          US3.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US3.json
-            size_bytes: 248020
-          US4.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US4.json
-            size_bytes: 227605
-          US5.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US5.json
-            size_bytes: 227897
-          US6.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US6.json
-            size_bytes: 225355
-          US7.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US7.json
-            size_bytes: 223722
-          US8.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US8.json
-            size_bytes: 226419
-          US9.json:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\bordeaux\Zones
-              US\US9.json
-            size_bytes: 223592
-  desktop.ini:
-    type: file
-    path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\desktop.ini
-    size_bytes: 246
+              à Urbaniser\AU99.json
+            size_bytes: 43467
   grenoble:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\desktop.ini
-        size_bytes: 246
       Dispositions Générales:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Dispositions
           Générales
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Dispositions
-              Générales\desktop.ini
-            size_bytes: 246
           Dispositions Générales.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Dispositions
@@ -1033,21 +966,11 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
               Agricoles\AL.json
             size_bytes: 157714
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
-              Agricoles\desktop.ini
-            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
           Naturelles et Forestières
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
-              Naturelles et Forestières\desktop.ini
-            size_bytes: 246
           N.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
@@ -1063,11 +986,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
           Urbaines
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
-              Urbaines\desktop.ini
-            size_bytes: 246
           UA1.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
@@ -1278,11 +1196,6 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
               À Urbaniser\AUZ1.json
             size_bytes: 281420
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\Zones
-              À Urbaniser\desktop.ini
-            size_bytes: 246
       zones_a_urbaniser.json:
         type: file
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\grenoble\zones_a_urbaniser.json
@@ -1303,20 +1216,11 @@ data:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\desktop.ini
-        size_bytes: 246
       Dispositions Générales:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Dispositions
           Générales
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Dispositions
-              Générales\desktop.ini
-            size_bytes: 246
           Dispositions Générales.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Dispositions
@@ -1346,21 +1250,11 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
               Agricoles\AS2.json
             size_bytes: 8291
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
-              Agricoles\desktop.ini
-            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
           Naturelles et Forestières
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
-              Naturelles et Forestières\desktop.ini
-            size_bytes: 246
           N.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
@@ -1411,11 +1305,6 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
               Spécifiques\AUCMZ13.json
             size_bytes: 25516
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
-              Spécifiques\desktop.ini
-            size_bytes: 246
           NZ30.4.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
@@ -1906,11 +1795,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
           Urbaines
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
-              Urbaines\desktop.ini
-            size_bytes: 246
           UAR1.1.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
@@ -2661,11 +2545,6 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
               À Urbaniser\AUD.json
             size_bytes: 8381
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\Zones
-              À Urbaniser\desktop.ini
-            size_bytes: 246
       zones_constructibles.json:
         type: file
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\lille\zones_constructibles.json
@@ -2682,20 +2561,11 @@ data:
     type: directory
     path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes
     contents:
-      desktop.ini:
-        type: file
-        path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\desktop.ini
-        size_bytes: 246
       Dispositions Générales:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Dispositions
           Générales
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Dispositions
-              Générales\desktop.ini
-            size_bytes: 246
           Dispositions Générales.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Dispositions
@@ -2710,11 +2580,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Règles
           Applicables au Patrimoine
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Règles
-              Applicables au Patrimoine\desktop.ini
-            size_bytes: 246
           Dispositions Communes au Patrimoine.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Règles
@@ -2741,21 +2606,11 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
               Agricoles\A.json
             size_bytes: 20688
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
-              Agricoles\desktop.ini
-            size_bytes: 246
       Zones Naturelles et Forestières:
         type: directory
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
           Naturelles et Forestières
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
-              Naturelles et Forestières\desktop.ini
-            size_bytes: 246
           N.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
@@ -2766,11 +2621,6 @@ data:
         path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
           Urbaines
         contents:
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
-              Urbaines\desktop.ini
-            size_bytes: 246
           UE.json:
             type: file
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
@@ -2801,8 +2651,3 @@ data:
             path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
               À Urbaniser\2AU.json
             size_bytes: 4821
-          desktop.ini:
-            type: file
-            path: C:\Users\Regium\Repositories\mwplu_analysis\data\interim\nantes\Zones
-              À Urbaniser\desktop.ini
-            size_bytes: 246

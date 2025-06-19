@@ -33,6 +33,10 @@ app = typer.Typer(
 )
 console = Console()
 
+# Remove default handler to avoid duplicate messages
+logger.remove()
+logger.add(sys.stderr, level="TRACE")
+
 
 @app.command()
 def status(
@@ -41,23 +45,29 @@ def status(
         "--refresh",
         "-r",
         help="Refresh YAML configurations before showing status",
-    )
+    ),
 ):
     """Show the current status of data across pipeline stages."""
 
     if refresh:
         console.print("[yellow]Refreshing configuration files...[/yellow]")
         try:
-            subprocess.run(
+            result = subprocess.run(
                 ["python", "config/generate_plu_configs.py"],
+                check=True,
                 capture_output=True,
                 text=True,
-                check=True,
             )
             console.print("[green]✓ Configurations updated[/green]\n")
         except subprocess.CalledProcessError as e:
-            console.print(f"[red]Error updating configs: {e}[/red]")
-            return
+            console.print("[red]Error:[/red] Failed to refresh configurations")
+            console.print(f"[red]Command:[/red] {' '.join(e.cmd)}")
+            console.print(f"[red]Exit code:[/red] {e.returncode}")
+            if e.stdout:
+                console.print(f"[yellow]Stdout:[/yellow]\n{e.stdout}")
+            if e.stderr:
+                console.print(f"[red]Stderr:[/red]\n{e.stderr}")
+            sys.exit(1)
 
     processor = BulkProcessor()
 
@@ -117,6 +127,9 @@ def run(
     force: bool = typer.Option(
         False, "--force", help="Force execution without confirmation"
     ),
+    limit: int = typer.Option(
+        None, "--limit", "-l", help="Maximum number of tasks to execute (default: all)"
+    ),
 ):
     """Run bulk processing for specified stages and cities."""
 
@@ -174,38 +187,15 @@ def run(
         f"\n[bold green]{'DRY RUN - ' if dry_run else ''}Starting bulk processing...[/bold green]"
     )
 
-    try:
-        results = processor.run_pipeline_stages(
-            stages=pipeline_stages,
-            cities=cities if cities and "all" not in cities else None,
-            dry_run=dry_run,
-        )
+    processor.run_pipeline_stages(
+        stages=pipeline_stages,
+        cities=cities if cities and "all" not in cities else None,
+        dry_run=dry_run,
+        limit=limit,
+    )
 
-        if dry_run:
-            console.print("\n[bold]Dry Run Results:[/bold]")
-            console.print(
-                f"Total tasks that would be executed: {results['total_tasks']}"
-            )
-        else:
-            console.print("\n[bold]Execution Results:[/bold]")
-            console.print(f"Total tasks: {results['total']}")
-            console.print(f"[green]Successful: {results['successful']}[/green]")
-            if results["failed"] > 0:
-                console.print(f"[red]Failed: {results['failed']}[/red]")
-
-            if results["failed"] == 0:
-                console.print(
-                    "\n[bold green]✅ All tasks completed successfully![/bold green]"
-                )
-            else:
-                console.print(
-                    "\n[bold yellow]⚠️  Some tasks failed. Check logs for details.[/bold yellow]"
-                )
-
-    except Exception as e:  # pylint: disable=broad-exception-caught
-        console.print(f"[red]Error during execution: {e}[/red]")
-        logger.exception("Bulk processing failed")
-        sys.exit(1)
+    if not dry_run:
+        console.print("\n[bold green]✅ Bulk processing complete.[/bold green]")
 
 
 @app.command()
@@ -241,20 +231,10 @@ def upload_all():
         console.print("Operation cancelled.")
         return
 
-    try:
-        results = processor.run_pipeline_stages(
-            stages=[PipelineStage.UPLOAD_SUPABASE], cities=["all"]
-        )
-
-        console.print("\n[bold]Upload Results:[/bold]")
-        console.print(f"Total upload tasks: {results['total']}")
-        console.print(f"[green]Successful: {results['successful']}[/green]")
-        if results["failed"] > 0:
-            console.print(f"[red]Failed: {results['failed']}[/red]")
-
-    except Exception as e:  # pylint: disable=broad-exception-caught
-        console.print(f"[red]Error during upload: {e}[/red]")
-        logger.exception("Upload failed")
+    processor.run_pipeline_stages(
+        stages=[PipelineStage.UPLOAD_SUPABASE], cities=["all"]
+    )
+    console.print("\n[bold green]✅ Upload complete.[/bold green]")
 
 
 @app.command()
@@ -264,21 +244,26 @@ def refresh():
     console.print("Scanning directories and updating YAML files...\n")
 
     try:
-        subprocess.run(
+        result = subprocess.run(
             ["python", "config/generate_plu_configs.py"],
+            check=True,
             capture_output=True,
             text=True,
-            check=True,
         )
         console.print("[green]✅ Configuration files successfully updated![/green]")
-        console.print(
-            "\n[dim]You can now run 'python bulk_runner.py status' to see updated \
-            file counts.[/dim]"
-        )
     except subprocess.CalledProcessError as e:
-        console.print("[red]❌ Error updating configuration files:[/red]")
-        console.print(f"[red]{e.stderr}[/red]")
-        logger.exception("Failed to refresh configurations")
+        console.print("[red]Error:[/red] Failed to refresh configurations")
+        console.print(f"[red]Command:[/red] {' '.join(e.cmd)}")
+        console.print(f"[red]Exit code:[/red] {e.returncode}")
+        if e.stdout:
+            console.print(f"[yellow]Stdout:[/yellow]\n{e.stdout}")
+        if e.stderr:
+            console.print(f"[red]Stderr:[/red]\n{e.stderr}")
+        sys.exit(1)
+    console.print(
+        "\n[dim]You can now run 'python bulk_runner.py status' to see updated \
+            file counts.[/dim]"
+    )
 
 
 if __name__ == "__main__":

@@ -16,7 +16,6 @@ from src.api.config.gemini_2_5 import (
 )
 from src.api.text_gemini import generate
 from src.utils.image import base64_to_image
-from src.utils.logger import save_gemini_response
 
 
 def data_to_parts(interim_data: dict) -> List[Union[types.Part, Image.Image]]:
@@ -112,8 +111,6 @@ def synthesis_gemini(
     except json.decoder.JSONDecodeError as e:
         logger.error(f"Error in extract_pages_gemini: {str(e)}")
         response_json = None
-
-    save_gemini_response(response=response, model_name=MODEL_PRO, operation="synthesis")
 
     standardized_response = standardize_synthesis_output(
         response=response_json,

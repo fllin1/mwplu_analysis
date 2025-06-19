@@ -20,7 +20,6 @@ from src.api.config.gemini_2_5 import (
     standardize_extract_pages_output,
 )
 from src.api.text_gemini import generate
-from src.utils.logger import save_gemini_response
 
 
 def extract_pages_gemini(raw_data: dict) -> dict:
@@ -49,10 +48,6 @@ def extract_pages_gemini(raw_data: dict) -> dict:
     except json.decoder.JSONDecodeError as e:
         logger.error(f"Error in extract_pages_gemini: {str(e)}")
         response_json = None
-
-    save_gemini_response(
-        response=response, model_name=MODEL_FLASH, operation="extract_pages"
-    )
 
     standardized_response = standardize_extract_pages_output(
         response=response_json,
