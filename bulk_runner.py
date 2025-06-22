@@ -20,7 +20,6 @@ import sys
 from typing import List
 
 import typer
-from loguru import logger
 from rich.console import Console
 from rich.table import Table
 
@@ -32,10 +31,6 @@ app = typer.Typer(
     pretty_exceptions_enable=False,
 )
 console = Console()
-
-# Remove default handler to avoid duplicate messages
-logger.remove()
-logger.add(sys.stderr, level="TRACE")
 
 
 @app.command()

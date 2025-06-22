@@ -35,12 +35,15 @@ PROMPTS_DIR = REFERENCES_DIR / "prompt"
 CONFIG_DIR = PROJ_ROOT / "config"
 LOGS_DIR = PROJ_ROOT / "logs"
 
+
+logger.add(LOGS_DIR / "app.log", rotation="50 MB")
+logger.enable("src")
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
     from tqdm import tqdm
 
     logger.remove(0)
-    logger.add(lambda msg: tqdm.write(msg, end=""), colorize=True)
+    logger.add(lambda msg: tqdm.write(msg, end=""), level="TRACE", colorize=True)
 except ModuleNotFoundError:
     pass
